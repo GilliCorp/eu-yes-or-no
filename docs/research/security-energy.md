@@ -72,9 +72,51 @@ replacing today's voluntary alignment.
 - ✅ **The Atlanticist concern:** historically Iceland feared an EU-led defence policy would **compete
   with and divide NATO**, weakening the Atlantic solidarity its safety depends on. (SIPRI)
 
+## CRISIS RESILIENCE & SUPPLY LINES (follow-up gather, 2026-06-17)
+
+**The striking fact:** Iceland produces ~100% renewable *electricity* but imports **virtually all
+liquid fuel** (transport, fishing fleet, aviation; ~15% of primary energy, zero domestic reserves) —
+yet, unlike almost every other developed importer, it is bound by **neither the IEA's nor the EU's
+90-day oil-reserve rules** and has **no statutory strategic fuel reserve.** This is the clearest
+concrete way EU membership would change resilience.
+
+- ✅ **Not an IEA member** — one of ~5 OECD states outside the IEA, so the IEA 90-day oil-stock
+  obligation doesn't apply. (IEA membership list) — *corrects the common assumption that it is.*
+- ⚠️ **Not bound by the EU oil-stocks Directive 2009/119** either — deemed *not* EEA-relevant, so not
+  incorporated into the EEA. *(load-bearing — from EFTA EEA-Lex factsheet snippet; verify live page.)*
+- ⚠️ **No statutory strategic oil reserve;** fuel security rests on undisclosed private commercial
+  inventories; mandatory stockholding **under government review since 2025.** *(Nordic Energy Research
+  snippet; verify.)*
+- ✅ **Food is import-dependent** — Iceland doesn't grow enough; imported food/beverages >$967M in 2024
+  (~11.5% of merchandise imports); ~57% of all imports come from the EEA (Norway, NL, UK, DK, DE). After
+  COVID + Ukraine the govt earmarked **~ISK 2bn over 5 yrs** to raise domestic cereal production. (US
+  ITA Trade.gov; OECD 2025; Hagstofa)
+- ✅ **Civil protection** via Almannavarnir; the **2023 National Security Policy** (Alþingi 42–0)
+  explicitly names food security, energy security and critical-infrastructure resilience. (Govt of Iceland)
+
+**What membership would change here:**
+- ✅ **Imposes a binding strategic oil-stock obligation** (Directive 2009/119: 90 days net imports / 61
+  days consumption) — closing the current fuel-reserve gap. (EUR-Lex)
+- ✅ **Plugs Iceland into EU crisis coordination** — the Internal Market Emergency & Resilience Act
+  (IMERA): joint procurement, reserve distribution, priority allocation of scarce crisis goods — buying
+  power a 390k-person island can't replicate alone. *Caveat: the crisis phase is triggered by
+  qualified-majority vote in Brussels, not Reykjavík.* (Council of the EU)
+- ✅ **What stays the same: geography.** No fixed link/pipeline/interconnector is added; the grid stays
+  islanded and fuel/goods still arrive by sea/air regardless. (Landsvirkjun)
+
+**Both sides (resilience):** *Pro* — a first-ever binding fuel reserve + EU crisis solidarity/joint
+procurement. *Anti* — the EEA already gives single-market supply access and Iceland can build reserves
+unilaterally (review underway) without ceding sovereignty; membership duplicates access while adding
+CFP exposure over fisheries (its food-export backbone); geography is the real constraint and EU
+membership doesn't change it.
+
+**Gaps (not guessed):** no sourced sea-vs-air import split; no public figure for days of fuel actually
+held; no statutory food stockpile found; the two ⚠️ load-bearing claims came from search snippets —
+verify against live pages before publishing.
+
 ## UNCERTAIN / HONEST UNKNOWNS
-- ⚠️ **Crisis resilience / supply lines / food & fuel security** for an isolated island state — **no
-  primary source addressed this**; a real gap worth a dedicated follow-up.
+- ✅ ~~Crisis resilience / supply lines~~ — now covered above (follow-up gather). Remaining sub-gaps
+  noted there (fuel days-of-cover, sea/air split, food stockpile).
 - ⚠️ **Practical military value of Art. 42(7)** given the EU has no standing force, and whether
   membership would change **US/NATO posture** (Keflavík, GIUK-gap air policing).
 - ⚠️ Whether membership adds **meaningful Arctic influence** beyond the 2026 partnership + NATO, and
@@ -95,7 +137,9 @@ Commission *Joint Understanding on the Third Energy Package towards Iceland* (20
 (Icelink, electricity sector).
 
 ## TO FINISH
-1. Dedicated follow-up on **island crisis resilience / supply-line / food-fuel security** (the open gap).
+1. ~~Dedicated follow-up on island crisis resilience / supply-line / food-fuel security.~~ ✅ DONE
+   2026-06-17 (see Crisis Resilience section). Still verify the 2 ⚠️ snippet-sourced claims (no
+   IEA/EU oil-stock obligation; reserve under review) against live pages.
 2. Confirm current **US/NATO presence** at Keflavík (rotational air policing) — the 2006 SIPRI source is
    stale; use a current source before writing.
 3. Frame neutrally: the headline nuance is "EU defence **complements** NATO, doesn't replace it" + "the
