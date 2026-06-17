@@ -33,18 +33,21 @@ today:
   is: >-
     Ísland er nær tollalaust hagkerfi með einni undantekningu: mat. Meðaltollur á
     landbúnaðarvörur er um 20% á móti 0,1% á annað. Hæstu tollarnir eru á
-    mjólkurvörur (~73%) og kjöt (~62–67%), auk tollkvóta og verndarákvæða. Tollarnir
-    beinast að vörum sem keppa við innlenda framleiðslu (mjólk, kjöt, egg, sumt
-    grænmeti); korn, ávextir og flest grænmeti koma tollfrjáls inn. OECD metur að
-    verndin haldi verði til bænda ~60% yfir heimsmarkaðsverði.
+    mjólkurvörur (~73%), kjöt (~62–67%) og egg (~30%), auk tollkvóta og
+    verndarákvæða; tómatar, gúrkur og paprika bera hærri tolla á íslenska
+    ræktunartímanum til að verja gróðurhúsabændur. Tollarnir beinast að vörum sem
+    keppa við innlenda framleiðslu; korn, hrísgrjón, pasta, sykur, olíur og ávextir
+    koma tollfrjáls inn (um 1.000 af 1.793 tollnúmerum eru þegar tollfrjáls). OECD
+    metur að verndin haldi verði til bænda ~60% yfir heimsmarkaðsverði.
   en: >-
     Iceland is a near-tariff-free economy with one exception: food. The average
     agricultural tariff is about 20% versus 0.1% on everything else. The highest
-    tariffs are on dairy (~73%) and meat (~62–67%), plus tariff quotas and
-    safeguards. The tariffs target goods that compete with domestic production
-    (dairy, meat, eggs, some vegetables); grains, fruit and most vegetables enter
-    tariff-free. The OECD estimates this protection keeps farm-gate prices ~60%
-    above world levels.
+    tariffs are on dairy (~73%), meat (~62–67%) and eggs (~30%), plus tariff quotas
+    and safeguards; tomatoes, cucumbers and peppers carry higher tariffs during the
+    Icelandic growing season to protect greenhouse farmers. The tariffs target goods
+    that compete with domestic production; grains, rice, pasta, sugar, oils and fruit
+    enter tariff-free (about 1,000 of 1,793 tariff lines are already duty-free). The
+    OECD estimates this protection keeps farm-gate prices ~60% above world levels.
 
 asMember:
   is: >-
@@ -140,6 +143,19 @@ uncertain:
       - title: "WTO Tariff Profile — Iceland (2024)"
         url: "https://www.wto.org/english/res_e/statis_e/daily_update_e/tariff_profiles/is_e.pdf"
         publisher: "World Trade Organization"
+        tier: primary
+  - claim:
+      is: "Sérstök reglugerð um dýraheilbrigði er tvíeggjað mál: annars vegar hækka innflutningshömlur (t.d. á hráu kjöti og eggjum) matvælaverð og EFTA-dómstóllinn dæmdi gamla hráakjötsbannið andstætt EES-rétti (mál E-17/15 2016; E-2/17 og E-3/17 2017); hins vegar er Ísland laust við 14 alvarlega dýrasjúkdóma og notar minnst af sýklalyfjum í dýr í Evrópu, sem margir telja verndarvert."
+      en: "Iceland's animal-health rules are double-edged: on one hand, import limits (e.g. on raw meat and eggs) raise food prices, and the EFTA Court found the old raw-meat ban breached EEA law (case E-17/15 in 2016; E-2/17 and E-3/17 in 2017); on the other, Iceland is free of 14 serious animal diseases and has the lowest veterinary antibiotic use in Europe, which many consider worth protecting."
+    confidence: high
+    sources:
+      - title: "Joined Cases E-2/17 and E-3/17 (import of raw meat, eggs, dairy)"
+        url: "https://eftacourt.int/cases/joined-cases-e-02-17-and-e-03-17/"
+        publisher: "EFTA Court"
+        tier: primary
+      - title: "Iceland authorised to apply special guarantees concerning Salmonella (Jan 2019)"
+        url: "https://www.eftasurv.int/newsroom/updates/iceland-must-lift-restrictions-imports-fresh-meat"
+        publisher: "EFTA Surveillance Authority"
         tier: primary
 
 calculator: false
