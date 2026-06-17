@@ -4,6 +4,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 import type { Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
 import Calculator from './Calculator.astro';
+import Basket from './Basket.astro';
 
 interface Props {
   entry: CollectionEntry<'dossiers'>;
@@ -70,6 +71,8 @@ const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
   </section>
 
   {d.calculator && <Calculator lang={lang} />}
+
+  {d.basket && <Basket lang={lang} />}
 
   <!-- The ledger: gains weighed against costs -->
   <section class="ledger" aria-label={`${t(lang, 'dossier.gains')} / ${t(lang, 'dossier.losses')}`}>

@@ -143,5 +143,6 @@ uncertain:
         tier: primary
 
 calculator: false
+basket: true
 lastReviewed: 2026-06-17
 confidence: high
