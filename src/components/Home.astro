@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import type { Lang } from '../i18n/ui';
+import { t } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const dossiers = (await getCollection('dossiers')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+
+const dateFmt = new Intl.DateTimeFormat(lang === 'is' ? 'is-IS' : 'en-GB', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+---
+
+<section class="hero">
+  <h1>{t(lang, 'site.title')}</h1>
+  <p class="tagline">{t(lang, 'site.tagline')}</p>
+  <p class="draft">{t(lang, 'home.draft')}</p>
+</section>
+
+<h2>{t(lang, 'home.chapters')}</h2>
+<ul class="chapters">
+  {
+    dossiers.map((d) => (
+      <li>
+        <span class="num">{d.data.order}</span>
+        <div>
+          <h3>{d.data.title[lang]}</h3>
+          <p>{d.data.tldr[lang]}</p>
+          <p class="meta">
+            {t(lang, 'home.lastReviewed')}: {dateFmt.format(d.data.lastReviewed)}
+          </p>
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .hero { margin-bottom: 2.5rem; }
+  h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 0.5rem; }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 1rem; }
+  .draft {
+    display: inline-block; font-size: 0.8rem; color: var(--muted);
+    background: #fff3d6; border: 1px solid #e8d8a8; padding: 0.2rem 0.6rem; border-radius: 999px;
+  }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .chapters { list-style: none; padding: 0; margin: 0; }
+  .chapters li {
+    display: flex; gap: 1rem; padding: 1.25rem 0; border-top: 1px solid var(--line);
+  }
+  .num {
+    font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent);
+    min-width: 1.5rem;
+  }
+  .chapters h3 { margin: 0 0 0.25rem; font-size: 1.2rem; }
+  .chapters p { margin: 0 0 0.25rem; }
+  .meta { font-size: 0.8rem; color: var(--muted); }
+</style>

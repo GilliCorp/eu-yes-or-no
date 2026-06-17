@@ -1,0 +1,121 @@
+order: 1
+
+title:
+  is: "Buddan þín"
+  en: "Your money"
+
+tldr:
+  is: "ESB-aðild myndi ekki banna verðtrygginguna — íslenskir dómstólar og stjórnvöld eru þegar að breyta henni meira en Brussel myndi gera."
+  en: "EU membership would not ban verðtrygging — Iceland's own courts and government are already reshaping it more than Brussels would."
+
+summary:
+  is: >-
+    Stóra spurningin um buddu heimilanna er verðtryggingin (vísitölubinding
+    húsnæðislána). Algengur misskilningur er að ESB-aðild myndi sjálfkrafa
+    afnema hana. Það er ekki rétt: ESB/EES-réttur leyfir verðtryggingu en gerir
+    kröfur um gagnsæi, og þessar reglur gilda nú þegar á Íslandi í gegnum
+    EES-samninginn. Raunverulega breytingin kæmi með evru — en það er margra ára
+    ferli (ERM II + Maastricht-skilyrði) sem byggir á lágri verðbólgu, sem er
+    einmitt það sem gerir verðtrygginguna óþarfa.
+  en: >-
+    The big household-budget question is verðtrygging (CPI-indexation of
+    mortgages). A common misconception is that EU membership would automatically
+    abolish it. It would not: EU/EEA law permits indexation but demands
+    transparency, and those rules already apply in Iceland through the EEA
+    Agreement. The real change would come with the euro — but that is a
+    multi-year path (ERM II + Maastricht criteria) that rests on low inflation,
+    which is exactly what makes verðtrygging unnecessary.
+
+today:
+  is: >-
+    Verðtryggingin er lögleg samkvæmt lögum nr. 38/2001 og fer eftir
+    EES-reglum um neytendalán. EES-réttur (tilskipun 93/13/EBE um óréttmæta
+    skilmála og húsnæðislánatilskipun 2014/17/ESB) bannar ekki verðtryggingu —
+    hann setur kröfur um gagnsæi. Allar þessar reglur gilda nú þegar á Íslandi.
+    EFTA-dómstóllinn (mál E-25/13 og E-27/13) dæmdi verðtrygginguna ekki
+    ólögmæta heldur vísaði sanngirnismatinu til íslenskra dómstóla.
+  en: >-
+    Verðtrygging is legal under Act No. 38/2001 and follows EEA consumer-credit
+    rules. EEA law (the Unfair Terms Directive 93/13/EEC and the Mortgage Credit
+    Directive 2014/17/EU) does not ban indexation — it requires transparency.
+    All of these rules already apply in Iceland. The EFTA Court (cases E-25/13
+    and E-27/13) did not rule indexation unlawful; it referred the fairness
+    assessment back to Icelandic courts.
+
+asMember:
+  is: >-
+    Lagalega myndi ESB-aðild breyta litlu, því sömu neytendareglur gilda nú
+    þegar í gegnum EES. Aðild jafngildir ekki sjálfkrafa upptöku evru: ný
+    aðildarríki þurfa að vera að minnsta kosti tvö ár í ERM II og uppfylla
+    Maastricht-skilyrðin (lág verðbólga, samræmdir vextir) — margra ára ferli.
+    Það er evran, ekki aðildin sem slík, sem gæti gert verðtrygginguna óþarfa —
+    en aðeins þegar lág og stöðug verðbólga er þegar komin.
+  en: >-
+    Legally, EU membership would change little, because the same consumer rules
+    already apply via the EEA. Membership does not equal instant euro adoption:
+    new members must spend at least two years in ERM II and meet the Maastricht
+    criteria (low inflation, converged interest rates) — a multi-year process.
+    It is the euro, not membership itself, that could make verðtrygging
+    unnecessary — but only once low, stable inflation is already in place.
+
+gains:
+  - claim:
+      is: "Evran fjarlægir gengisfall krónunnar sem keyrir verðbólgu beint inn í verðtryggð lán (eins og gerðist 2008 þegar krónan féll um meira en 50%)."
+      en: "The euro removes króna devaluation, which drives inflation straight into indexed loans (as in 2008 when the króna fell more than 50%)."
+    affects: ["homeowners", "borrowers"]
+    confidence: high
+    sources:
+      - title: "Economic Affairs No. 6 — Iceland's currency and exchange rate policy options"
+        url: "https://www.cb.is/library/Skraarsafn---EN/Economic-Affairs/Economic%20Affairs_no%206.pdf"
+        publisher: "Central Bank of Iceland"
+        tier: primary
+  - claim:
+      is: "Maastricht-skilyrðin krefjast lágrar verðbólgu og lægri vaxta — einmitt þeirra aðstæðna þar sem verðtryggingin missir tilgang sinn."
+      en: "The Maastricht criteria require low inflation and lower interest rates — precisely the conditions under which verðtrygging loses its rationale."
+    affects: ["borrowers"]
+    confidence: high
+    sources:
+      - title: "Convergence criteria for joining the euro area"
+        url: "https://www.ecb.europa.eu/ecb/orga/escb/html/convergence-criteria.en.html"
+        publisher: "European Central Bank"
+        tier: primary
+
+losses:
+  - claim:
+      is: "Sjálfstæð króna virkaði sem höggdeyfir í endurreisninni eftir 2008; evruríki geta ekki fellt eigin gjaldmiðil til að bregðast við áföllum."
+      en: "An independent króna acted as a shock absorber in the post-2008 recovery; eurozone members cannot devalue their own currency to respond to shocks."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Iceland's financial crisis and recovery (briefing)"
+        url: "https://www.europarl.europa.eu/RegData/etudes/briefing_note/join/2014/522331/EXPO-AFET_SP(2014)522331_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+  - claim:
+      is: "Lægri vextir vegna evru geta horfið aftur ef ríkisfjármálin eru ekki í lagi — evran er ekki ókeypis lausn."
+      en: "Lower interest rates from the euro can evaporate without sound public finances — the euro is not a free lunch."
+    affects: ["borrowers", "taxpayers"]
+    confidence: high
+    sources:
+      - title: "Upptaka evru og vextir á Íslandi"
+        url: "https://ioes.hi.is/files/2021-05/Upptaka-Evru-og-vextir-a-Islandi.pdf"
+        publisher: "Institute of Economic Studies, University of Iceland"
+        tier: academic
+
+uncertain:
+  - claim:
+      is: "Stærsti þrýstingurinn á verðtrygginguna núna er innlendur, ekki frá ESB: Hæstiréttur dæmdi vaxtaskilmála ólögmæta (okt./des. 2025) og bankar gerðu hlé á verðtryggðum lánum; stjórnvöld ætla að minnka vægi verðtryggðra íbúðalána frá 2027."
+      en: "The biggest pressure on verðtrygging right now is domestic, not from the EU: the Supreme Court ruled rate terms unlawful (Oct/Dec 2025) and banks paused indexed loans; the government plans to reduce the weight of indexed mortgages from 2027."
+    confidence: high
+    sources:
+      - title: "Breytilegir vextir Íslandsbanka ólöglegir (14 Oct 2025)"
+        url: "https://www.ruv.is/frettir/innlent/2025-10-14-breytilegir-vextir-islandsbanka-ologlegir-456101"
+        publisher: "RÚV"
+        tier: press
+      - title: "Fyrsti húsnæðispakki ríkisstjórnarinnar kynntur (29 Oct 2025)"
+        url: "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/10/29/Fyrsti-husnaedispakki-rikisstjornarinnar-kynntur/"
+        publisher: "Government of Iceland"
+        tier: primary
+
+lastReviewed: 2026-06-17
+confidence: high

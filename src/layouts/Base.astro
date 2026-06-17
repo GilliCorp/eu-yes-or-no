@@ -1,0 +1,55 @@
+---
+import type { Lang } from '../i18n/ui';
+import { t } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+}
+
+const { lang, title } = Astro.props;
+const pageTitle = title ? `${title} — ${t(lang, 'site.title')}` : t(lang, 'site.title');
+const altLang: Lang = lang === 'is' ? 'en' : 'is';
+const altHref = altLang === 'is' ? '/' : '/en/';
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href={lang === 'is' ? '/' : '/en/'}>{t(lang, 'site.title')}</a>
+      <a class="lang" href={altHref}>{altLang === 'is' ? 'Íslenska' : 'English'}</a>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <style is:global>
+      :root {
+        --ink: #14110f;
+        --muted: #6b645c;
+        --bg: #faf8f4;
+        --line: #e6e0d6;
+        --gain: #1f7a4d;
+        --loss: #b23c2e;
+        --accent: #2b4a7a;
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.6; }
+      header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 1rem 1.5rem; border-bottom: 1px solid var(--line);
+      }
+      .brand { font-weight: 700; text-decoration: none; color: var(--ink); }
+      .lang { text-decoration: none; color: var(--accent); font-size: 0.9rem; }
+      main { max-width: 52rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+      a { color: var(--accent); }
+    </style>
+  </body>
+</html>
