@@ -35,6 +35,18 @@ const point = z.object({
 });
 
 /**
+ * A sourced statistic shown as a labelled bar (e.g. "fisheries = 40% of goods
+ * exports"). Generic + reusable across chapters. Like `point`, `sources` has
+ * `.min(1)` — a bar with no source is a BUILD ERROR. 🔒
+ */
+const statBar = z.object({
+  label: loc,
+  valuePct: z.number().min(0).max(100),
+  caption: loc,
+  sources: z.array(source).min(1),
+});
+
+/**
  * A topic "dossier" — one chapter of the site (e.g. "Your money").
  * Structured data, not prose: plain-language summary + what's true today
  * under the EEA vs. what changes as a full EU member, with gains/losses/unknowns.
@@ -51,6 +63,8 @@ const dossiers = defineCollection({
     gains: z.array(point).default([]),
     losses: z.array(point).default([]),
     uncertain: z.array(point).default([]),
+    // Optional sourced "what's at stake" stat-bars, rendered as the chapter hook.
+    stakes: z.array(statBar).optional(),
     // Render the "build your household" calculator on this chapter.
     calculator: z.boolean().default(false),
     basket: z.boolean().default(false),
