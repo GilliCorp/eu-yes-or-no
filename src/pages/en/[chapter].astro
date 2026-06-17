@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Dossier from '../../components/Dossier.astro';
+
+export async function getStaticPaths() {
+  const dossiers = await getCollection('dossiers');
+  return dossiers.map((entry) => ({
+    params: { chapter: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+
+<Base lang="en" title={entry.data.title.en}>
+  <Dossier entry={entry} lang="en" />
+</Base>

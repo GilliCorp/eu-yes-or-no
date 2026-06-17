@@ -1,0 +1,262 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import type { Lang } from '../i18n/ui';
+import { t } from '../i18n/ui';
+
+interface Props {
+  entry: CollectionEntry<'dossiers'>;
+  lang: Lang;
+}
+const { entry, lang } = Astro.props;
+const d = entry.data;
+
+const num = String(d.order).padStart(2, '0');
+const backHref = getRelativeLocaleUrl(lang, '');
+
+const dateFmt = new Intl.DateTimeFormat(lang === 'is' ? 'is-IS' : 'en-GB', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const confLabel = (c: 'high' | 'medium' | 'low') =>
+  t(lang, `dossier.confidence.${c}` as const);
+
+const tierLabel: Record<string, { is: string; en: string }> = {
+  primary: { is: 'frumheimild', en: 'primary' },
+  academic: { is: 'fræðigrein', en: 'academic' },
+  press: { is: 'fjölmiðill', en: 'press' },
+  advocacy: { is: 'málsvari', en: 'advocacy' },
+};
+
+const affectsLabel: Record<string, { is: string; en: string }> = {
+  homeowners: { is: 'húseigendur', en: 'homeowners' },
+  borrowers: { is: 'lántakar', en: 'borrowers' },
+  taxpayers: { is: 'skattgreiðendur', en: 'taxpayers' },
+  everyone: { is: 'almenningur', en: 'everyone' },
+};
+const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
+---
+
+<article class="dossier">
+  <a class="back" href={backHref}>← {t(lang, 'dossier.back')}</a>
+
+  <header class="hero">
+    <p class="eyebrow">{t(lang, 'dossier.eyebrow')} {num}</p>
+    <h1>{d.title[lang]}</h1>
+    <p class="lead">{d.tldr[lang]}</p>
+    <p class="summary">{d.summary[lang]}</p>
+  </header>
+
+  <!-- Today vs. As a member: the before/after spine -->
+  <section class="compare" aria-label={`${t(lang, 'dossier.today')} / ${t(lang, 'dossier.asMember')}`}>
+    <div class="panel today">
+      <p class="panel-label">{t(lang, 'dossier.today')}</p>
+      <p class="panel-sub">{t(lang, 'dossier.todaySub')}</p>
+      <p class="panel-body">{d.today[lang]}</p>
+    </div>
+    <div class="spine" aria-hidden="true"><span>→</span></div>
+    <div class="panel member">
+      <p class="panel-label">{t(lang, 'dossier.asMember')}</p>
+      <p class="panel-sub">{t(lang, 'dossier.asMemberSub')}</p>
+      <p class="panel-body">{d.asMember[lang]}</p>
+    </div>
+  </section>
+
+  <!-- The ledger: gains weighed against costs -->
+  <section class="ledger" aria-label={`${t(lang, 'dossier.gains')} / ${t(lang, 'dossier.losses')}`}>
+    <div class="ledger-head">
+      <span class="lh gain">{t(lang, 'dossier.gains')}</span>
+      <span class="scale" aria-hidden="true">⚖</span>
+      <span class="lh loss">{t(lang, 'dossier.losses')}</span>
+    </div>
+
+    <div class="cols">
+      <ul class="col gains">
+        {d.gains.map((p) => (
+          <li class="entry">
+            <p class="claim">{p.claim[lang]}</p>
+            <div class="meta">
+              {p.affects?.map((a) => <span class="affect">{affect(a)}</span>)}
+              <span class="conf">{t(lang, 'dossier.confidence')}: {confLabel(p.confidence)}</span>
+            </div>
+            <div class="srcs">
+              {p.sources.map((s) => (
+                <a class="chip" href={s.url} target="_blank" rel="noopener">
+                  <span class="tier">{tierLabel[s.tier]?.[lang] ?? s.tier}</span>
+                  {s.publisher ?? s.title}
+                </a>
+              ))}
+            </div>
+          </li>
+        ))}
+      </ul>
+
+      <ul class="col losses">
+        {d.losses.map((p) => (
+          <li class="entry">
+            <p class="claim">{p.claim[lang]}</p>
+            <div class="meta">
+              {p.affects?.map((a) => <span class="affect">{affect(a)}</span>)}
+              <span class="conf">{t(lang, 'dossier.confidence')}: {confLabel(p.confidence)}</span>
+            </div>
+            <div class="srcs">
+              {p.sources.map((s) => (
+                <a class="chip" href={s.url} target="_blank" rel="noopener">
+                  <span class="tier">{tierLabel[s.tier]?.[lang] ?? s.tier}</span>
+                  {s.publisher ?? s.title}
+                </a>
+              ))}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Honest unknowns -->
+  {d.uncertain.length > 0 && (
+    <section class="uncertain">
+      <p class="u-label">{t(lang, 'dossier.uncertain')}</p>
+      <p class="u-sub">{t(lang, 'dossier.uncertainSub')}</p>
+      <ul>
+        {d.uncertain.map((p) => (
+          <li class="entry">
+            <p class="claim">{p.claim[lang]}</p>
+            <div class="srcs">
+              {p.sources.map((s) => (
+                <a class="chip" href={s.url} target="_blank" rel="noopener">
+                  <span class="tier">{tierLabel[s.tier]?.[lang] ?? s.tier}</span>
+                  {s.publisher ?? s.title}
+                </a>
+              ))}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <p class="reviewed">
+    {t(lang, 'dossier.lastReviewed')}: <time datetime={d.lastReviewed.toISOString()}>{dateFmt.format(d.lastReviewed)}</time>
+  </p>
+</article>
+
+<style>
+  .dossier { max-width: 64rem; margin: 0 auto; padding: 2rem clamp(1rem, 5vw, 2.5rem) 4rem; }
+
+  .back {
+    font-family: var(--mono); font-size: 0.8rem; text-decoration: none; color: var(--slate);
+    display: inline-block; margin-bottom: 2rem;
+  }
+  .back:hover { color: var(--ink); }
+
+  /* Hero */
+  .hero { max-width: 44rem; margin-bottom: 3.5rem; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--brass); margin: 0 0 0.75rem;
+  }
+  .hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.4rem); margin: 0 0 1.25rem; }
+  .lead {
+    font-family: var(--display); font-weight: 500; font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+    line-height: 1.3; color: var(--ink); margin: 0 0 1.25rem;
+  }
+  .summary { font-size: 1.125rem; color: #34322d; margin: 0; }
+
+  /* Compare: today vs. as member */
+  .compare {
+    display: grid; grid-template-columns: 1fr auto 1fr; gap: 0; align-items: stretch;
+    border: 1px solid var(--line-strong); background: var(--paper-raised); border-radius: 4px;
+    margin-bottom: 4rem; overflow: hidden;
+  }
+  .panel { padding: 1.5rem clamp(1rem, 3vw, 1.75rem); }
+  .panel-label { font-family: var(--display); font-weight: 600; font-size: 1.1rem; margin: 0 0 0.15rem; }
+  .panel-sub {
+    font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); margin: 0 0 0.85rem;
+  }
+  .panel-body { margin: 0; font-size: 1rem; }
+  .panel.today { border-right: 3px solid var(--brass); }
+  .spine {
+    display: flex; align-items: center; justify-content: center; width: 0; position: relative;
+  }
+  .spine span {
+    position: absolute; background: var(--brass); color: var(--paper-raised);
+    width: 1.9rem; height: 1.9rem; border-radius: 50%; display: grid; place-items: center;
+    font-family: var(--mono); font-size: 0.9rem;
+  }
+
+  /* Ledger */
+  .ledger { margin-bottom: 4rem; }
+  .ledger-head {
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .lh {
+    font-family: var(--display); font-weight: 600; font-size: 1.3rem;
+  }
+  .lh.gain { color: var(--gain); }
+  .lh.loss { color: var(--loss); text-align: right; }
+  .scale { color: var(--brass); font-size: 1.5rem; }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .col { list-style: none; margin: 0; padding: 0; }
+  .col.gains { padding-right: 1.5rem; }
+  .col.losses { padding-left: 1.5rem; border-left: 1px solid var(--line-strong); }
+
+  .entry { padding: 1.1rem 0; border-top: 1px solid var(--line); }
+  .entry:first-child { border-top: none; }
+  .col.gains .entry { border-left: 3px solid var(--gain-bg); padding-left: 0.85rem; }
+  .col.losses .entry { border-left: 3px solid var(--loss-bg); padding-left: 0.85rem; }
+  .claim { margin: 0 0 0.6rem; font-size: 1.02rem; }
+
+  .meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: 0.6rem; }
+  .affect {
+    font-family: var(--mono); font-size: 0.68rem; text-transform: lowercase; letter-spacing: 0.03em;
+    color: var(--slate); background: var(--paper-raised); border: 1px solid var(--line-strong);
+    padding: 0.1rem 0.45rem; border-radius: 2px;
+  }
+  .conf { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); }
+
+  .srcs { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-family: var(--mono); font-size: 0.72rem; text-decoration: none; color: var(--slate);
+    background: var(--paper); border: 1px solid var(--line-strong); border-radius: 2px;
+    padding: 0.22rem 0.5rem; line-height: 1.3;
+  }
+  .chip:hover { border-color: var(--slate); background: var(--paper-raised); }
+  .chip .tier {
+    font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--brass);
+    border-right: 1px solid var(--line-strong); padding-right: 0.4rem;
+  }
+
+  /* Uncertain */
+  .uncertain {
+    border: 1px dashed var(--line-strong); border-radius: 4px;
+    padding: 1.5rem clamp(1rem, 3vw, 1.75rem); margin-bottom: 3rem; background: #f3f2ec;
+  }
+  .u-label { font-family: var(--display); font-weight: 600; font-size: 1.15rem; margin: 0 0 0.15rem; }
+  .u-sub {
+    font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); margin: 0 0 1rem;
+  }
+  .uncertain ul { list-style: none; margin: 0; padding: 0; }
+  .uncertain .entry { border-top: 1px solid var(--line); }
+  .uncertain .entry:first-child { border-top: none; }
+
+  .reviewed { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
+
+  /* Responsive: stack the dualities on small screens */
+  @media (max-width: 40rem) {
+    .compare { grid-template-columns: 1fr; }
+    .panel.today { border-right: none; border-bottom: 3px solid var(--brass); }
+    .spine { display: none; }
+    .cols { grid-template-columns: 1fr; }
+    .col.gains { padding-right: 0; }
+    .col.losses { padding-left: 0; border-left: none; border-top: 1px solid var(--line-strong); margin-top: 1.5rem; padding-top: 0.5rem; }
+    .lh.loss { text-align: left; }
+  }
+</style>

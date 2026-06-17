@@ -3,20 +3,71 @@ export const languages = { is: 'Íslenska', en: 'English' } as const;
 
 export type Lang = keyof typeof languages;
 
+/** Where "Spotted an error?" points — the public, auditable source of truth. */
+export const REPO_URL = 'https://github.com/GilliCorp/eu-yes-or-no';
+
 export const ui = {
   is: {
     'site.title': 'ESB — já eða nei?',
     'site.tagline': 'Hvað myndum við græða og hvað myndum við tapa? Á mannamáli, með heimildum.',
+    'home.intro':
+      'Ísland er nú þegar um tveir þriðju „inni“ í ESB gegnum EES-samninginn. Þessi síða snýst því ekki um „ESB eða ekkert“ — heldur hvað raunverulega breytist ef við göngum alla leið. Kafli fyrir kafla, byrjað á því sem snertir hversdaginn.',
     'home.chapters': 'Kaflar',
     'home.lastReviewed': 'Síðast yfirfarið',
     'home.draft': 'Vinnueintak — heimildastutt en óyfirlesið.',
+    'home.readMore': 'Lesa kaflann',
+    'dossier.eyebrow': 'Kafli',
+    'dossier.today': 'Staðan í dag',
+    'dossier.todaySub': 'Það sem er nú þegar satt undir EES',
+    'dossier.asMember': 'Sem aðildarríki',
+    'dossier.asMemberSub': 'Það sem breytist með fullri aðild',
+    'dossier.gains': 'Ávinningur',
+    'dossier.losses': 'Kostnaður',
+    'dossier.uncertain': 'Óvissa',
+    'dossier.uncertainSub': 'Það sem við vitum ekki — heiðarlega merkt',
+    'dossier.sources': 'Heimildir',
+    'dossier.affects': 'Snertir',
+    'dossier.confidence': 'Vissa',
+    'dossier.confidence.high': 'mikil',
+    'dossier.confidence.medium': 'nokkur',
+    'dossier.confidence.low': 'lítil',
+    'dossier.lastReviewed': 'Síðast yfirfarið',
+    'dossier.back': 'Allir kaflar',
+    'footer.neutral':
+      'Hlutlaus, heimildastudd síða. Hver fullyrðing vísar í frumheimild. Allt efni er opið á GitHub — saga breytinga er sýnileg.',
+    'footer.bullshit': 'Sástu villu? Leiðréttu hana',
+    'a11y.skip': 'Beint í efni',
   },
   en: {
     'site.title': 'EU — yes or no?',
     'site.tagline': 'What would we gain and what would we lose? In plain language, with sources.',
+    'home.intro':
+      "Iceland is already about two-thirds 'in' the EU through the EEA Agreement. So this site isn't about 'EU or nothing' — it's about what actually changes if we go all the way. Chapter by chapter, starting with what touches everyday life.",
     'home.chapters': 'Chapters',
     'home.lastReviewed': 'Last reviewed',
     'home.draft': 'Work in progress — sourced but not yet copy-edited.',
+    'home.readMore': 'Read the chapter',
+    'dossier.eyebrow': 'Chapter',
+    'dossier.today': 'Today',
+    'dossier.todaySub': "What's already true under the EEA",
+    'dossier.asMember': 'As a member',
+    'dossier.asMemberSub': 'What changes with full membership',
+    'dossier.gains': 'Gains',
+    'dossier.losses': 'Costs',
+    'dossier.uncertain': 'Uncertain',
+    'dossier.uncertainSub': "What we don't know — honestly flagged",
+    'dossier.sources': 'Sources',
+    'dossier.affects': 'Affects',
+    'dossier.confidence': 'Confidence',
+    'dossier.confidence.high': 'high',
+    'dossier.confidence.medium': 'medium',
+    'dossier.confidence.low': 'low',
+    'dossier.lastReviewed': 'Last reviewed',
+    'dossier.back': 'All chapters',
+    'footer.neutral':
+      'A neutral, sourced site. Every claim cites a primary source. All content is open on GitHub — the edit history is visible.',
+    'footer.bullshit': 'Spotted an error? Fix it',
+    'a11y.skip': 'Skip to content',
   },
 } as const;
 

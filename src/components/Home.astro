@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import type { Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
 
@@ -19,48 +20,77 @@ const dateFmt = new Intl.DateTimeFormat(lang === 'is' ? 'is-IS' : 'en-GB', {
 });
 ---
 
-<section class="hero">
-  <h1>{t(lang, 'site.title')}</h1>
-  <p class="tagline">{t(lang, 'site.tagline')}</p>
-  <p class="draft">{t(lang, 'home.draft')}</p>
-</section>
+<div class="wrap">
+  <section class="hero">
+    <h1>{t(lang, 'site.title')}</h1>
+    <p class="tagline">{t(lang, 'site.tagline')}</p>
+    <p class="intro">{t(lang, 'home.intro')}</p>
+    <p class="draft">{t(lang, 'home.draft')}</p>
+  </section>
 
-<h2>{t(lang, 'home.chapters')}</h2>
-<ul class="chapters">
-  {
-    dossiers.map((d) => (
-      <li>
-        <span class="num">{d.data.order}</span>
-        <div>
-          <h3>{d.data.title[lang]}</h3>
-          <p>{d.data.tldr[lang]}</p>
-          <p class="meta">
-            {t(lang, 'home.lastReviewed')}: {dateFmt.format(d.data.lastReviewed)}
-          </p>
-        </div>
-      </li>
-    ))
-  }
-</ul>
+  <h2 class="section-label">{t(lang, 'home.chapters')}</h2>
+  <ul class="chapters">
+    {
+      dossiers.map((d) => (
+        <li>
+          <a class="card" href={getRelativeLocaleUrl(lang, d.id)}>
+            <span class="num">{String(d.data.order).padStart(2, '0')}</span>
+            <span class="body">
+              <span class="title">{d.data.title[lang]}</span>
+              <span class="tldr">{d.data.tldr[lang]}</span>
+              <span class="row">
+                <span class="meta">
+                  {t(lang, 'home.lastReviewed')}: {dateFmt.format(d.data.lastReviewed)}
+                </span>
+                <span class="go">{t(lang, 'home.readMore')} →</span>
+              </span>
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
 
 <style>
-  .hero { margin-bottom: 2.5rem; }
-  h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 0.5rem; }
-  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 1rem; }
+  .wrap { max-width: 50rem; margin: 0 auto; padding: clamp(2.5rem, 7vw, 5rem) clamp(1rem, 5vw, 2.5rem) 4rem; }
+
+  .hero { margin-bottom: 3.5rem; }
+  h1 { font-size: clamp(2.6rem, 8vw, 4.5rem); margin: 0 0 0.75rem; }
+  .tagline {
+    font-family: var(--display); font-weight: 500; font-size: clamp(1.2rem, 3vw, 1.6rem);
+    line-height: 1.3; color: var(--ink); margin: 0 0 1.5rem; max-width: 32rem;
+  }
+  .intro { font-size: 1.125rem; color: #34322d; margin: 0 0 1.5rem; max-width: 38rem; }
   .draft {
-    display: inline-block; font-size: 0.8rem; color: var(--muted);
-    background: #fff3d6; border: 1px solid #e8d8a8; padding: 0.2rem 0.6rem; border-radius: 999px;
+    display: inline-block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em;
+    color: #7a5a1e; background: #f4e9cf; border: 1px solid #e2cf9c; padding: 0.25rem 0.65rem; border-radius: 2px;
   }
-  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+
+  .section-label {
+    font-family: var(--mono); font-size: 0.78rem; font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.14em; color: var(--muted); margin: 0 0 0.5rem; border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 0.75rem;
+  }
+
   .chapters { list-style: none; padding: 0; margin: 0; }
-  .chapters li {
-    display: flex; gap: 1rem; padding: 1.25rem 0; border-top: 1px solid var(--line);
+  .chapters li { border-bottom: 1px solid var(--line); }
+
+  .card {
+    display: flex; gap: clamp(0.85rem, 3vw, 1.5rem); padding: 1.5rem 0.5rem; text-decoration: none;
+    color: inherit; transition: background 0.15s ease, padding 0.15s ease;
   }
+  .card:hover { background: var(--paper-raised); padding-left: 1rem; padding-right: 1rem; }
+
   .num {
-    font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent);
-    min-width: 1.5rem;
+    font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 1rem; font-weight: 500;
+    color: var(--brass); padding-top: 0.35rem; min-width: 1.6rem;
   }
-  .chapters h3 { margin: 0 0 0.25rem; font-size: 1.2rem; }
-  .chapters p { margin: 0 0 0.25rem; }
-  .meta { font-size: 0.8rem; color: var(--muted); }
+  .body { display: flex; flex-direction: column; gap: 0.4rem; }
+  .title { font-family: var(--display); font-weight: 600; font-size: 1.35rem; letter-spacing: -0.01em; }
+  .tldr { font-size: 1.0625rem; color: #34322d; }
+  .row { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: baseline; margin-top: 0.25rem; }
+  .meta { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); }
+  .go { font-family: var(--mono); font-size: 0.74rem; color: var(--slate); }
+  .card:hover .go { color: var(--loss); }
 </style>

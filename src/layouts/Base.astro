@@ -2,6 +2,7 @@
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import type { Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
+import { REPO_URL } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
@@ -14,6 +15,7 @@ const altLang: Lang = lang === 'is' ? 'en' : 'is';
 // getRelativeLocaleUrl respects both `base` and the i18n config (no /is/ prefix).
 const homeHref = getRelativeLocaleUrl(lang, '');
 const altHref = getRelativeLocaleUrl(altLang, '');
+const favicon = `${import.meta.env.BASE_URL}/favicon.svg`.replace(/\/+/g, '/');
 ---
 
 <!doctype html>
@@ -21,38 +23,124 @@ const altHref = getRelativeLocaleUrl(altLang, '');
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`.replace(/\/+/g, '/')} />
+    <link rel="icon" type="image/svg+xml" href={favicon} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+    />
     <title>{pageTitle}</title>
   </head>
   <body>
+    <a class="skip" href="#main">{t(lang, 'a11y.skip')}</a>
     <header>
-      <a class="brand" href={homeHref}>{t(lang, 'site.title')}</a>
+      <a class="brand" href={homeHref}>
+        <span class="brand-mark" aria-hidden="true">⚖</span>
+        <span>{t(lang, 'site.title')}</span>
+      </a>
       <a class="lang" href={altHref}>{altLang === 'is' ? 'Íslenska' : 'English'}</a>
     </header>
-    <main>
+    <main id="main">
       <slot />
     </main>
+    <footer>
+      <p class="neutral">{t(lang, 'footer.neutral')}</p>
+      <a class="callout" href={REPO_URL}>{t(lang, 'footer.bullshit')} →</a>
+    </footer>
+
     <style is:global>
       :root {
-        --ink: #14110f;
-        --muted: #6b645c;
-        --bg: #faf8f4;
-        --line: #e6e0d6;
-        --gain: #1f7a4d;
-        --loss: #b23c2e;
-        --accent: #2b4a7a;
-        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+        /* The civic ledger — cool greige paper, warm ink, balanced two-sided accents */
+        --paper: #edeee9;
+        --paper-raised: #f7f7f3;
+        --ink: #1b1a17;
+        --muted: #6e6a60;
+        --line: #d6d6cc;
+        --line-strong: #c2c2b6;
+        --slate: #2e4756; /* structure, links, fulcrum */
+        --slate-soft: #5b7484;
+        --gain: #3e6b52; /* muted forest — equal weight to loss */
+        --gain-bg: #e6ece5;
+        --loss: #a8503e; /* muted brick — equal weight to gain */
+        --loss-bg: #f1e4df;
+        --brass: #a8863f; /* the balance beam — used sparingly */
+
+        --display: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
+        --body: 'Source Serif 4', Georgia, serif;
+        --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
       }
+
       * { box-sizing: border-box; }
-      body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.6; }
-      header {
-        display: flex; justify-content: space-between; align-items: center;
-        padding: 1rem 1.5rem; border-bottom: 1px solid var(--line);
+
+      html { scroll-behavior: smooth; }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
       }
-      .brand { font-weight: 700; text-decoration: none; color: var(--ink); }
-      .lang { text-decoration: none; color: var(--accent); font-size: 0.9rem; }
-      main { max-width: 52rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-      a { color: var(--accent); }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--body);
+        font-size: 1.0625rem;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.12; letter-spacing: -0.01em; }
+
+      a { color: var(--slate); text-underline-offset: 2px; }
+
+      .skip {
+        position: absolute; left: -9999px; top: 0; background: var(--ink); color: var(--paper);
+        padding: 0.5rem 1rem; z-index: 10; font-family: var(--mono); font-size: 0.8rem;
+      }
+      .skip:focus { left: 0.5rem; top: 0.5rem; }
+
+      :focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+
+      /* Site chrome only — scoped so it never matches a nested <header> (e.g. .hero) */
+      body > header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 1.1rem clamp(1rem, 5vw, 2.5rem);
+        border-bottom: 1px solid var(--line-strong);
+        background: var(--paper);
+      }
+      .brand {
+        display: inline-flex; align-items: center; gap: 0.55rem;
+        font-family: var(--display); font-weight: 700; font-size: 1.05rem;
+        text-decoration: none; color: var(--ink); letter-spacing: -0.01em;
+      }
+      .brand-mark { color: var(--brass); font-size: 1.2rem; }
+      .lang {
+        font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase;
+        letter-spacing: 0.06em; text-decoration: none; color: var(--slate);
+        border: 1px solid var(--line-strong); padding: 0.3rem 0.7rem; border-radius: 2px;
+      }
+      .lang:hover { background: var(--paper-raised); border-color: var(--slate-soft); }
+
+      main { flex: 1 0 auto; width: 100%; }
+
+      footer {
+        border-top: 1px solid var(--line-strong);
+        padding: 2rem clamp(1rem, 5vw, 2.5rem);
+        display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center;
+        max-width: 64rem; margin: 0 auto; width: 100%;
+      }
+      .footer .neutral, footer .neutral {
+        margin: 0; font-size: 0.85rem; color: var(--muted); max-width: 38rem;
+      }
+      footer .callout {
+        font-family: var(--mono); font-size: 0.8rem; color: var(--slate);
+        text-decoration: none; border-bottom: 1px solid var(--slate-soft); padding-bottom: 2px;
+        white-space: nowrap;
+      }
+      footer .callout:hover { color: var(--loss); border-color: var(--loss); }
     </style>
   </body>
 </html>
