@@ -1,0 +1,167 @@
+---
+import type { Lang } from '../i18n/ui';
+import { t } from '../i18n/ui';
+import { BASKET_ITEMS, MEDIAN_WAGE_ISK, WAGE_SOURCE, SNAPSHOT_DATE, type BasketDataItem } from '../data/basket';
+import { GROCERY_SOURCES } from '../data/grocery-sources';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const loc = lang === 'is' ? 'is-IS' : 'en-GB';
+const tagKey = (p: BasketDataItem['protection']) =>
+  p === 'free' ? 'basket.tag.free' : p === 'seasonal' ? 'basket.tag.seasonal' : 'basket.tag.protected';
+---
+
+<section class="basket" data-locale={loc} data-wage={MEDIAN_WAGE_ISK} aria-labelledby="basket-h">
+  <header class="basket-head">
+    <p class="eyebrow">🛒 {t(lang, 'basket.title')}</p>
+    <h2 id="basket-h">{t(lang, 'basket.sub')}</h2>
+  </header>
+
+  <table class="items">
+    <tbody>
+      {BASKET_ITEMS.map((it) => (
+        <tr data-id={it.id} data-price={it.priceISK} data-protection={it.protection}>
+          <td class="name">
+            {it.name[lang]} <span class="unit">{it.unit[lang]}</span>
+            <a class="src" href={it.source.url} target="_blank" rel="noopener" title={it.source.publisher}>↗</a>
+          </td>
+          <td class="price">{it.approx ? '~' : ''}<span data-price-fmt={it.id}></span></td>
+          <td class="qty">
+            <button type="button" class="step" data-step={`${it.id}:-1`} aria-label="−">−</button>
+            <input type="number" min="0" max="99" value={it.defaultQty} data-qty={it.id} aria-label={t(lang, 'basket.qty')} />
+            <button type="button" class="step" data-step={`${it.id}:1`} aria-label="+">+</button>
+          </td>
+          <td class="tag">
+            <span class={`tag-${it.protection}`}>{t(lang, tagKey(it.protection))}</span>
+            {it.tariffNote && <span class="tariff">{it.tariffNote[lang]}</span>}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p class="border-note">ℹ {t(lang, 'basket.tariffIsBorder')}</p>
+
+  <div class="summary">
+    <p class="total"><strong data-fill="total"></strong> · <span data-fill="share"></span> {t(lang, 'basket.share')}</p>
+    <p class="split"><strong data-fill="protectedCount"></strong> / {BASKET_ITEMS.length} {t(lang, 'basket.split')}</p>
+    <p class="eu-effect">{t(lang, 'basket.euEffect')}</p>
+  </div>
+
+  <details class="detail">
+    <summary>{t(lang, 'basket.detail')}</summary>
+    <div class="detail-body">
+      <p><strong>Tollabandalag vs. innlendir tollar / Customs union vs national tariffs.</strong> ESB-aðild skiptir innlendu tollunum út fyrir sameiginlega tollskrá ESB; verndun á mjólk (~73%), kjöti (~62–67%) og eggjum (~30%) félli, en um 1.000 af 1.793 tollnúmerum eru þegar tollfrjáls.</p>
+      <p><strong>Af hverju engin verðspá? / Why no predicted price?</strong> Hve mikið af tollalækkun skilar sér í búðarverð er ekki tölusett í neinni heimild (veltur á álagningu og innlendri framleiðslu). Við spáum ekki tölu sem við getum ekki heimildastutt.</p>
+      <p><strong>VSK breytist ekki / VAT does not change.</strong> Virðisaukaskattur er á forræði aðildarríkja innan ESB-ramma; matar-VSK á Íslandi gæti haldist óbreyttur.</p>
+      <p><strong>Styrkir hverfa ekki / Subsidies don't vanish.</strong> Stuðningur færist úr verðvernd (greitt í búð) yfir í beingreiðslur CAP (greitt um skatta) — áfram stutt, úr öðrum vasa.</p>
+      <p><strong>Samhengi / Context (not a prediction):</strong> OECD metur verð til bænda ~60% yfir heimsmarkaði (NPC 1,60); Eurostat: Ísland með hæsta verð á mjólkurvörum/eggjum af 36 löndum 2024.</p>
+      <p class="wage-src">{t(lang, 'basket.snapshot')} {SNAPSHOT_DATE[lang]}. Laun: <a href={WAGE_SOURCE.url} target="_blank" rel="noopener">{WAGE_SOURCE.publisher}</a>.</p>
+    </div>
+  </details>
+
+  <aside class="verify">
+    <p class="verify-title">{t(lang, 'basket.verifyTitle')}</p>
+    <p class="verify-note">{t(lang, 'basket.verifyNote')}</p>
+    <ul>
+      {GROCERY_SOURCES.map((s) => (
+        <li><a href={s.url} target="_blank" rel="noopener">{s.label[lang]} ↗</a></li>
+      ))}
+    </ul>
+  </aside>
+</section>
+
+<script>
+  import { BASKET_ITEMS, MEDIAN_WAGE_ISK } from '../data/basket';
+  import { basketTotal, shareOfWagePct, protectedCount } from '../lib/basket-math';
+
+  const root = document.querySelector('.basket');
+  if (root) init(root as HTMLElement);
+
+  function init(root: HTMLElement) {
+    const loc = root.dataset.locale || 'is-IS';
+    const fmt = new Intl.NumberFormat(loc, { maximumFractionDigits: 0 });
+    const money = (n: number) => fmt.format(Math.round(n)) + ' kr.';
+    const wage = Number(root.dataset.wage) || 0;
+
+    const fill = (k: string, txt: string) => {
+      const el = root.querySelector(`[data-fill="${k}"]`); if (el) el.textContent = txt;
+    };
+    const readQty = (): Record<string, number> => {
+      const q: Record<string, number> = {};
+      root.querySelectorAll<HTMLInputElement>('[data-qty]').forEach((i) => {
+        q[i.dataset.qty as string] = Math.max(0, Number(i.value) || 0);
+      });
+      return q;
+    };
+
+    // static per-item price labels (current prices — never a forecast)
+    BASKET_ITEMS.forEach((it) => {
+      const el = root.querySelector(`[data-price-fmt="${it.id}"]`);
+      if (el) el.textContent = money(it.priceISK);
+    });
+
+    function recompute() {
+      const qty = readQty();
+      const total = basketTotal(BASKET_ITEMS, qty);
+      fill('total', money(total));
+      fill('share', shareOfWagePct(total, wage).toFixed(1) + '%');
+      fill('protectedCount', String(protectedCount(BASKET_ITEMS)));
+    }
+
+    root.querySelectorAll<HTMLInputElement>('[data-qty]').forEach((i) =>
+      i.addEventListener('input', recompute));
+    root.querySelectorAll<HTMLButtonElement>('[data-step]').forEach((b) =>
+      b.addEventListener('click', () => {
+        const [id, delta] = (b.dataset.step as string).split(':');
+        const input = root.querySelector<HTMLInputElement>(`[data-qty="${id}"]`);
+        if (input) { input.value = String(Math.max(0, (Number(input.value) || 0) + Number(delta))); recompute(); }
+      }));
+    recompute();
+  }
+</script>
+
+<style>
+  .basket { border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper-raised); padding: clamp(1.25rem, 4vw, 2rem); margin: 0 0 3rem; }
+  .basket-head { margin-bottom: 1.25rem; }
+  .basket-head .eyebrow { font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--brass); margin: 0 0 0.4rem; }
+  .basket-head h2 { font-size: clamp(1.2rem, 3vw, 1.6rem); margin: 0; max-width: 40rem; }
+
+  .items { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  .items td { padding: 0.55rem 0.4rem; border-top: 1px solid var(--line); vertical-align: middle; }
+  .items tr:first-child td { border-top: none; }
+  .name { font-family: var(--body); }
+  .name .unit { color: var(--muted); font-size: 0.8rem; }
+  .name .src { text-decoration: none; color: var(--slate-soft); margin-left: 0.25rem; font-size: 0.75rem; }
+  .price { font-family: var(--mono); white-space: nowrap; }
+  .qty { white-space: nowrap; text-align: center; }
+  .qty input { width: 3rem; font-family: var(--mono); text-align: center; border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.2rem; }
+  .qty .step { font-family: var(--mono); width: 1.6rem; height: 1.6rem; border: 1px solid var(--line-strong); background: var(--paper); border-radius: 2px; cursor: pointer; }
+  .tag span { display: inline-block; font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.1rem 0.4rem; border-radius: 2px; }
+  .tag-protected { background: var(--loss-bg); color: var(--loss); }
+  .tag-seasonal { background: #f0e8d6; color: var(--brass); }
+  .tag-free { background: var(--gain-bg); color: var(--gain); }
+  .tag .tariff { background: none; color: var(--muted); text-transform: none; letter-spacing: 0; font-size: 0.7rem; display: block; padding: 0.1rem 0 0; }
+  .border-note { font-size: 0.78rem; color: var(--muted); margin: 0.6rem 0 0; }
+
+  .summary { margin: 1.5rem 0 0; border-top: 2px solid var(--line-strong); padding-top: 1rem; }
+  .summary .total { font-family: var(--mono); font-size: 1.1rem; margin: 0 0 0.3rem; }
+  .summary .split { font-size: 0.9rem; color: #34322d; margin: 0 0 0.75rem; }
+  .summary .eu-effect { font-size: 0.9rem; color: #4a463f; background: #f4e9cf; border: 1px solid #e2cf9c; border-radius: 3px; padding: 0.7rem 0.9rem; margin: 0; }
+
+  .detail { margin-top: 1rem; }
+  .detail summary { font-family: var(--mono); font-size: 0.78rem; color: var(--slate); cursor: pointer; }
+  .detail-body p { font-size: 0.88rem; color: #34322d; margin: 0.7rem 0 0; }
+  .detail-body .wage-src { font-family: var(--mono); font-size: 0.76rem; color: var(--muted); }
+
+  .verify { margin-top: 1.5rem; border-top: 1px solid var(--line-strong); padding-top: 1.25rem; }
+  .verify-title { font-family: var(--display); font-weight: 600; font-size: 1rem; margin: 0 0 0.3rem; }
+  .verify-note { font-size: 0.85rem; color: #4a463f; margin: 0 0 0.75rem; max-width: 42rem; }
+  .verify ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+  .verify a { font-family: var(--mono); font-size: 0.82rem; color: var(--slate); text-decoration: none; }
+  .verify a:hover { color: var(--ink); text-decoration: underline; }
+
+  @media (max-width: 34rem) {
+    .items td { padding: 0.5rem 0.25rem; }
+    .tag span { font-size: 0.6rem; }
+  }
+</style>
