@@ -1,0 +1,132 @@
+order: 2
+
+title:
+  is: "Húsnæðislán"
+  en: "Your home loan"
+
+tldr:
+  is: "Hvort lánið þitt er verðtryggt eða óverðtryggt ræður greiðslubyrðinni. Evran gæti lækkað vextina — en hún er mörg ár í burtu og engin töfralausn."
+  en: "Whether your loan is indexed or non-indexed drives your payments. The euro could lower the interest rates — but it's years away and no magic fix."
+
+summary:
+  is: >-
+    Húsnæðislán á Íslandi bera háa vexti, og stór hluti þeirra er áhættuálag vegna
+    lítillar og sveiflukenndrar krónu. Þú getur valið verðtryggt lán (lág byrjun sem
+    hækkar með verðbólgu) eða óverðtryggt (hærri en stöðug greiðsla). Reiknivélin hér
+    að neðan sýnir muninn — og hvernig evru-lán gæti litið út. Full ESB-aðild breytir
+    lánamarkaðnum litlu strax; það er evran (mörg ár í burtu) sem gæti lækkað
+    fjármagnskostnað, að því gefnu að ríkisfjármálin haldist í lagi.
+  en: >-
+    Home loans in Iceland carry high interest, and a large part of that is a risk
+    premium tied to the small, volatile króna. You can choose an indexed loan (a low
+    start that rises with inflation) or a non-indexed one (higher but steady
+    payments). The calculator below shows the difference — and what a euro loan might
+    look like. Full EU membership changes the loan market little right away; it's the
+    euro (years off) that could lower the cost of capital, provided public finances
+    stay sound.
+
+today:
+  is: >-
+    Vextir á íslenskum húsnæðislánum eru háir í alþjóðlegum samanburði. Óverðtryggð
+    lán bera um 8,75–9,7% nafnvexti og verðtryggð um 4,5–5,25% raunvexti (auk
+    verðbóta). Meginvextir Seðlabankans voru 7,75% í maí 2026. Lánamarkaðurinn sjálfur
+    lýtur nú þegar samkeppnis- og neytendareglum ESB gegnum EES.
+  en: >-
+    Interest on Icelandic home loans is high by international standards. Non-indexed
+    loans carry roughly 8.75–9.7% nominal interest and indexed loans about 4.5–5.25%
+    real interest (plus indexation). The Central Bank's policy rate was 7.75% in May
+    2026. The loan market itself already follows EU competition and consumer rules via
+    the EEA.
+
+asMember:
+  is: >-
+    Lánamarkaðurinn er þegar undir EES, svo aðild breytir reglunum litlu. Full aðild
+    setur Ísland hins vegar á leið að evru: ný evruríki sáu fjármagnskostnað lækka um
+    25–100 punkta og gengisáhættuálag krónunnar hverfa. En evran er margra ára ferli
+    og lægri vextir haldast aðeins með aga í ríkisfjármálum — með evru setur Seðlabanki
+    Evrópu líka vexti fyrir allt svæðið, ekki sniðna að íslensku hagsveiflunni.
+  en: >-
+    The loan market is already under the EEA, so membership changes the rules little.
+    Full membership does, however, put Iceland on the path to the euro: new euro states
+    saw the cost of capital fall 25–100 basis points and the króna's exchange-rate risk
+    premium disappear. But the euro is a multi-year process and lower rates only hold
+    with fiscal discipline — and with the euro the European Central Bank also sets rates
+    for the whole area, not tailored to Iceland's cycle.
+
+gains:
+  - claim:
+      is: "Evran gæti lækkað fjármagnskostnað um 25–100 punkta og fjarlægt gengisáhættuálagið sem krónan ber með sér — lægri vextir á húsnæðislán heimila."
+      en: "The euro could lower the cost of capital by 25–100 basis points and remove the exchange-rate risk premium the króna carries — lower interest on households' home loans."
+    affects: ["borrowers", "homeowners"]
+    confidence: high
+    sources:
+      - title: "Skýrsla um valkosti Íslands í gjaldmiðlamálum (currency-options report)"
+        url: "https://www.stjornarradid.is/library/02-Rit--skyrslur-og-skrar/Sk%C3%BDrsla%20um%20valkosti%20%C3%8Dslands%20%C3%AD%20gjaldmi%C3%B0lam%C3%A1lum%20-%20001.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Skilvirkari og samkeppnishæfari fjármálageiri gæti með tímanum lækkað milligöngukostnað og þjónustugjöld á lánum."
+      en: "A more efficient, more competitive financial sector could, over time, lower intermediation costs and service fees on loans."
+    affects: ["borrowers"]
+    confidence: medium
+    sources:
+      - title: "Skýrsla um valkosti Íslands í gjaldmiðlamálum (currency-options report)"
+        url: "https://www.stjornarradid.is/library/02-Rit--skyrslur-og-skrar/Sk%C3%BDrsla%20um%20valkosti%20%C3%8Dslands%20%C3%AD%20gjaldmi%C3%B0lam%C3%A1lum%20-%20001.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+
+losses:
+  - claim:
+      is: "Sjálfstæð króna virkaði sem höggdeyfir eftir 2008: gengisfall flýtti bata. Með evru er ekki hægt að fella eigin gjaldmiðil til að bregðast við áföllum."
+      en: "An independent króna acted as a shock absorber after 2008: a currency fall sped the recovery. With the euro you can't devalue your own currency to respond to shocks."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Iceland's financial crisis and recovery (briefing)"
+        url: "https://www.europarl.europa.eu/RegData/etudes/briefing_note/join/2014/522331/EXPO-AFET_SP(2014)522331_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+  - claim:
+      is: "Lægri vextir vegna evru geta horfið aftur ef ríkisfjármálin fara úr böndunum — evran er ekki töfralausn."
+      en: "Lower interest rates from the euro can disappear again if public finances slip — the euro is no magic fix."
+    affects: ["borrowers", "taxpayers"]
+    confidence: high
+    sources:
+      - title: "Upptaka evru og vextir á Íslandi"
+        url: "https://ioes.hi.is/files/2021-05/Upptaka-Evru-og-vextir-a-Islandi.pdf"
+        publisher: "Institute of Economic Studies, University of Iceland"
+        tier: academic
+  - claim:
+      is: "Með evru setur Seðlabanki Evrópu vexti fyrir allt evrusvæðið — það getur þýtt of háa eða of lága vexti á röngum tíma fyrir íslensk heimili."
+      en: "With the euro the European Central Bank sets interest rates for the whole euro area — that can mean rates too high or too low at the wrong time for Icelandic households."
+    affects: ["everyone", "borrowers"]
+    confidence: medium
+    sources:
+      - title: "Iceland's financial crisis and recovery (briefing)"
+        url: "https://www.europarl.europa.eu/RegData/etudes/briefing_note/join/2014/522331/EXPO-AFET_SP(2014)522331_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+
+uncertain:
+  - claim:
+      is: "Evran er mörg ár í burtu: minnst tvö ár í ERM II og svo Maastricht-skilyrðin. Hvenær — eða hvort — Ísland uppfyllti þau ræðst af verðbólgu og vöxtum hér heima."
+      en: "The euro is many years away: at least two years in ERM II and then the Maastricht criteria. When — or whether — Iceland would meet them depends on inflation and interest rates at home."
+    confidence: high
+    sources:
+      - title: "ERM II — the EU's exchange-rate mechanism"
+        url: "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/adoption-fixed-euro-conversion-rate/erm-ii-eus-exchange-rate-mechanism_en"
+        publisher: "European Commission"
+        tier: primary
+  - claim:
+      is: "Hve stór hluti hárra íslenskra vaxta er krónunni að kenna — á móti fákeppni og smæð markaðarins — er ekki að fullu greindur."
+      en: "How much of Iceland's high interest rates is due to the króna — versus market concentration and small scale — is not fully established."
+    confidence: medium
+    sources:
+      - title: "OECD Economic Survey: Iceland 2025 — boosting business dynamism"
+        url: "https://www.oecd.org/en/publications/oecd-economic-surveys-iceland-2025_890dbe05-en/full-report/reforming-regulatory-frameworks-to-boost-business-dynamism_722b9c58.html"
+        publisher: "OECD"
+        tier: primary
+
+calculator: true
+lastReviewed: 2026-06-17
+confidence: high
