@@ -1,0 +1,200 @@
+order: 5
+
+title:
+  is: "Fiskveiðar"
+  en: "Fisheries"
+
+tldr:
+  is: "Stærsta breytingin og klassíka ásteytingarefnið: stjórn fiskveiða færðist frá Reykjavík til ESB, kvótahlutdeild réðist af veiðireynslu, og engin varanleg undanþága hefur nokkru sinni fengist."
+  en: "The biggest change and the classic sticking point: fisheries management would move from Reykjavík to the EU, quota shares would track historic catch, and no permanent exemption has ever been granted to a joining country."
+
+summary:
+  is: >-
+    Sjávarútvegur er svæðið þar sem aðild breytir mestu — og ástæðan fyrir því að
+    viðræðurnar 2010–2013 stöðvuðust í raun. Samkvæmt sameiginlegri
+    sjávarútvegsstefnunni (reglugerð (ESB) nr. 1380/2013) verður verndun auðlinda
+    hafsins — að ákveða leyfilegan heildarafla (TAC), tæknilegar verndarráðstafanir
+    og úthlutun kvóta — að einkavaldssviði ESB sem ákveðið er á sambandsstigi, ekki í
+    Reykjavík. Aflanum er skipt eftir reglunni um „hlutfallslegan stöðugleika": hvert
+    ríki fær fasta prósentu sem byggð er á sögulegri veiðireynslu. Utan 12 sjómílna er
+    meginreglan jafn aðgangur allra ESB-skipa — kjarni óttans um „yfirráð yfir
+    miðunum" — en raunverulegur afli takmarkast áfram af kvótahlutdeild (jafn aðgangur
+    þýðir ekki ótakmarkaðan afla erlendra skipa). Ekkert umsóknarríki hefur nokkru
+    sinni fengið varanlega undanþágu, og sjávarútvegskaflinn var aldrei opnaður í
+    viðræðunum 2010–2013.
+  en: >-
+    Fisheries is the area where membership changes the most — and the reason the
+    2010–2013 talks effectively died. Under the Common Fisheries Policy (Regulation
+    (EU) No 1380/2013) the conservation of marine resources — setting the total
+    allowable catch (TAC), technical conservation measures and the allocation of
+    quotas — becomes an EU exclusive competence decided at Union level, not in
+    Reykjavík. The catch is divided by the principle of "relative stability": each
+    state gets a fixed percentage anchored to its historic catch record. Outside 12
+    nautical miles the default is equal access for all EU vessels — the heart of the
+    "control of our waters" fear — but actual catch stays bound by quota shares (equal
+    access does not mean unlimited foreign catch). No candidate country has ever won a
+    permanent derogation, and the fisheries chapter was never even opened in the
+    2010–2013 negotiations.
+
+today:
+  is: >-
+    Stjórn fiskveiða í íslenskri lögsögu er alfarið innlent mál. Ísland ákveður sjálft
+    leyfilegan heildarafla, rekur eigið kvótakerfi og talar sjálfstætt fyrir hagsmunum
+    sínum á alþjóðavettvangi (t.d. í NEAFC og í makríldeilunum). Ólíkt flestum öðrum
+    sviðum fellur þetta ekki undir EES-samninginn — þetta er eitt af því sem full
+    aðild myndu raunverulega breyta.
+  en: >-
+    Fisheries management in Icelandic waters is an entirely national matter. Iceland
+    sets its own total allowable catch, runs its own quota system and advocates
+    independently for its interests internationally (e.g. in NEAFC and the mackerel
+    disputes). Unlike most other areas this is not covered by the EEA Agreement — it
+    is one of the things full membership would genuinely change.
+
+asMember:
+  is: >-
+    Sjávarútvegsstefnan yrði einkavaldssvið ESB: leyfilegur heildarafli og úthlutun
+    kvóta yrðu ákveðin á sambandsstigi (af ráðinu, árlega). Reglan um hlutfallslegan
+    stöðugleika festir hlutdeild Íslands við sögulega veiðireynslu (úthlutunarlykill
+    frá 1983, viðmiðunarárin 1973–78, óbreyttur eftir endurskoðunina 2013). Utan 12
+    sjómílna gildir jafn aðgangur ESB-skipa (strandveiðiundanþágan framlengd til 31.
+    desember 2032), en aflinn er áfram bundinn kvótahlutdeild.
+  en: >-
+    The Common Fisheries Policy would be an EU exclusive competence: the total
+    allowable catch and the allocation of quotas would be decided at Union level (by
+    the Council, annually). The principle of relative stability locks Iceland's share
+    to its historic catch record (the 1983 allocation key, reference years 1973–78,
+    left unchanged by the 2013 reform). Outside 12 nautical miles equal access for EU
+    vessels applies (the coastal derogation extended to 31 December 2032), but the
+    catch remains bound by quota shares.
+
+stakes:
+  - label:
+      is: "Hlutur sjávarafurða í vöruútflutningi"
+      en: "Share of goods exports"
+    valuePct: 40
+    caption:
+      is: "40% er hlutur af VÖRUútflutningi (2012; 39,3% árið 2011). Að meðtöldum þjónustuútflutningi er hlutfallið lægra (~17%, 2017)."
+      en: "40% is the share of GOODS exports (2012; 39.3% in 2011). Including services exports the share is lower (~17%, 2017)."
+    sources:
+      - title: "Iceland and the EU — accession briefing (economic weight of fisheries)"
+        url: "https://www.europarl.europa.eu/RegData/etudes/briefing_note/join/2014/522331/EXPO-AFET_SP(2014)522331_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+  - label:
+      is: "Hlutur sjávarútvegs í störfum"
+      en: "Share of all jobs"
+    valuePct: 7
+    caption:
+      is: "Um 7% af vinnuafli (2012). Frumvinnslugreinar samtals (landbúnaður, sjávarútvegur, námuvinnsla) eru 6,8% af landsframleiðslu."
+      en: "About 7% of the workforce (2012). The primary sector together (agriculture, fisheries, mining) is 6.8% of GDP."
+    sources:
+      - title: "Iceland and the EU — accession briefing (economic weight of fisheries)"
+        url: "https://www.europarl.europa.eu/RegData/etudes/briefing_note/join/2014/522331/EXPO-AFET_SP(2014)522331_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+
+gains:
+  - claim:
+      is: "Eftir endurskoðun stefnunnar 2013 er stjórnkerfi ESB í sjávarútvegi dreifstýrðara og — samkvæmt skýrslu Hagfræðistofnunar (IES) — samrýmanlegt íslenska kvótakerfinu."
+      en: "After the 2013 reform the EU's fisheries management system is more decentralised and — according to the Institute of Economic Studies (IES) report — compatible with Iceland's quota system."
+    affects: ["everyone"]
+    confidence: medium
+    sources:
+      - title: "Iceland and the EU — accession briefing"
+        url: "https://www.europarl.europa.eu/RegData/etudes/briefing_note/join/2014/522331/EXPO-AFET_SP(2014)522331_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+  - claim:
+      is: "Kvótahlutdeild yrði fyrirsjáanleg og stöðug: hlutfallslegur stöðugleiki tryggir hverju ríki fasta prósentu yfir tíma, og jafn aðgangur þýðir ekki ótakmarkaðan afla — raunafli helst bundinn kvóta."
+      en: "Quota shares would be predictable and stable: relative stability guarantees each state a fixed percentage over time, and equal access does not mean unlimited catch — actual catch stays quota-bound."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Regulation (EU) No 1380/2013 on the Common Fisheries Policy (Art. 16(1), Art. 5(1))"
+        url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32013R1380"
+        publisher: "EUR-Lex"
+        tier: primary
+      - title: "The Common Fisheries Policy: origins and development (fact sheet 114)"
+        url: "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        publisher: "European Parliament"
+        tier: primary
+
+losses:
+  - claim:
+      is: "Tap á forræði yfir ákvörðun heildarafla: aflamörk yrðu ákveðin á sambandsstigi, þar sem vægi smáríkis í atkvæðagreiðslu væri mjög lítið."
+      en: "Loss of control over setting the total allowable catch: catch limits would be decided at Union level, where a small state's voting weight would be very small."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Iceland and the EU — accession briefing"
+        url: "https://www.europarl.europa.eu/RegData/etudes/briefing_note/join/2014/522331/EXPO-AFET_SP(2014)522331_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+      - title: "Summary Conclusions — Iceland's EU accession negotiations"
+        url: "https://www.government.is/media/utanrikisraduneyti-media/media/esb/Summary-Conclusions.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Engin varanleg undanþága frá sameiginlegri stefnu hefur nokkru sinni verið veitt umsóknarríki — aðeins tímabundnar (breytanlegar á sambandsstigi); varanleg sérlausn verður að standa í aðildarsamningnum sjálfum. 25 sjómílna svæði Möltu er fordæmi smáríkis, en það er stýrður aðgangur fyrir lítil skip, breytanlegur á sambandsstigi — ekki útilokun eftir fána."
+      en: "No permanent derogation from a common policy has ever been granted to a joining country — only temporary ones (changeable at Union level); a permanent special solution must be written into the accession treaty itself. Malta's 25-nautical-mile zone is the small-state precedent, but it is regulated access for small vessels, amendable at Union level — not a flag-based exclusion."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Summary Conclusions — Iceland's EU accession negotiations"
+        url: "https://www.government.is/media/utanrikisraduneyti-media/media/esb/Summary-Conclusions.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+      - title: "Council Regulation (EC) No 813/2004 — Malta fisheries management zone"
+        url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0813R(01)"
+        publisher: "EUR-Lex"
+        tier: primary
+  - claim:
+      is: "Utan 12 sjómílna fengju ESB-skip jafnan aðgang að íslenskum miðum (kjarni óttans um yfirráð yfir miðunum) — þó afli helist bundinn kvótahlutdeild."
+      en: "Outside 12 nautical miles, EU vessels would have equal access to Icelandic waters (the core 'control of our waters' concern) — though catch remains bound by quota shares."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Regulation (EU) No 1380/2013 on the Common Fisheries Policy (Art. 5)"
+        url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32013R1380"
+        publisher: "EUR-Lex"
+        tier: primary
+      - title: "The Common Fisheries Policy: origins and development (fact sheet 114)"
+        url: "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        publisher: "European Parliament"
+        tier: primary
+
+uncertain:
+  - claim:
+      is: "Óvíst er hvaða kvótahlutdeild Ísland fengi í raun — flestir helstu stofnar (þorskur, loðna, makríll) eru ekki sameiginlegir ESB-stofnar í dag og engin ESB-veiðireynsla er til í íslenskri lögsögu til að byggja úthlutunarlykil á."
+      en: "It is uncertain what quota share Iceland would actually receive — most of its key stocks (cod, capelin, mackerel) are not currently shared EU stocks, and there is no EU catch record in its waters on which to base an allocation key."
+    confidence: low
+    sources:
+      - title: "Regulation (EU) No 1380/2013 on the Common Fisheries Policy (relative stability)"
+        url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32013R1380"
+        publisher: "EUR-Lex"
+        tier: primary
+  - claim:
+      is: |-
+        Óvíst er hvort sérstakt „íslenskt stjórnunarsvæði" að fyrirmynd 25 sjómílna svæðis Möltu gæti raunhæft náð yfir 200 sjómílna lögsögu og stóran iðnaðarflota — fordæmi Möltu nær aðeils til lítilla skipa (undir 12 m) með kyrrstæð veiðarfæri.
+      en: |-
+        It is uncertain whether a bespoke 'Icelandic management zone' modelled on Malta's 25-nautical-mile zone could realistically cover a 200-nautical-mile EEZ and a large industrial fleet — the Malta precedent only covers small vessels (under 12 m) using non-towed gear.
+    confidence: low
+    sources:
+      - title: "Council Regulation (EC) No 813/2004 — Malta fisheries management zone"
+        url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0813R(01)"
+        publisher: "EUR-Lex"
+        tier: primary
+  - claim:
+      is: "Óvíst er hvernig farið yrði með deilistofna og deilur strandríkja (t.d. makríldeiluna), og hvort sjálfstæð málsvörn Íslands rynni inn í eitt sameiginlegt sæti ESB í alþjóðastofnunum eins og NEAFC."
+      en: "It is uncertain how shared/straddling stocks and coastal-state disputes (e.g. the mackerel war) would be handled, and whether Iceland's independent advocacy would be subsumed into the EU's single seat in international bodies such as NEAFC."
+    confidence: low
+    sources:
+      - title: "Summary Conclusions — Iceland's EU accession negotiations"
+        url: "https://www.government.is/media/utanrikisraduneyti-media/media/esb/Summary-Conclusions.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+
+calculator: false
+basket: false
+lastReviewed: 2026-06-17
+confidence: high
