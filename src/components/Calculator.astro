@@ -1,61 +1,41 @@
 ---
 import type { Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
-import { ASSUMPTIONS, PRESETS } from '../data/assumptions';
+import { ASSUMPTIONS } from '../data/assumptions';
 
-interface Props {
-  lang: Lang;
-}
+interface Props { lang: Lang }
 const { lang } = Astro.props;
-
-// Pass server-side data + localized labels into the client script.
-const labels = {
-  presetAlone: t(lang, 'calc.preset.alone'),
-  presetCouple: t(lang, 'calc.preset.couple'),
-  presetFamily: t(lang, 'calc.preset.family'),
-  indexed: t(lang, 'calc.scenario.indexed'),
-  nonindexed: t(lang, 'calc.scenario.nonindexed'),
-  euro: t(lang, 'calc.scenario.euro'),
-  now: t(lang, 'calc.now'),
-  in10: t(lang, 'calc.in10'),
-  indexedNote: t(lang, 'calc.indexedNote'),
-  flatNote: t(lang, 'calc.flatNote'),
-  provisional: t(lang, 'calc.provisional'),
-  rate: t(lang, 'calc.rate'),
-  perMonth: t(lang, 'calc.perMonth'),
-  locale: lang === 'is' ? 'is-IS' : 'en-GB',
-};
-const presetKeys = ['alone', 'couple', 'family'] as const;
+const loc = lang === 'is' ? 'is-IS' : 'en-GB';
+const scenarios = [
+  { kind: 'indexed', label: t(lang, 'calc.scenario.indexed') },
+  { kind: 'nonindexed', label: t(lang, 'calc.scenario.nonindexed') },
+  { kind: 'euro', label: t(lang, 'calc.scenario.euro') },
+] as const;
 ---
 
-<section class="calc" aria-labelledby="calc-h">
+<section class="calc" data-locale={loc} aria-labelledby="calc-h">
   <header class="calc-head">
     <p class="eyebrow">⚖ {t(lang, 'calc.title')}</p>
     <h2 id="calc-h">{t(lang, 'calc.sub')}</h2>
   </header>
 
   <div class="controls">
-    <div class="presets" role="group" aria-label={t(lang, 'calc.preset')}>
-      <span class="ctrl-label">{t(lang, 'calc.preset')}</span>
-      <div class="preset-btns">
-        {presetKeys.map((k) => (
-          <button type="button" class="preset" data-preset={k}>
-            {t(lang, `calc.preset.${k}` as const)}
-          </button>
-        ))}
-        <button type="button" class="preset is-active" data-preset="custom">
-          {t(lang, 'calc.preset.custom')}
-        </button>
-      </div>
-    </div>
-
     <label class="field">
-      <span class="ctrl-label">{t(lang, 'calc.amount')}</span>
+      <span class="ctrl-label">{t(lang, 'calc.purchasePrice')}</span>
       <span class="field-row">
-        <input type="number" id="amount" min="5000000" max="120000000" step="1000000" value="60000000" />
+        <input type="number" id="price" min="10000000" max="200000000" step="1000000" value="60000000" />
         <span class="unit">kr.</span>
       </span>
-      <input type="range" id="amount-range" min="5000000" max="120000000" step="1000000" value="60000000" aria-hidden="true" tabindex="-1" />
+      <input type="range" id="price-range" min="10000000" max="200000000" step="1000000" value="60000000" aria-hidden="true" tabindex="-1" />
+    </label>
+
+    <label class="field">
+      <span class="ctrl-label">{t(lang, 'calc.equity')}</span>
+      <span class="field-row">
+        <input type="number" id="equity" min="0" max="200000000" step="1000000" value="16000000" />
+        <span class="unit">kr.</span>
+      </span>
+      <input type="range" id="equity-range" min="0" max="200000000" step="1000000" value="16000000" aria-hidden="true" tabindex="-1" />
     </label>
 
     <label class="field">
@@ -68,10 +48,42 @@ const presetKeys = ['alone', 'couple', 'family'] as const;
     </label>
   </div>
 
-  <div class="results" id="results">
-    <!-- three scenario cards injected by the script -->
+  <p class="derived">
+    {t(lang, 'calc.loanAmount')}: <strong data-fill="loanAmount"></strong>
+    · {t(lang, 'calc.ltv')}: <strong data-fill="ltv"></strong>
+  </p>
+
+  <div class="results">
+    {scenarios.map((s) => (
+      <div class={`rcard ${s.kind}`} data-kind={s.kind}>
+        <p class="rlabel">{s.label} <span class="badge" data-fill={`badge-${s.kind}`}></span></p>
+        <div class="bar" aria-hidden="true">
+          <span class="seg seg-principal" data-bar={`principal-${s.kind}`}></span>
+          <span class="seg seg-interest" data-bar={`interest-${s.kind}`}></span>
+        </div>
+        <p class="total">
+          <span class="total-real" data-fill={`real-${s.kind}`}></span>
+          <span class="total-sub">{t(lang, 'calc.totalReal')}</span>
+        </p>
+        <p class="total-nominal">
+          {t(lang, 'calc.totalNominal')}: <span data-fill={`nominal-${s.kind}`}></span>
+        </p>
+        <p class="monthly">
+          {t(lang, 'calc.monthlyStart')}: <span data-fill={`monthly-${s.kind}`}></span>
+          <span class="m10" data-fill={`monthly10-${s.kind}`}></span>
+        </p>
+        <p class="rrate" data-fill={`rate-${s.kind}`}></p>
+      </div>
+    ))}
   </div>
 
+  <p class="legend">
+    <span class="key seg-principal"></span>{t(lang, 'calc.principal')}
+    <span class="key seg-interest"></span>{t(lang, 'calc.interest')}
+    · <span class="muted">{t(lang, 'calc.indexation')} = {t(lang, 'calc.totalNominal')} − {t(lang, 'calc.totalReal')}</span>
+  </p>
+
+  <p class="termcap">{t(lang, 'calc.termCapNote')}</p>
   <p class="disclaimer">⚠ {t(lang, 'calc.disclaimer')}</p>
 
   <details class="assumptions">
@@ -80,7 +92,6 @@ const presetKeys = ['alone', 'couple', 'family'] as const;
       {Object.entries(ASSUMPTIONS).map(([key, a]) => (
         <li>
           <code>{key}</code>: {a.typical}% ({a.min}–{a.max}%)
-          {a.provisional && <span class="prov">{t(lang, 'calc.provisional')}</span>}
           <a href={a.source.url} target="_blank" rel="noopener">{a.source.publisher}</a>
         </li>
       ))}
@@ -88,153 +99,132 @@ const presetKeys = ['alone', 'couple', 'family'] as const;
   </details>
 </section>
 
-<script define:vars={{ A: ASSUMPTIONS, PRESETS, L: labels }}>
-  const fmt = new Intl.NumberFormat(L.locale, { maximumFractionDigits: 0 });
-  const money = (n) => fmt.format(Math.round(n / 1000) * 1000);
-  const range = (lo, hi) =>
-    Math.abs(hi - lo) / Math.max(hi, 1) < 0.02 ? money(lo) : `${money(lo)} – ${money(hi)}`;
+<script>
+  import { computeLoan } from '../lib/loan-math';
+  import { ASSUMPTIONS } from '../data/assumptions';
 
-  // Standard annuity: monthly payment for principal P at annual % rate over `years`.
-  const annuity = (P, ratePct, years) => {
-    const r = ratePct / 100 / 12;
-    const n = years * 12;
-    return r === 0 ? P / n : (P * r) / (1 - Math.pow(1 + r, -n));
-  };
+  const root = document.currentScript?.closest('.calc') ?? document.querySelector('.calc');
+  if (root) initCalc(root as HTMLElement);
 
-  const $ = (id) => document.getElementById(id);
-  const amount = $('amount'), amountRange = $('amount-range');
-  const term = $('term'), termRange = $('term-range');
-  const results = $('results');
+  function initCalc(root: HTMLElement) {
+    const loc = root.dataset.locale || 'is-IS';
+    const fmt = new Intl.NumberFormat(loc, { maximumFractionDigits: 0 });
+    const money = (n: number) => fmt.format(Math.round(n / 1000) * 1000) + ' kr.';
+    const rng = (lo: number, hi: number) =>
+      Math.abs(hi - lo) / Math.max(hi, 1) < 0.03 ? money(lo) : `${money(lo)} – ${money(hi)}`;
 
-  function compute() {
-    const P = Number(amount.value) || 0;
-    const yrs = Number(term.value) || 1;
-    const inflLo = A.inflation.min / 100, inflHi = A.inflation.max / 100;
+    const $ = (id: string) => root.querySelector<HTMLInputElement>('#' + id)!;
+    const fill = (key: string, txt: string) => {
+      const el = root.querySelector(`[data-fill="${key}"]`);
+      if (el) el.textContent = txt;
+    };
+    const price = $('price'), priceR = $('price-range');
+    const equity = $('equity'), equityR = $('equity-range');
+    const term = $('term'), termR = $('term-range');
 
-    // Indexed (verðtryggt): annuity at the REAL rate; nominal payment grows with inflation.
-    const idxNowLo = annuity(P, A.indexedReal.min, yrs);
-    const idxNowHi = annuity(P, A.indexedReal.max, yrs);
-    const idx10Lo = idxNowLo * Math.pow(1 + inflLo, 10);
-    const idx10Hi = idxNowHi * Math.pow(1 + inflHi, 10);
+    const band = (a: { min: number; typical: number; max: number }) =>
+      ({ min: a.min, typ: a.typical, max: a.max });
 
-    // Non-indexed (óverðtryggt): nominal annuity, flat over time.
-    const nonLo = annuity(P, A.nonIndexedNominal.min, yrs);
-    const nonHi = annuity(P, A.nonIndexedNominal.max, yrs);
+    function compute() {
+      const P = Math.max(0, (Number(price.value) || 0) - (Number(equity.value) || 0));
+      const yrs = Number(term.value) || 1;
+      const infl = band(ASSUMPTIONS.inflation);
+      const ltv = Number(price.value) > 0 ? Math.round((P / Number(price.value)) * 100) : 0;
+      fill('loanAmount', money(P));
+      fill('ltv', ltv + '%');
 
-    // Euro loan: nominal annuity, flat, low inflation.
-    const euroLo = annuity(P, A.euroNominal.min, yrs);
-    const euroHi = annuity(P, A.euroNominal.max, yrs);
+      const defs = [
+        { kind: 'indexed' as const, rate: band(ASSUMPTIONS.indexedReal) },
+        { kind: 'nonindexed' as const, rate: band(ASSUMPTIONS.nonIndexedNominal) },
+        { kind: 'euro' as const, rate: band(ASSUMPTIONS.euroNominal) },
+      ];
+      const results = defs.map((d) => computeLoan(d.kind, P, yrs, d.rate, infl));
+      const maxReal = Math.max(...results.map((r) => r.totalReal.typ), 1);
+      const cheapest = results.reduce((a, b) => (a.totalReal.typ <= b.totalReal.typ ? a : b)).kind;
 
-    const cards = [
-      { kind: 'idx', label: L.indexed, a: A.indexedReal, now: [idxNowLo, idxNowHi], in10: [idx10Lo, idx10Hi], note: L.indexedNote },
-      { kind: 'non', label: L.nonindexed, a: A.nonIndexedNominal, now: [nonLo, nonHi], in10: [nonLo, nonHi], note: L.flatNote },
-      { kind: 'eur', label: L.euro, a: A.euroNominal, now: [euroLo, euroHi], in10: [euroLo, euroHi], note: L.flatNote },
-    ];
-
-    results.innerHTML = cards.map((c) => `
-      <div class="rcard ${c.kind}">
-        <p class="rlabel">${c.label}</p>
-        <p class="rrate">${L.rate}: ${c.a.min}–${c.a.max}%${c.a.provisional ? ` <span class="prov">${L.provisional}</span>` : ''}</p>
-        <div class="rline"><span>${L.now}</span><strong>${range(c.now[0], c.now[1])}</strong></div>
-        <div class="rline"><span>${L.in10}</span><strong>${range(c.in10[0], c.in10[1])}</strong></div>
-        <p class="rnote">${c.note}</p>
-      </div>`).join('');
-  }
-
-  // Keep number + range inputs in sync; clear preset highlight on manual edit.
-  const setActive = (key) => document.querySelectorAll('.preset').forEach((b) =>
-    b.classList.toggle('is-active', b.dataset.preset === key));
-
-  function bindPair(numEl, rangeEl, onManual) {
-    const sync = (from, to) => { to.value = from.value; compute(); };
-    numEl.addEventListener('input', () => { sync(numEl, rangeEl); onManual(); });
-    rangeEl.addEventListener('input', () => { sync(rangeEl, numEl); onManual(); });
-  }
-  bindPair(amount, amountRange, () => setActive('custom'));
-  bindPair(term, termRange, () => setActive('custom'));
-
-  document.querySelectorAll('.preset').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const key = btn.dataset.preset;
-      const p = PRESETS.find((x) => x.key === key);
-      if (p) {
-        amount.value = amountRange.value = p.amount;
-        term.value = termRange.value = p.term;
-        compute();
+      for (const r of results) {
+        fill(`real-${r.kind}`, rng(r.totalReal.lo, r.totalReal.hi));
+        fill(`nominal-${r.kind}`, rng(r.totalNominal.lo, r.totalNominal.hi));
+        fill(`monthly-${r.kind}`, rng(r.monthlyStart.lo, r.monthlyStart.hi));
+        fill(`monthly10-${r.kind}`,
+          r.monthlyAfter10 ? ` → ${rng(r.monthlyAfter10.lo, r.monthlyAfter10.hi)} ${L_in10(loc)}` : '');
+        const a = ASSUMPTIONS[r.kind === 'indexed' ? 'indexedReal' : r.kind === 'nonindexed' ? 'nonIndexedNominal' : 'euroNominal'];
+        fill(`rate-${r.kind}`, `${L_rate(loc)}: ${a.min}–${a.max}%`);
+        fill(`badge-${r.kind}`, r.kind === cheapest ? '★' : '');
+        // stacked bar widths (% of widest real total)
+        const scale = (r.totalReal.typ / maxReal) * 100;
+        const principalPct = (r.principal / r.totalReal.typ) * scale;
+        const interestPct = scale - principalPct;
+        setBar(`principal-${r.kind}`, principalPct);
+        setBar(`interest-${r.kind}`, interestPct);
       }
-      setActive(key);
-    });
-  });
+    }
+    function setBar(key: string, pct: number) {
+      const el = root.querySelector<HTMLElement>(`[data-bar="${key}"]`);
+      if (el) el.style.width = Math.max(0, pct) + '%';
+    }
+    // tiny locale-aware words for the runtime-only bits
+    function L_in10(loc: string) { return loc.startsWith('is') ? 'eftir 10 ár' : 'after 10 yrs'; }
+    function L_rate(loc: string) { return loc.startsWith('is') ? 'vextir' : 'rate'; }
 
-  compute();
+    function bindPair(numEl: HTMLInputElement, rangeEl: HTMLInputElement) {
+      numEl.addEventListener('input', () => { rangeEl.value = numEl.value; compute(); });
+      rangeEl.addEventListener('input', () => { numEl.value = rangeEl.value; compute(); });
+    }
+    bindPair(price, priceR); bindPair(equity, equityR); bindPair(term, termR);
+    compute();
+  }
 </script>
 
 <style>
-  .calc {
-    border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper-raised);
-    padding: clamp(1.25rem, 4vw, 2rem); margin: 0 0 3rem;
-  }
+  .calc { border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper-raised); padding: clamp(1.25rem, 4vw, 2rem); margin: 0 0 3rem; }
   .calc-head { margin-bottom: 1.5rem; }
-  .calc-head .eyebrow {
-    font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em;
-    color: var(--brass); margin: 0 0 0.4rem;
-  }
-  .calc-head h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); margin: 0; max-width: 36rem; }
+  .calc-head .eyebrow { font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--brass); margin: 0 0 0.4rem; }
+  .calc-head h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); margin: 0; max-width: 38rem; }
 
-  .controls { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-bottom: 1.75rem; }
-  @media (min-width: 38rem) { .controls { grid-template-columns: 1.4fr 1fr 1fr; align-items: start; } }
-
-  .ctrl-label {
-    display: block; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase;
-    letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.5rem;
-  }
-  .preset-btns { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .preset {
-    font-family: var(--mono); font-size: 0.78rem; cursor: pointer; color: var(--slate);
-    background: var(--paper); border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.4rem 0.7rem;
-  }
-  .preset:hover { border-color: var(--slate-soft); }
-  .preset.is-active { background: var(--slate); color: var(--paper); border-color: var(--slate); }
-
-  .field { display: block; }
+  .controls { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-bottom: 0.75rem; }
+  @media (min-width: 38rem) { .controls { grid-template-columns: repeat(3, 1fr); } }
+  .ctrl-label { display: block; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.5rem; }
   .field-row { display: flex; align-items: baseline; gap: 0.4rem; }
-  .field input[type='number'] {
-    width: 100%; font-family: var(--mono); font-size: 1.05rem; color: var(--ink);
-    background: var(--paper); border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.45rem 0.55rem;
-  }
+  .field input[type='number'] { width: 100%; font-family: var(--mono); font-size: 1.05rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.45rem 0.55rem; }
   .unit { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
   .field input[type='range'] { width: 100%; margin-top: 0.6rem; accent-color: var(--slate); }
 
+  .derived { font-family: var(--mono); font-size: 0.85rem; color: var(--slate); margin: 0 0 1.75rem; }
+  .derived strong { color: var(--ink); }
+
   .results { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
   @media (min-width: 38rem) { .results { grid-template-columns: repeat(3, 1fr); } }
+  .rcard { border: 1px solid var(--line-strong); border-radius: 3px; padding: 1rem; background: var(--paper); border-top: 3px solid var(--line-strong); }
+  .rcard.indexed { border-top-color: var(--brass); }
+  .rcard.nonindexed { border-top-color: var(--loss); }
+  .rcard.euro { border-top-color: var(--gain); }
+  .rlabel { font-family: var(--display); font-weight: 600; font-size: 1.05rem; margin: 0 0 0.6rem; }
+  .badge { color: var(--gain); }
 
-  /* Result cards are injected by the client script, so they don't receive Astro's
-     scoped attribute — target them with :global(), namespaced under .results. */
-  .results :global(.rcard) { border: 1px solid var(--line-strong); border-radius: 3px; padding: 1rem; background: var(--paper); border-top: 3px solid var(--line-strong); }
-  .results :global(.rcard.idx) { border-top-color: var(--brass); }
-  .results :global(.rcard.non) { border-top-color: var(--loss); }
-  .results :global(.rcard.eur) { border-top-color: var(--gain); }
-  .results :global(.rlabel) { font-family: var(--display); font-weight: 600; font-size: 1.05rem; margin: 0 0 0.2rem; }
-  .results :global(.rrate) { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); margin: 0 0 0.85rem; }
-  .results :global(.rline) { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; padding: 0.35rem 0; border-top: 1px dotted var(--line); }
-  .results :global(.rline span) { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); }
-  .results :global(.rline strong) { font-family: var(--mono); font-size: 1.02rem; font-weight: 500; color: var(--ink); }
-  .results :global(.rnote) { font-size: 0.85rem; color: #4a463f; margin: 0.75rem 0 0; }
+  .bar { display: flex; height: 0.85rem; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 2px; overflow: hidden; margin-bottom: 0.6rem; }
+  .seg { height: 100%; transition: width 0.2s ease; }
+  .seg-principal { background: var(--slate); }
+  .seg-interest { background: var(--brass); }
+  @media (prefers-reduced-motion: reduce) { .seg { transition: none; } }
 
-  :global(.prov) {
-    font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em;
-    color: var(--loss); border: 1px solid var(--loss); border-radius: 2px; padding: 0 0.3rem; margin-left: 0.3rem;
-  }
+  .total { margin: 0; }
+  .total-real { font-family: var(--mono); font-size: 1.15rem; font-weight: 500; color: var(--ink); }
+  .total-sub { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); margin-left: 0.3rem; }
+  .total-nominal { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); margin: 0.15rem 0 0.6rem; }
+  .monthly { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); margin: 0 0 0.4rem; }
+  .rrate { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); margin: 0; }
 
-  .disclaimer {
-    font-size: 0.85rem; color: #4a463f; background: #f4e9cf; border: 1px solid #e2cf9c;
-    border-radius: 3px; padding: 0.7rem 0.9rem; margin: 1.5rem 0 0;
-  }
+  .legend { font-family: var(--mono); font-size: 0.72rem; color: var(--ink); margin: 1rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+  .legend .key { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 2px; }
+  .legend .muted { color: var(--muted); }
+  .key.seg-principal { background: var(--slate); }
+  .key.seg-interest { background: var(--brass); }
 
+  .termcap { font-size: 0.78rem; color: var(--muted); margin: 1rem 0 0; }
+  .disclaimer { font-size: 0.85rem; color: #4a463f; background: #f4e9cf; border: 1px solid #e2cf9c; border-radius: 3px; padding: 0.7rem 0.9rem; margin: 1rem 0 0; }
   .assumptions { margin-top: 1rem; }
-  .assumptions summary {
-    font-family: var(--mono); font-size: 0.78rem; color: var(--slate); cursor: pointer;
-  }
+  .assumptions summary { font-family: var(--mono); font-size: 0.78rem; color: var(--slate); cursor: pointer; }
   .assumptions ul { list-style: none; margin: 0.85rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
   .assumptions li { font-size: 0.85rem; }
   .assumptions code { font-family: var(--mono); font-size: 0.8rem; color: var(--ink); }
