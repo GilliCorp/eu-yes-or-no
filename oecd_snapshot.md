@@ -1,0 +1,1990 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e9]:
+        - link "OECD" [ref=e10] [cursor=pointer]:
+          - /url: /en.html
+          - img [ref=e12]
+          - generic [ref=e14]: OECD
+        - navigation "Main menu" [ref=e15]:
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - button "Topics" [ref=e18] [cursor=pointer]
+            - listitem [ref=e19]:
+              - button "Countries & regions" [ref=e20] [cursor=pointer]
+            - listitem [ref=e21]:
+              - button "Publications" [ref=e22] [cursor=pointer]
+            - listitem [ref=e23]:
+              - button "Data" [ref=e24] [cursor=pointer]
+            - listitem [ref=e25]:
+              - button "News & events" [ref=e26] [cursor=pointer]
+            - listitem [ref=e27]:
+              - button "About" [ref=e28] [cursor=pointer]
+        - generic [ref=e29]:
+          - link "Login on your MyOECD account" [ref=e30] [cursor=pointer]:
+            - /url: https://contact.oecd.org/login.aspx?lang=en
+            - img [ref=e32]
+            - generic [ref=e35]: Login on your MyOECD account
+          - button "Search" [ref=e36] [cursor=pointer]:
+            - img [ref=e38]
+            - generic [ref=e40]: Search
+        - region "Language selection" [ref=e42]:
+          - button "English" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+            - generic [ref=e46]: English
+    - main [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e54]:
+          - navigation "Breadcrumb" [ref=e56]:
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - link "OECD" [ref=e59] [cursor=pointer]:
+                  - /url: /en.html
+              - listitem [ref=e60]:
+                - link "Publications" [ref=e61] [cursor=pointer]:
+                  - /url: /en/publications.html
+              - listitem [ref=e62]:
+                - link "Agricultural Policy Monitoring and Evaluation 2025" [ref=e63] [cursor=pointer]:
+                  - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en.html
+              - listitem [ref=e64]:
+                - link "Full Report" [ref=e65] [cursor=pointer]:
+                  - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report.html
+              - listitem [ref=e66]: Iceland
+          - generic [ref=e67]:
+            - heading "Agricultural Policy Monitoring and Evaluation 2025" [level=1] [ref=e68]
+            - generic [ref=e69]: Making the Most of the Trade and Environment Nexus in Agriculture
+            - generic [ref=e71]: Report
+            - button "More info" [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: More info
+          - generic [ref=e76]:
+            - paragraph [ref=e78]:
+              - link "Agricultural Policy Monitoring and Evaluation" [ref=e79] [cursor=pointer]:
+                - /url: /en/publications/serials/agricultural-policy-monitoring-and-evaluation_g1g132b3.html
+            - generic [ref=e80]:
+              - text: •
+              - time [ref=e81]: 30 October 2025
+        - navigation [ref=e85]:
+          - list [ref=e86]:
+            - listitem [ref=e87]:
+              - link "Summary" [ref=e88]:
+                - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en.html
+            - listitem [ref=e89]:
+              - link "Full report" [ref=e90]:
+                - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report.html
+            - listitem [ref=e91]:
+              - link "Support materials" [ref=e92]:
+                - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/support-materials.html
+        - generic [ref=e95]:
+          - navigation [ref=e96]:
+            - generic [ref=e97]: "Available in:"
+            - list [ref=e99]:
+              - listitem [ref=e100]:
+                - generic [ref=e101]: English
+              - listitem [ref=e102]:
+                - link "français" [ref=e103] [cursor=pointer]:
+                  - /url: /fr/publications/politiques-agricoles-suivi-et-evaluation-2025-version-abregee_0cec016c-fr/full-report/iceland_f418d854
+          - generic [ref=e104]:
+            - link "Download PDF" [ref=e107] [cursor=pointer]:
+              - /url: /content/dam/oecd/en/publications/reports/2025/10/agricultural-policy-monitoring-and-evaluation-2025_354e7040/a80ac398-en.pdf
+              - generic [ref=e108]: Download PDF
+            - button "Cite this publication" [ref=e111] [cursor=pointer]:
+              - generic [ref=e112]: Cite this publication
+        - generic [ref=e114]:
+          - generic [ref=e116]:
+            - generic [ref=e117]: Share
+            - generic [ref=e118]:
+              - link "Facebook" [ref=e119] [cursor=pointer]:
+                - /url: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.oecd.org%2Fen%2Fpublications%2Fagricultural-policy-monitoring-and-evaluation-2025_a80ac398-en%2Ffull-report%2Ficeland_f418d854
+                - img [ref=e121]
+                - generic [ref=e123]: Facebook
+              - link "Twitter" [ref=e124] [cursor=pointer]:
+                - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.oecd.org%2Fen%2Fpublications%2Fagricultural-policy-monitoring-and-evaluation-2025_a80ac398-en%2Ffull-report%2Ficeland_f418d854
+                - img [ref=e126]
+                - generic [ref=e128]: Twitter
+              - link "LinkedIn" [ref=e129] [cursor=pointer]:
+                - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.oecd.org%2Fen%2Fpublications%2Fagricultural-policy-monitoring-and-evaluation-2025_a80ac398-en%2Ffull-report%2Ficeland_f418d854
+                - img [ref=e131]
+                - generic [ref=e133]: LinkedIn
+          - generic [ref=e135]:
+            - navigation [ref=e138]:
+              - list [ref=e139]:
+                - listitem [ref=e140]:
+                  - link "Disclaimers" [ref=e142] [cursor=pointer]:
+                    - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/disclaimer.html#disclaimer
+                - listitem [ref=e143]:
+                  - generic [ref=e144]:
+                    - link "Foreword" [ref=e145] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report.html#foreword-d1e20-564eb8b366
+                    - button "More items about Foreword" [ref=e146] [cursor=pointer]
+                - listitem [ref=e147]:
+                  - link "Acknowledgements" [ref=e149] [cursor=pointer]:
+                    - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/component-2.html#acknowledgement-d1e62-564eb8b366
+                - listitem [ref=e150]:
+                  - link "Acronyms and Abbreviations" [ref=e152] [cursor=pointer]:
+                    - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/acronyms-and-abbreviations_06011ce1.html#glossaryAcronymList-d1e222-564eb8b366
+                - listitem [ref=e153]:
+                  - generic [ref=e154]:
+                    - link "Executive Summary" [ref=e155] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/executive-summary_f39e37b3.html#execsumm-d1e1157-564eb8b366
+                    - button "More items about Executive Summary" [ref=e156] [cursor=pointer]
+                - listitem [ref=e157]:
+                  - generic [ref=e158]:
+                    - link "1. Making the most of the trade and environment nexus in agriculture" [ref=e159] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/making-the-most-of-the-trade-and-environment-nexus-in-agriculture_d74b07a7.html#chapter-d1e1432-4aa2e263aa
+                    - button "More items about 1. Making the most of the trade and environment nexus in agriculture" [ref=e160] [cursor=pointer]
+                - listitem [ref=e161]:
+                  - generic [ref=e162]:
+                    - link "2. Overview of agricultural policies and support" [ref=e163] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/overview-of-agricultural-policies-and-support_68470b91.html#chapter-d1e7744-c9e23f402a
+                    - button "More items about 2. Overview of agricultural policies and support" [ref=e164] [cursor=pointer]
+                - listitem [ref=e165]:
+                  - generic [ref=e166]:
+                    - link "3. Developments in agricultural policies and support by country" [ref=e167] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/developments-in-agricultural-policies-and-support-by-country_411a0245.html#chapter-d1e18145-8b2037dd91
+                    - button "More items about 3. Developments in agricultural policies and support by country" [ref=e168] [cursor=pointer]
+                - listitem [ref=e169]:
+                  - generic [ref=e170]:
+                    - link "Country chapters" [ref=e171] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/component-8.html#part-d1e20138-f71dd3857f
+                    - button "More items about Country chapters" [ref=e172] [cursor=pointer]
+                - listitem [ref=e173]:
+                  - generic [ref=e174]:
+                    - link "Annex A. Sources and Definitions of Contextual Indicators" [ref=e175] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/sources-and-definitions-of-contextual-indicators_429c691a.html#annex-d1e157188-40c916973c
+                    - button "More items about Annex A. Sources and Definitions of Contextual Indicators" [ref=e176] [cursor=pointer]
+            - generic [ref=e177]:
+              - generic [ref=e179]:
+                - generic [ref=e181]:
+                  - heading "13. Iceland" [level=2] [ref=e182]
+                  - link "Copy link to 13. Iceland" [ref=e183] [cursor=pointer]:
+                    - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#chapter-d1e72215-5c510ef4cf
+                    - generic [ref=e184]: Copy link to 13. Iceland
+                - generic [ref=e186]:
+                  - heading "Main findings" [level=3] [ref=e187]
+                  - link "Copy link to Main findings" [ref=e188] [cursor=pointer]:
+                    - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#section-d1e72222-5c510ef4cf
+                    - generic [ref=e189]: Copy link to Main findings
+                - heading "Support to agriculture" [level=4] [ref=e192]
+                - generic [ref=e194]:
+                  - paragraph [ref=e195]: Support to agricultural producers in Iceland is the second highest across all countries covered in this report. The Producer Support Estimate (PSE) was more than three times the OECD average in 2022‑24, at 47% of gross farm receipts. Market price support measures account for 45% of producer support, driven principally by tariffs that maintain high domestic prices relative to world prices and cause a transfer from consumers to agricultural producers. Payments coupled with production factors complement market price support. Output payments for milk producers and largely decoupled payments to sheep meat producers represent most of the remaining support to farmers. About 70% of farm support is potentially most-distorting to production and trade.
+                  - paragraph [ref=e196]: Effective prices received by farmers have declined over time on average as the Producer Nominal Protection Coefficient (NPC) declined but remain very high at 60% above border reference levels in 2022‑24. Market price support is especially high for poultry and egg products, where it accounts for 70% and 62% of commodity gross farm receipts, respectively. In the case of wool output payments account for 78% of Single Commodity Transfers (SCT). Overall, SCT represent 95% of total PSE.
+                  - paragraph [ref=e197]: "Expenditures for general services (General Service Support Estimate, GSSE) represent 4% of total support to agriculture (Total Support Estimate, TSE), much lower than the OECD average of 12%. These expenditures decreased from 7% of the value of agricultural production in 2000-02 to less than 3% in 2022-24: despite doubled output, expenditures for general services declined over this period. Inspection and control represent 67% of GSSE and the rest is split between agricultural knowledge and innovation system, marketing and promotion, and public stockholding."
+                  - paragraph [ref=e198]: TSE as a share of Gross Domestic Product (GDP) declined from 1.7% in 2000‑02 to 0.7% in 2022‑24. This largely reflects the declining share of agriculture in the overall economy.
+                - heading "Key recent policy changes" [level=4] [ref=e201]
+                - generic [ref=e203]:
+                  - paragraph [ref=e204]: "Implementation of the first five-year action plan of Iceland’s new agricultural policy (passed by parliament in 2023) started in 2024. The new agricultural policy is based on three key pillars: land use; climate and environmental protection; and technology and innovation. The first five-year action plan contains 28 actions linked to the policy’s ten main issues: food security; adaptation to and mitigation of climate change; biodiversity; land use and land preservation; circular economy; international market issues; consumers; innovation and technology; education and R&D; and agricultural income support. The new agricultural policy is meant to guide development of the agricultural system until 2040. Its main objectives are to strengthen and support Icelandic agriculture for the future, with sustainable development as a guiding principle."
+                  - paragraph [ref=e205]: Concrete actions under the first five-year plan include an initiative to promote cereal production; several measures for assessing and researching the carbon footprint of agricultural products, adapting to climate change and preserving biodiversity; actions to promote sustainable land use and enhance the circular agricultural economy; promoting innovation; and promotion of research and education in the field of agriculture. Specific measures to promote cereal production include, for example, grain breeding, production and investment support measures, and the establishment of grain co-operatives. As regards the carbon footprint of agricultural products, climate and other environmental accounting will be set up for each farm which will be based on reporting of various key variables in the management of farms.
+                  - paragraph [ref=e206]: The agriculture policy is an integral part of a new food policy until the year 2040, adopted in 2023. Implementation of a five-year action plan for the food policy also started in 2024. The food policy takes all major aspects of food production in Iceland into consideration, including fisheries, agriculture, and aquaculture. The focus is on sustainability and the circular economy of food production, food security and safety, R&D, consumers, and society. For example, efforts will be made to make information on the requirements made for labelling more accessible, both as a guiding tool for manufacturers and to increase consumer confidence in labelling. The Ministry of Food, Agriculture and Fisheries, in collaboration with the Icelandic Food and Veterinary Authority and stakeholders, is developing a measure that contributes to improved information on the origin labelling of food. For innovation, the aim is to measure the effectiveness of support for research and innovation in the food industry and an assessment will be conducted of what this support achieves for the food sector, economy and society.
+                  - paragraph [ref=e207]: In 2024, the ten-year agreements between the government and the Farmers’ Association were revised for a second time. Only minor adjustments were made, as the contracting parties agreed to focus on developing the future of the agricultural support system. The main change was to delay the abolition of the support scheme for sheep farmers, which had been expected by the end of 2026. Minor changes were made to the horticulture agreement and to the general framework agreement to encourage organic production. In protocols to the 2024 revision agreement, contracting parties agreed for agriculture in Iceland to become carbon neutral no later than 2040, and for necessary steps to prepare for the implementation of climate accounting for agriculture.
+                - heading "Assessment and recommendations" [level=4] [ref=e210]
+                - list [ref=e213]:
+                  - listitem [ref=e214]:
+                    - paragraph [ref=e215]: Progress in agricultural policy reforms has been limited, and Iceland’s support to farmers remains well above that of most OECD countries. As Iceland’s agricultural support policies remain dominated by market price support and output payments, they continue to be production- and trade-distorting, contributing to inflated agricultural and food prices, and risk adding to pressures on the local environment.
+                  - listitem [ref=e216]:
+                    - paragraph [ref=e217]: Producer support should be decoupled from agricultural production and favour less production- and trade-distorting and less environmentally harmful forms of support. Re-instrumentation from production-coupled support measures towards decoupled support payments with environmental cross-compliance requirements and towards specific agri-environmental measures (including GHG-mitigation) would contribute to reaching agriculture’s carbon-neutrality target by 2040. Reducing market price support and payments targeted at specific commodities would also contribute to climate change adaptation, as farmers would not be locked into producing subsidised commodities under changing climatic conditions.
+                  - listitem [ref=e218]:
+                    - paragraph [ref=e219]: Iceland is performing relatively well in environmentally sustainable productivity growth. Agricultural output growth (9%) clearly outpaced the global average over the 2012‑21 period. This was driven by robust growth in total factor productivity (TFP) of about 10% per year, much higher than the global average TFP growth. Performance is good in some agri-environmental indicators, such as nitrogen and phosphorus surpluses and the share of agriculture sector of the total energy use, which are comparatively small. However, agriculture continues to represent a significant share (13%) in the country’s total GHG emissions – well above the OECD average – mainly due to the importance of the ruminant livestock sector.
+                  - listitem [ref=e220]:
+                    - paragraph [ref=e221]: Given the role that the size of the livestock sector plays in Iceland’s agricultural GHG emissions, current agricultural support measures – especially market price support and output payments for ruminant products such as milk and wool – counteract and reduce the effectiveness of GHG-mitigation measures in agriculture, which will be essential to reach the challenging goal of carbon-neutral agriculture by 2040.
+                  - listitem [ref=e222]:
+                    - paragraph [ref=e223]: Expenditures for general services (General Service Support Estimate, GSSE) are low relative to agricultural value of production (2.7%). Shifting budget expenditure from producer support towards Iceland’s agricultural innovation systems and other general services could increase innovations to enhance environmentally sustainable productivity growth and contribute to climate change mitigation and adaptation.
+                - heading "Development of support to agriculture" [level=4] [ref=e226]
+                - 'figure "Table 13.1. Iceland: Estimates of support to agriculture Copy link to Table 13.1. Iceland: Estimates of support to agriculture Million USD" [ref=e258]':
+                  - generic [ref=e259]:
+                    - generic [ref=e261]:
+                      - 'heading "Table 13.1. Iceland: Estimates of support to agriculture" [level=3] [ref=e262]'
+                      - 'link "Copy link to Table 13.1. Iceland: Estimates of support to agriculture" [ref=e263] [cursor=pointer]':
+                        - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#title-513095d6c4
+                        - generic [ref=e264]: "Copy link to Table 13.1. Iceland: Estimates of support to agriculture"
+                    - paragraph [ref=e267]: Million USD
+                  - button "expand" [ref=e270] [cursor=pointer]:
+                    - generic [ref=e271]: expand
+                  - generic [ref=e272]:
+                    - table [ref=e278]:
+                      - rowgroup [ref=e287]:
+                        - row ". 1986-88 2000-02 2022-24 2022 2023 2024p" [ref=e288]:
+                          - cell "." [ref=e289]:
+                            - paragraph [ref=e290]: .
+                          - cell "1986-88" [ref=e291]:
+                            - paragraph [ref=e292]: 1986-88
+                          - cell "2000-02" [ref=e293]:
+                            - paragraph [ref=e294]: 2000-02
+                          - cell "2022-24" [ref=e295]:
+                            - paragraph [ref=e296]: 2022-24
+                          - cell "2022" [ref=e297]:
+                            - paragraph [ref=e298]: "2022"
+                          - cell "2023" [ref=e299]:
+                            - paragraph [ref=e300]: "2023"
+                          - cell "2024p" [ref=e301]:
+                            - paragraph [ref=e302]: 2024p
+                        - row "Total value of production (at farm gate) 236 150 329 304 327 355" [ref=e303]:
+                          - cell "Total value of production (at farm gate)" [ref=e304]:
+                            - paragraph [ref=e305]:
+                              - strong [ref=e306]: Total value of production (at farm gate)
+                          - cell "236" [ref=e307]:
+                            - paragraph [ref=e308]:
+                              - strong [ref=e309]: "236"
+                          - cell "150" [ref=e310]:
+                            - paragraph [ref=e311]:
+                              - strong [ref=e312]: "150"
+                          - cell "329" [ref=e313]:
+                            - paragraph [ref=e314]:
+                              - strong [ref=e315]: "329"
+                          - cell "304" [ref=e316]:
+                            - paragraph [ref=e317]:
+                              - strong [ref=e318]: "304"
+                          - cell "327" [ref=e319]:
+                            - paragraph [ref=e320]:
+                              - strong [ref=e321]: "327"
+                          - cell "355" [ref=e322]:
+                            - paragraph [ref=e323]:
+                              - strong [ref=e324]: "355"
+                        - 'row "of which: share of MPS commodities (%) 80.32 82.11 87.74 86.63 87.82 88.77" [ref=e325]':
+                          - 'cell "of which: share of MPS commodities (%)" [ref=e326]':
+                            - paragraph [ref=e327]:
+                              - emphasis [ref=e328]: "of which: share of MPS commodities (%)"
+                          - cell "80.32" [ref=e329]:
+                            - paragraph [ref=e330]: "80.32"
+                          - cell "82.11" [ref=e331]:
+                            - paragraph [ref=e332]: "82.11"
+                          - cell "87.74" [ref=e333]:
+                            - paragraph [ref=e334]: "87.74"
+                          - cell "86.63" [ref=e335]:
+                            - paragraph [ref=e336]: "86.63"
+                          - cell "87.82" [ref=e337]:
+                            - paragraph [ref=e338]: "87.82"
+                          - cell "88.77" [ref=e339]:
+                            - paragraph [ref=e340]: "88.77"
+                        - row "Total value of consumption (at farm gate) 205 137 301 276 304 324" [ref=e341]:
+                          - cell "Total value of consumption (at farm gate)" [ref=e342]:
+                            - paragraph [ref=e343]:
+                              - strong [ref=e344]: Total value of consumption (at farm gate)
+                          - cell "205" [ref=e345]:
+                            - paragraph [ref=e346]:
+                              - strong [ref=e347]: "205"
+                          - cell "137" [ref=e348]:
+                            - paragraph [ref=e349]:
+                              - strong [ref=e350]: "137"
+                          - cell "301" [ref=e351]:
+                            - paragraph [ref=e352]:
+                              - strong [ref=e353]: "301"
+                          - cell "276" [ref=e354]:
+                            - paragraph [ref=e355]:
+                              - strong [ref=e356]: "276"
+                          - cell "304" [ref=e357]:
+                            - paragraph [ref=e358]:
+                              - strong [ref=e359]: "304"
+                          - cell "324" [ref=e360]:
+                            - paragraph [ref=e361]:
+                              - strong [ref=e362]: "324"
+                        - row "Producer Support Estimate (PSE) 193 139 209 185 200 242" [ref=e363]:
+                          - cell "Producer Support Estimate (PSE)" [ref=e364]:
+                            - paragraph [ref=e365]:
+                              - strong [ref=e366]: Producer Support Estimate (PSE)
+                          - cell "193" [ref=e367]:
+                            - paragraph [ref=e368]:
+                              - strong [ref=e369]: "193"
+                          - cell "139" [ref=e370]:
+                            - paragraph [ref=e371]:
+                              - strong [ref=e372]: "139"
+                          - cell "209" [ref=e373]:
+                            - paragraph [ref=e374]:
+                              - strong [ref=e375]: "209"
+                          - cell "185" [ref=e376]:
+                            - paragraph [ref=e377]:
+                              - strong [ref=e378]: "185"
+                          - cell "200" [ref=e379]:
+                            - paragraph [ref=e380]:
+                              - strong [ref=e381]: "200"
+                          - cell "242" [ref=e382]:
+                            - paragraph [ref=e383]:
+                              - strong [ref=e384]: "242"
+                        - row "Support based on commodity output 180 113 141 116 129 179" [ref=e385]:
+                          - cell "Support based on commodity output" [ref=e386]:
+                            - paragraph [ref=e387]: Support based on commodity output
+                          - cell "180" [ref=e388]:
+                            - paragraph [ref=e389]: "180"
+                          - cell "113" [ref=e390]:
+                            - paragraph [ref=e391]: "113"
+                          - cell "141" [ref=e392]:
+                            - paragraph [ref=e393]: "141"
+                          - cell "116" [ref=e394]:
+                            - paragraph [ref=e395]: "116"
+                          - cell "129" [ref=e396]:
+                            - paragraph [ref=e397]: "129"
+                          - cell "179" [ref=e398]:
+                            - paragraph [ref=e399]: "179"
+                        - row "Market price support¹ 179 72 94 74 79 129" [ref=e400]:
+                          - cell "Market price support¹" [ref=e401]:
+                            - paragraph [ref=e402]: Market price support¹
+                          - cell "179" [ref=e403]:
+                            - paragraph [ref=e404]: "179"
+                          - cell "72" [ref=e405]:
+                            - paragraph [ref=e406]: "72"
+                          - cell "94" [ref=e407]:
+                            - paragraph [ref=e408]: "94"
+                          - cell "74" [ref=e409]:
+                            - paragraph [ref=e410]: "74"
+                          - cell "79" [ref=e411]:
+                            - paragraph [ref=e412]: "79"
+                          - cell "129" [ref=e413]:
+                            - paragraph [ref=e414]: "129"
+                        - row "Positive market price support 179 72 94 74 79 129" [ref=e415]:
+                          - cell "Positive market price support" [ref=e416]:
+                            - paragraph [ref=e417]: Positive market price support
+                          - cell "179" [ref=e418]:
+                            - paragraph [ref=e419]: "179"
+                          - cell "72" [ref=e420]:
+                            - paragraph [ref=e421]: "72"
+                          - cell "94" [ref=e422]:
+                            - paragraph [ref=e423]: "94"
+                          - cell "74" [ref=e424]:
+                            - paragraph [ref=e425]: "74"
+                          - cell "79" [ref=e426]:
+                            - paragraph [ref=e427]: "79"
+                          - cell "129" [ref=e428]:
+                            - paragraph [ref=e429]: "129"
+                        - row "Negative market price support 0 0 0 0 0 0" [ref=e430]:
+                          - cell "Negative market price support" [ref=e431]:
+                            - paragraph [ref=e432]: Negative market price support
+                          - cell "0" [ref=e433]:
+                            - paragraph [ref=e434]: "0"
+                          - cell "0" [ref=e435]:
+                            - paragraph [ref=e436]: "0"
+                          - cell "0" [ref=e437]:
+                            - paragraph [ref=e438]: "0"
+                          - cell "0" [ref=e439]:
+                            - paragraph [ref=e440]: "0"
+                          - cell "0" [ref=e441]:
+                            - paragraph [ref=e442]: "0"
+                          - cell "0" [ref=e443]:
+                            - paragraph [ref=e444]: "0"
+                        - row "Payments based on output 2 40 47 42 51 49" [ref=e445]:
+                          - cell "Payments based on output" [ref=e446]:
+                            - paragraph [ref=e447]: Payments based on output
+                          - cell "2" [ref=e448]:
+                            - paragraph [ref=e449]: "2"
+                          - cell "40" [ref=e450]:
+                            - paragraph [ref=e451]: "40"
+                          - cell "47" [ref=e452]:
+                            - paragraph [ref=e453]: "47"
+                          - cell "42" [ref=e454]:
+                            - paragraph [ref=e455]: "42"
+                          - cell "51" [ref=e456]:
+                            - paragraph [ref=e457]: "51"
+                          - cell "49" [ref=e458]:
+                            - paragraph [ref=e459]: "49"
+                        - row "Payments based on input use 13 4 19 16 25 18" [ref=e460]:
+                          - cell "Payments based on input use" [ref=e461]:
+                            - paragraph [ref=e462]: Payments based on input use
+                          - cell "13" [ref=e463]:
+                            - paragraph [ref=e464]: "13"
+                          - cell "4" [ref=e465]:
+                            - paragraph [ref=e466]: "4"
+                          - cell "19" [ref=e467]:
+                            - paragraph [ref=e468]: "19"
+                          - cell "16" [ref=e469]:
+                            - paragraph [ref=e470]: "16"
+                          - cell "25" [ref=e471]:
+                            - paragraph [ref=e472]: "25"
+                          - cell "18" [ref=e473]:
+                            - paragraph [ref=e474]: "18"
+                        - row "Based on variable input use 3 0 4 4 4 4" [ref=e475]:
+                          - cell "Based on variable input use" [ref=e476]:
+                            - paragraph [ref=e477]: Based on variable input use
+                          - cell "3" [ref=e478]:
+                            - paragraph [ref=e479]: "3"
+                          - cell "0" [ref=e480]:
+                            - paragraph [ref=e481]: "0"
+                          - cell "4" [ref=e482]:
+                            - paragraph [ref=e483]: "4"
+                          - cell "4" [ref=e484]:
+                            - paragraph [ref=e485]: "4"
+                          - cell "4" [ref=e486]:
+                            - paragraph [ref=e487]: "4"
+                          - cell "4" [ref=e488]:
+                            - paragraph [ref=e489]: "4"
+                        - row "with input constraints 0 0 0 0 0 0" [ref=e490]:
+                          - cell "with input constraints" [ref=e491]:
+                            - paragraph [ref=e492]: with input constraints
+                          - cell "0" [ref=e493]:
+                            - paragraph [ref=e494]: "0"
+                          - cell "0" [ref=e495]:
+                            - paragraph [ref=e496]: "0"
+                          - cell "0" [ref=e497]:
+                            - paragraph [ref=e498]: "0"
+                          - cell "0" [ref=e499]:
+                            - paragraph [ref=e500]: "0"
+                          - cell "0" [ref=e501]:
+                            - paragraph [ref=e502]: "0"
+                          - cell "0" [ref=e503]:
+                            - paragraph [ref=e504]: "0"
+                        - row "Based on fixed capital formation 6 2 10 8 15 8" [ref=e505]:
+                          - cell "Based on fixed capital formation" [ref=e506]:
+                            - paragraph [ref=e507]: Based on fixed capital formation
+                          - cell "6" [ref=e508]:
+                            - paragraph [ref=e509]: "6"
+                          - cell "2" [ref=e510]:
+                            - paragraph [ref=e511]: "2"
+                          - cell "10" [ref=e512]:
+                            - paragraph [ref=e513]: "10"
+                          - cell "8" [ref=e514]:
+                            - paragraph [ref=e515]: "8"
+                          - cell "15" [ref=e516]:
+                            - paragraph [ref=e517]: "15"
+                          - cell "8" [ref=e518]:
+                            - paragraph [ref=e519]: "8"
+                        - row "with input constraints 0 0 0 0 0 0" [ref=e520]:
+                          - cell "with input constraints" [ref=e521]:
+                            - paragraph [ref=e522]: with input constraints
+                          - cell "0" [ref=e523]:
+                            - paragraph [ref=e524]: "0"
+                          - cell "0" [ref=e525]:
+                            - paragraph [ref=e526]: "0"
+                          - cell "0" [ref=e527]:
+                            - paragraph [ref=e528]: "0"
+                          - cell "0" [ref=e529]:
+                            - paragraph [ref=e530]: "0"
+                          - cell "0" [ref=e531]:
+                            - paragraph [ref=e532]: "0"
+                          - cell "0" [ref=e533]:
+                            - paragraph [ref=e534]: "0"
+                        - row "Based on on-farm services 4 2 5 4 6 6" [ref=e535]:
+                          - cell "Based on on-farm services" [ref=e536]:
+                            - paragraph [ref=e537]: Based on on-farm services
+                          - cell "4" [ref=e538]:
+                            - paragraph [ref=e539]: "4"
+                          - cell "2" [ref=e540]:
+                            - paragraph [ref=e541]: "2"
+                          - cell "5" [ref=e542]:
+                            - paragraph [ref=e543]: "5"
+                          - cell "4" [ref=e544]:
+                            - paragraph [ref=e545]: "4"
+                          - cell "6" [ref=e546]:
+                            - paragraph [ref=e547]: "6"
+                          - cell "6" [ref=e548]:
+                            - paragraph [ref=e549]: "6"
+                        - row "with input constraints 0 0 0 0 0 0" [ref=e550]:
+                          - cell "with input constraints" [ref=e551]:
+                            - paragraph [ref=e552]: with input constraints
+                          - cell "0" [ref=e553]:
+                            - paragraph [ref=e554]: "0"
+                          - cell "0" [ref=e555]:
+                            - paragraph [ref=e556]: "0"
+                          - cell "0" [ref=e557]:
+                            - paragraph [ref=e558]: "0"
+                          - cell "0" [ref=e559]:
+                            - paragraph [ref=e560]: "0"
+                          - cell "0" [ref=e561]:
+                            - paragraph [ref=e562]: "0"
+                          - cell "0" [ref=e563]:
+                            - paragraph [ref=e564]: "0"
+                        - row "Payments based on current A/An/R/I, production required -1 -3 13 13 12 13" [ref=e565]:
+                          - cell "Payments based on current A/An/R/I, production required" [ref=e566]:
+                            - paragraph [ref=e567]: Payments based on current A/An/R/I, production required
+                          - cell "-1" [ref=e568]:
+                            - paragraph [ref=e569]: "-1"
+                          - cell "-3" [ref=e570]:
+                            - paragraph [ref=e571]: "-3"
+                          - cell "13" [ref=e572]:
+                            - paragraph [ref=e573]: "13"
+                          - cell "13" [ref=e574]:
+                            - paragraph [ref=e575]: "13"
+                          - cell "12" [ref=e576]:
+                            - paragraph [ref=e577]: "12"
+                          - cell "13" [ref=e578]:
+                            - paragraph [ref=e579]: "13"
+                        - row "Based on Receipts / Income -1 -3 0 0 0 0" [ref=e580]:
+                          - cell "Based on Receipts / Income" [ref=e581]:
+                            - paragraph [ref=e582]: Based on Receipts / Income
+                          - cell "-1" [ref=e583]:
+                            - paragraph [ref=e584]: "-1"
+                          - cell "-3" [ref=e585]:
+                            - paragraph [ref=e586]: "-3"
+                          - cell "0" [ref=e587]:
+                            - paragraph [ref=e588]: "0"
+                          - cell "0" [ref=e589]:
+                            - paragraph [ref=e590]: "0"
+                          - cell "0" [ref=e591]:
+                            - paragraph [ref=e592]: "0"
+                          - cell "0" [ref=e593]:
+                            - paragraph [ref=e594]: "0"
+                        - row "Based on Area planted / Animal numbers 0 0 13 13 12 13" [ref=e595]:
+                          - cell "Based on Area planted / Animal numbers" [ref=e596]:
+                            - paragraph [ref=e597]: Based on Area planted / Animal numbers
+                          - cell "0" [ref=e598]:
+                            - paragraph [ref=e599]: "0"
+                          - cell "0" [ref=e600]:
+                            - paragraph [ref=e601]: "0"
+                          - cell "13" [ref=e602]:
+                            - paragraph [ref=e603]: "13"
+                          - cell "13" [ref=e604]:
+                            - paragraph [ref=e605]: "13"
+                          - cell "12" [ref=e606]:
+                            - paragraph [ref=e607]: "12"
+                          - cell "13" [ref=e608]:
+                            - paragraph [ref=e609]: "13"
+                        - row "With input constraints 0 0 0 0 0 0" [ref=e610]:
+                          - cell "With input constraints" [ref=e611]:
+                            - paragraph [ref=e612]: With input constraints
+                          - cell "0" [ref=e613]:
+                            - paragraph [ref=e614]: "0"
+                          - cell "0" [ref=e615]:
+                            - paragraph [ref=e616]: "0"
+                          - cell "0" [ref=e617]:
+                            - paragraph [ref=e618]: "0"
+                          - cell "0" [ref=e619]:
+                            - paragraph [ref=e620]: "0"
+                          - cell "0" [ref=e621]:
+                            - paragraph [ref=e622]: "0"
+                          - cell "0" [ref=e623]:
+                            - paragraph [ref=e624]: "0"
+                        - row "Payments based on non-current A/An/R/I, production required 0 20 35 40 34 32" [ref=e625]:
+                          - cell "Payments based on non-current A/An/R/I, production required" [ref=e626]:
+                            - paragraph [ref=e627]: Payments based on non-current A/An/R/I, production required
+                          - cell "0" [ref=e628]:
+                            - paragraph [ref=e629]: "0"
+                          - cell "20" [ref=e630]:
+                            - paragraph [ref=e631]: "20"
+                          - cell "35" [ref=e632]:
+                            - paragraph [ref=e633]: "35"
+                          - cell "40" [ref=e634]:
+                            - paragraph [ref=e635]: "40"
+                          - cell "34" [ref=e636]:
+                            - paragraph [ref=e637]: "34"
+                          - cell "32" [ref=e638]:
+                            - paragraph [ref=e639]: "32"
+                        - row "Payments based on non-current A/An/R/I, production not required 1 5 0 0 0 0" [ref=e640]:
+                          - cell "Payments based on non-current A/An/R/I, production not required" [ref=e641]:
+                            - paragraph [ref=e642]: Payments based on non-current A/An/R/I, production not required
+                          - cell "1" [ref=e643]:
+                            - paragraph [ref=e644]: "1"
+                          - cell "5" [ref=e645]:
+                            - paragraph [ref=e646]: "5"
+                          - cell "0" [ref=e647]:
+                            - paragraph [ref=e648]: "0"
+                          - cell "0" [ref=e649]:
+                            - paragraph [ref=e650]: "0"
+                          - cell "0" [ref=e651]:
+                            - paragraph [ref=e652]: "0"
+                          - cell "0" [ref=e653]:
+                            - paragraph [ref=e654]: "0"
+                        - row "With variable payment rates 0 0 0 0 0 0" [ref=e655]:
+                          - cell "With variable payment rates" [ref=e656]:
+                            - paragraph [ref=e657]: With variable payment rates
+                          - cell "0" [ref=e658]:
+                            - paragraph [ref=e659]: "0"
+                          - cell "0" [ref=e660]:
+                            - paragraph [ref=e661]: "0"
+                          - cell "0" [ref=e662]:
+                            - paragraph [ref=e663]: "0"
+                          - cell "0" [ref=e664]:
+                            - paragraph [ref=e665]: "0"
+                          - cell "0" [ref=e666]:
+                            - paragraph [ref=e667]: "0"
+                          - cell "0" [ref=e668]:
+                            - paragraph [ref=e669]: "0"
+                        - row "with commodity exceptions 0 0 0 0 0 0" [ref=e670]:
+                          - cell "with commodity exceptions" [ref=e671]:
+                            - paragraph [ref=e672]: with commodity exceptions
+                          - cell "0" [ref=e673]:
+                            - paragraph [ref=e674]: "0"
+                          - cell "0" [ref=e675]:
+                            - paragraph [ref=e676]: "0"
+                          - cell "0" [ref=e677]:
+                            - paragraph [ref=e678]: "0"
+                          - cell "0" [ref=e679]:
+                            - paragraph [ref=e680]: "0"
+                          - cell "0" [ref=e681]:
+                            - paragraph [ref=e682]: "0"
+                          - cell "0" [ref=e683]:
+                            - paragraph [ref=e684]: "0"
+                        - row "With fixed payment rates 1 5 0 0 0 0" [ref=e685]:
+                          - cell "With fixed payment rates" [ref=e686]:
+                            - paragraph [ref=e687]: With fixed payment rates
+                          - cell "1" [ref=e688]:
+                            - paragraph [ref=e689]: "1"
+                          - cell "5" [ref=e690]:
+                            - paragraph [ref=e691]: "5"
+                          - cell "0" [ref=e692]:
+                            - paragraph [ref=e693]: "0"
+                          - cell "0" [ref=e694]:
+                            - paragraph [ref=e695]: "0"
+                          - cell "0" [ref=e696]:
+                            - paragraph [ref=e697]: "0"
+                          - cell "0" [ref=e698]:
+                            - paragraph [ref=e699]: "0"
+                        - row "with commodity exceptions 1 5 0 0 0 0" [ref=e700]:
+                          - cell "with commodity exceptions" [ref=e701]:
+                            - paragraph [ref=e702]: with commodity exceptions
+                          - cell "1" [ref=e703]:
+                            - paragraph [ref=e704]: "1"
+                          - cell "5" [ref=e705]:
+                            - paragraph [ref=e706]: "5"
+                          - cell "0" [ref=e707]:
+                            - paragraph [ref=e708]: "0"
+                          - cell "0" [ref=e709]:
+                            - paragraph [ref=e710]: "0"
+                          - cell "0" [ref=e711]:
+                            - paragraph [ref=e712]: "0"
+                          - cell "0" [ref=e713]:
+                            - paragraph [ref=e714]: "0"
+                        - row "Payments based on non-commodity criteria 0 0 0 0 0 0" [ref=e715]:
+                          - cell "Payments based on non-commodity criteria" [ref=e716]:
+                            - paragraph [ref=e717]: Payments based on non-commodity criteria
+                          - cell "0" [ref=e718]:
+                            - paragraph [ref=e719]: "0"
+                          - cell "0" [ref=e720]:
+                            - paragraph [ref=e721]: "0"
+                          - cell "0" [ref=e722]:
+                            - paragraph [ref=e723]: "0"
+                          - cell "0" [ref=e724]:
+                            - paragraph [ref=e725]: "0"
+                          - cell "0" [ref=e726]:
+                            - paragraph [ref=e727]: "0"
+                          - cell "0" [ref=e728]:
+                            - paragraph [ref=e729]: "0"
+                        - row "Based on long-term resource retirement 0 0 0 0 0 0" [ref=e730]:
+                          - cell "Based on long-term resource retirement" [ref=e731]:
+                            - paragraph [ref=e732]: Based on long-term resource retirement
+                          - cell "0" [ref=e733]:
+                            - paragraph [ref=e734]: "0"
+                          - cell "0" [ref=e735]:
+                            - paragraph [ref=e736]: "0"
+                          - cell "0" [ref=e737]:
+                            - paragraph [ref=e738]: "0"
+                          - cell "0" [ref=e739]:
+                            - paragraph [ref=e740]: "0"
+                          - cell "0" [ref=e741]:
+                            - paragraph [ref=e742]: "0"
+                          - cell "0" [ref=e743]:
+                            - paragraph [ref=e744]: "0"
+                        - row "Based on a specific non-commodity output 0 0 0 0 0 0" [ref=e745]:
+                          - cell "Based on a specific non-commodity output" [ref=e746]:
+                            - paragraph [ref=e747]: Based on a specific non-commodity output
+                          - cell "0" [ref=e748]:
+                            - paragraph [ref=e749]: "0"
+                          - cell "0" [ref=e750]:
+                            - paragraph [ref=e751]: "0"
+                          - cell "0" [ref=e752]:
+                            - paragraph [ref=e753]: "0"
+                          - cell "0" [ref=e754]:
+                            - paragraph [ref=e755]: "0"
+                          - cell "0" [ref=e756]:
+                            - paragraph [ref=e757]: "0"
+                          - cell "0" [ref=e758]:
+                            - paragraph [ref=e759]: "0"
+                        - row "Based on other non-commodity criteria 0 0 0 0 0 0" [ref=e760]:
+                          - cell "Based on other non-commodity criteria" [ref=e761]:
+                            - paragraph [ref=e762]: Based on other non-commodity criteria
+                          - cell "0" [ref=e763]:
+                            - paragraph [ref=e764]: "0"
+                          - cell "0" [ref=e765]:
+                            - paragraph [ref=e766]: "0"
+                          - cell "0" [ref=e767]:
+                            - paragraph [ref=e768]: "0"
+                          - cell "0" [ref=e769]:
+                            - paragraph [ref=e770]: "0"
+                          - cell "0" [ref=e771]:
+                            - paragraph [ref=e772]: "0"
+                          - cell "0" [ref=e773]:
+                            - paragraph [ref=e774]: "0"
+                        - row "Miscellaneous payments 0 0 0 0 0 0" [ref=e775]:
+                          - cell "Miscellaneous payments" [ref=e776]:
+                            - paragraph [ref=e777]: Miscellaneous payments
+                          - cell "0" [ref=e778]:
+                            - paragraph [ref=e779]: "0"
+                          - cell "0" [ref=e780]:
+                            - paragraph [ref=e781]: "0"
+                          - cell "0" [ref=e782]:
+                            - paragraph [ref=e783]: "0"
+                          - cell "0" [ref=e784]:
+                            - paragraph [ref=e785]: "0"
+                          - cell "0" [ref=e786]:
+                            - paragraph [ref=e787]: "0"
+                          - cell "0" [ref=e788]:
+                            - paragraph [ref=e789]: "0"
+                        - row "Percentage PSE (%) 77.19 63.98 47.08 44.53 44.55 51.71" [ref=e790]:
+                          - cell "Percentage PSE (%)" [ref=e791]:
+                            - paragraph [ref=e792]:
+                              - strong [ref=e793]: Percentage PSE (%)
+                          - cell "77.19" [ref=e794]:
+                            - paragraph [ref=e795]:
+                              - strong [ref=e796]: "77.19"
+                          - cell "63.98" [ref=e797]:
+                            - paragraph [ref=e798]:
+                              - strong [ref=e799]: "63.98"
+                          - cell "47.08" [ref=e800]:
+                            - paragraph [ref=e801]:
+                              - strong [ref=e802]: "47.08"
+                          - cell "44.53" [ref=e803]:
+                            - paragraph [ref=e804]:
+                              - strong [ref=e805]: "44.53"
+                          - cell "44.55" [ref=e806]:
+                            - paragraph [ref=e807]:
+                              - strong [ref=e808]: "44.55"
+                          - cell "51.71" [ref=e809]:
+                            - paragraph [ref=e810]:
+                              - strong [ref=e811]: "51.71"
+                        - row "Producer NPC (coeff.) 4.16 2.44 1.60 1.50 1.52 1.79" [ref=e812]:
+                          - cell "Producer NPC (coeff.)" [ref=e813]:
+                            - paragraph [ref=e814]:
+                              - strong [ref=e815]: Producer NPC (
+                              - strong [ref=e816]: coeff
+                              - strong [ref=e817]: .)
+                          - cell "4.16" [ref=e818]:
+                            - paragraph [ref=e819]:
+                              - strong [ref=e820]: "4.16"
+                          - cell "2.44" [ref=e821]:
+                            - paragraph [ref=e822]:
+                              - strong [ref=e823]: "2.44"
+                          - cell "1.60" [ref=e824]:
+                            - paragraph [ref=e825]:
+                              - strong [ref=e826]: "1.60"
+                          - cell "1.50" [ref=e827]:
+                            - paragraph [ref=e828]:
+                              - strong [ref=e829]: "1.50"
+                          - cell "1.52" [ref=e830]:
+                            - paragraph [ref=e831]:
+                              - strong [ref=e832]: "1.52"
+                          - cell "1.79" [ref=e833]:
+                            - paragraph [ref=e834]:
+                              - strong [ref=e835]: "1.79"
+                        - row "Producer NAC (coeff.) 4.38 2.78 1.89 1.80 1.80 2.07" [ref=e836]:
+                          - cell "Producer NAC (coeff.)" [ref=e837]:
+                            - paragraph [ref=e838]:
+                              - strong [ref=e839]: Producer NAC (
+                              - strong [ref=e840]: coeff
+                              - strong [ref=e841]: .)
+                          - cell "4.38" [ref=e842]:
+                            - paragraph [ref=e843]:
+                              - strong [ref=e844]: "4.38"
+                          - cell "2.78" [ref=e845]:
+                            - paragraph [ref=e846]:
+                              - strong [ref=e847]: "2.78"
+                          - cell "1.89" [ref=e848]:
+                            - paragraph [ref=e849]:
+                              - strong [ref=e850]: "1.89"
+                          - cell "1.80" [ref=e851]:
+                            - paragraph [ref=e852]:
+                              - strong [ref=e853]: "1.80"
+                          - cell "1.80" [ref=e854]:
+                            - paragraph [ref=e855]:
+                              - strong [ref=e856]: "1.80"
+                          - cell "2.07" [ref=e857]:
+                            - paragraph [ref=e858]:
+                              - strong [ref=e859]: "2.07"
+                        - row "General Services Support Estimate (GSSE) 18 11 9 8 9 9" [ref=e860]:
+                          - cell "General Services Support Estimate (GSSE)" [ref=e861]:
+                            - paragraph [ref=e862]:
+                              - strong [ref=e863]: General Services Support Estimate (GSSE)
+                          - cell "18" [ref=e864]:
+                            - paragraph [ref=e865]:
+                              - strong [ref=e866]: "18"
+                          - cell "11" [ref=e867]:
+                            - paragraph [ref=e868]:
+                              - strong [ref=e869]: "11"
+                          - cell "9" [ref=e870]:
+                            - paragraph [ref=e871]:
+                              - strong [ref=e872]: "9"
+                          - cell "8" [ref=e873]:
+                            - paragraph [ref=e874]:
+                              - strong [ref=e875]: "8"
+                          - cell "9" [ref=e876]:
+                            - paragraph [ref=e877]:
+                              - strong [ref=e878]: "9"
+                          - cell "9" [ref=e879]:
+                            - paragraph [ref=e880]:
+                              - strong [ref=e881]: "9"
+                        - row "Agricultural knowledge and innovation system 5 5 1 1 1 1" [ref=e882]:
+                          - cell "Agricultural knowledge and innovation system" [ref=e883]:
+                            - paragraph [ref=e884]: Agricultural knowledge and innovation system
+                          - cell "5" [ref=e885]:
+                            - paragraph [ref=e886]: "5"
+                          - cell "5" [ref=e887]:
+                            - paragraph [ref=e888]: "5"
+                          - cell "1" [ref=e889]:
+                            - paragraph [ref=e890]: "1"
+                          - cell "1" [ref=e891]:
+                            - paragraph [ref=e892]: "1"
+                          - cell "1" [ref=e893]:
+                            - paragraph [ref=e894]: "1"
+                          - cell "1" [ref=e895]:
+                            - paragraph [ref=e896]: "1"
+                        - row "Inspection and control 1 2 6 5 6 6" [ref=e897]:
+                          - cell "Inspection and control" [ref=e898]:
+                            - paragraph [ref=e899]: Inspection and control
+                          - cell "1" [ref=e900]:
+                            - paragraph [ref=e901]: "1"
+                          - cell "2" [ref=e902]:
+                            - paragraph [ref=e903]: "2"
+                          - cell "6" [ref=e904]:
+                            - paragraph [ref=e905]: "6"
+                          - cell "5" [ref=e906]:
+                            - paragraph [ref=e907]: "5"
+                          - cell "6" [ref=e908]:
+                            - paragraph [ref=e909]: "6"
+                          - cell "6" [ref=e910]:
+                            - paragraph [ref=e911]: "6"
+                        - row "Development and maintenance of infrastructure 2 1 0 0 0 0" [ref=e912]:
+                          - cell "Development and maintenance of infrastructure" [ref=e913]:
+                            - paragraph [ref=e914]: Development and maintenance of infrastructure
+                          - cell "2" [ref=e915]:
+                            - paragraph [ref=e916]: "2"
+                          - cell "1" [ref=e917]:
+                            - paragraph [ref=e918]: "1"
+                          - cell "0" [ref=e919]:
+                            - paragraph [ref=e920]: "0"
+                          - cell "0" [ref=e921]:
+                            - paragraph [ref=e922]: "0"
+                          - cell "0" [ref=e923]:
+                            - paragraph [ref=e924]: "0"
+                          - cell "0" [ref=e925]:
+                            - paragraph [ref=e926]: "0"
+                        - row "Marketing and promotion 1 1 1 1 1 0" [ref=e927]:
+                          - cell "Marketing and promotion" [ref=e928]:
+                            - paragraph [ref=e929]: Marketing and promotion
+                          - cell "1" [ref=e930]:
+                            - paragraph [ref=e931]: "1"
+                          - cell "1" [ref=e932]:
+                            - paragraph [ref=e933]: "1"
+                          - cell "1" [ref=e934]:
+                            - paragraph [ref=e935]: "1"
+                          - cell "1" [ref=e936]:
+                            - paragraph [ref=e937]: "1"
+                          - cell "1" [ref=e938]:
+                            - paragraph [ref=e939]: "1"
+                          - cell "0" [ref=e940]:
+                            - paragraph [ref=e941]: "0"
+                        - row "Cost of public stockholding 9 2 1 1 1 1" [ref=e942]:
+                          - cell "Cost of public stockholding" [ref=e943]:
+                            - paragraph [ref=e944]: Cost of public stockholding
+                          - cell "9" [ref=e945]:
+                            - paragraph [ref=e946]: "9"
+                          - cell "2" [ref=e947]:
+                            - paragraph [ref=e948]: "2"
+                          - cell "1" [ref=e949]:
+                            - paragraph [ref=e950]: "1"
+                          - cell "1" [ref=e951]:
+                            - paragraph [ref=e952]: "1"
+                          - cell "1" [ref=e953]:
+                            - paragraph [ref=e954]: "1"
+                          - cell "1" [ref=e955]:
+                            - paragraph [ref=e956]: "1"
+                        - row "Miscellaneous 0 0 0 0 0 0" [ref=e957]:
+                          - cell "Miscellaneous" [ref=e958]:
+                            - paragraph [ref=e959]: Miscellaneous
+                          - cell "0" [ref=e960]:
+                            - paragraph [ref=e961]: "0"
+                          - cell "0" [ref=e962]:
+                            - paragraph [ref=e963]: "0"
+                          - cell "0" [ref=e964]:
+                            - paragraph [ref=e965]: "0"
+                          - cell "0" [ref=e966]:
+                            - paragraph [ref=e967]: "0"
+                          - cell "0" [ref=e968]:
+                            - paragraph [ref=e969]: "0"
+                          - cell "0" [ref=e970]:
+                            - paragraph [ref=e971]: "0"
+                        - row "Percentage GSSE (% of TSE) 6.94 7.39 3.91 4.07 4.31 3.45" [ref=e972]:
+                          - cell "Percentage GSSE (% of TSE)" [ref=e973]:
+                            - paragraph [ref=e974]:
+                              - strong [ref=e975]: Percentage GSSE (% of TSE)
+                          - cell "6.94" [ref=e976]:
+                            - paragraph [ref=e977]:
+                              - strong [ref=e978]: "6.94"
+                          - cell "7.39" [ref=e979]:
+                            - paragraph [ref=e980]:
+                              - strong [ref=e981]: "7.39"
+                          - cell "3.91" [ref=e982]:
+                            - paragraph [ref=e983]:
+                              - strong [ref=e984]: "3.91"
+                          - cell "4.07" [ref=e985]:
+                            - paragraph [ref=e986]:
+                              - strong [ref=e987]: "4.07"
+                          - cell "4.31" [ref=e988]:
+                            - paragraph [ref=e989]:
+                              - strong [ref=e990]: "4.31"
+                          - cell "3.45" [ref=e991]:
+                            - paragraph [ref=e992]:
+                              - strong [ref=e993]: "3.45"
+                        - row "Consumer Support Estimate (CSE) -112 -65 -89 -71 -76 -121" [ref=e994]:
+                          - cell "Consumer Support Estimate (CSE)" [ref=e995]:
+                            - paragraph [ref=e996]:
+                              - strong [ref=e997]: Consumer Support Estimate (CSE)
+                          - cell "-112" [ref=e998]:
+                            - paragraph [ref=e999]:
+                              - strong [ref=e1000]: "-112"
+                          - cell "-65" [ref=e1001]:
+                            - paragraph [ref=e1002]:
+                              - strong [ref=e1003]: "-65"
+                          - cell "-89" [ref=e1004]:
+                            - paragraph [ref=e1005]:
+                              - strong [ref=e1006]: "-89"
+                          - cell "-71" [ref=e1007]:
+                            - paragraph [ref=e1008]:
+                              - strong [ref=e1009]: "-71"
+                          - cell "-76" [ref=e1010]:
+                            - paragraph [ref=e1011]:
+                              - strong [ref=e1012]: "-76"
+                          - cell "-121" [ref=e1013]:
+                            - paragraph [ref=e1014]:
+                              - strong [ref=e1015]: "-121"
+                        - row "Transfers to producers from consumers -157 -66 -90 -72 -76 -122" [ref=e1016]:
+                          - cell "Transfers to producers from consumers" [ref=e1017]:
+                            - paragraph [ref=e1018]: Transfers to producers from consumers
+                          - cell "-157" [ref=e1019]:
+                            - paragraph [ref=e1020]: "-157"
+                          - cell "-66" [ref=e1021]:
+                            - paragraph [ref=e1022]: "-66"
+                          - cell "-90" [ref=e1023]:
+                            - paragraph [ref=e1024]: "-90"
+                          - cell "-72" [ref=e1025]:
+                            - paragraph [ref=e1026]: "-72"
+                          - cell "-76" [ref=e1027]:
+                            - paragraph [ref=e1028]: "-76"
+                          - cell "-122" [ref=e1029]:
+                            - paragraph [ref=e1030]: "-122"
+                        - row "Other transfers from consumers -1 -2 0 0 0 0" [ref=e1031]:
+                          - cell "Other transfers from consumers" [ref=e1032]:
+                            - paragraph [ref=e1033]: Other transfers from consumers
+                          - cell "-1" [ref=e1034]:
+                            - paragraph [ref=e1035]: "-1"
+                          - cell "-2" [ref=e1036]:
+                            - paragraph [ref=e1037]: "-2"
+                          - cell "0" [ref=e1038]:
+                            - paragraph [ref=e1039]: "0"
+                          - cell "0" [ref=e1040]:
+                            - paragraph [ref=e1041]: "0"
+                          - cell "0" [ref=e1042]:
+                            - paragraph [ref=e1043]: "0"
+                          - cell "0" [ref=e1044]:
+                            - paragraph [ref=e1045]: "0"
+                        - row "Transfers to consumers from taxpayers 46 3 1 1 1 1" [ref=e1046]:
+                          - cell "Transfers to consumers from taxpayers" [ref=e1047]:
+                            - paragraph [ref=e1048]: Transfers to consumers from taxpayers
+                          - cell "46" [ref=e1049]:
+                            - paragraph [ref=e1050]: "46"
+                          - cell "3" [ref=e1051]:
+                            - paragraph [ref=e1052]: "3"
+                          - cell "1" [ref=e1053]:
+                            - paragraph [ref=e1054]: "1"
+                          - cell "1" [ref=e1055]:
+                            - paragraph [ref=e1056]: "1"
+                          - cell "1" [ref=e1057]:
+                            - paragraph [ref=e1058]: "1"
+                          - cell "1" [ref=e1059]:
+                            - paragraph [ref=e1060]: "1"
+                        - row "Excess feed cost 0 0 0 0 0 0" [ref=e1061]:
+                          - cell "Excess feed cost" [ref=e1062]:
+                            - paragraph [ref=e1063]: Excess feed cost
+                          - cell "0" [ref=e1064]:
+                            - paragraph [ref=e1065]: "0"
+                          - cell "0" [ref=e1066]:
+                            - paragraph [ref=e1067]: "0"
+                          - cell "0" [ref=e1068]:
+                            - paragraph [ref=e1069]: "0"
+                          - cell "0" [ref=e1070]:
+                            - paragraph [ref=e1071]: "0"
+                          - cell "0" [ref=e1072]:
+                            - paragraph [ref=e1073]: "0"
+                          - cell "0" [ref=e1074]:
+                            - paragraph [ref=e1075]: "0"
+                        - row "Percentage CSE (%) -70.44 -48.30 -29.72 -25.76 -24.97 -37.49" [ref=e1076]:
+                          - cell "Percentage CSE (%)" [ref=e1077]:
+                            - paragraph [ref=e1078]:
+                              - strong [ref=e1079]: Percentage CSE (%)
+                          - cell "-70.44" [ref=e1080]:
+                            - paragraph [ref=e1081]:
+                              - strong [ref=e1082]: "-70.44"
+                          - cell "-48.30" [ref=e1083]:
+                            - paragraph [ref=e1084]:
+                              - strong [ref=e1085]: "-48.30"
+                          - cell "-29.72" [ref=e1086]:
+                            - paragraph [ref=e1087]:
+                              - strong [ref=e1088]: "-29.72"
+                          - cell "-25.76" [ref=e1089]:
+                            - paragraph [ref=e1090]:
+                              - strong [ref=e1091]: "-25.76"
+                          - cell "-24.97" [ref=e1092]:
+                            - paragraph [ref=e1093]:
+                              - strong [ref=e1094]: "-24.97"
+                          - cell "-37.49" [ref=e1095]:
+                            - paragraph [ref=e1096]:
+                              - strong [ref=e1097]: "-37.49"
+                        - row "Consumer NPC (coeff.) 4.38 1.98 1.43 1.35 1.34 1.60" [ref=e1098]:
+                          - cell "Consumer NPC (coeff.)" [ref=e1099]:
+                            - paragraph [ref=e1100]:
+                              - strong [ref=e1101]: Consumer NPC (
+                              - strong [ref=e1102]: coeff
+                              - strong [ref=e1103]: .)
+                          - cell "4.38" [ref=e1104]:
+                            - paragraph [ref=e1105]:
+                              - strong [ref=e1106]: "4.38"
+                          - cell "1.98" [ref=e1107]:
+                            - paragraph [ref=e1108]:
+                              - strong [ref=e1109]: "1.98"
+                          - cell "1.43" [ref=e1110]:
+                            - paragraph [ref=e1111]:
+                              - strong [ref=e1112]: "1.43"
+                          - cell "1.35" [ref=e1113]:
+                            - paragraph [ref=e1114]:
+                              - strong [ref=e1115]: "1.35"
+                          - cell "1.34" [ref=e1116]:
+                            - paragraph [ref=e1117]:
+                              - strong [ref=e1118]: "1.34"
+                          - cell "1.60" [ref=e1119]:
+                            - paragraph [ref=e1120]:
+                              - strong [ref=e1121]: "1.60"
+                        - row "Consumer NAC (coeff.) 3.38 1.93 1.42 1.35 1.33 1.60" [ref=e1122]:
+                          - cell "Consumer NAC (coeff.)" [ref=e1123]:
+                            - paragraph [ref=e1124]:
+                              - strong [ref=e1125]: Consumer NAC (
+                              - strong [ref=e1126]: coeff
+                              - strong [ref=e1127]: .)
+                          - cell "3.38" [ref=e1128]:
+                            - paragraph [ref=e1129]:
+                              - strong [ref=e1130]: "3.38"
+                          - cell "1.93" [ref=e1131]:
+                            - paragraph [ref=e1132]:
+                              - strong [ref=e1133]: "1.93"
+                          - cell "1.42" [ref=e1134]:
+                            - paragraph [ref=e1135]:
+                              - strong [ref=e1136]: "1.42"
+                          - cell "1.35" [ref=e1137]:
+                            - paragraph [ref=e1138]:
+                              - strong [ref=e1139]: "1.35"
+                          - cell "1.33" [ref=e1140]:
+                            - paragraph [ref=e1141]:
+                              - strong [ref=e1142]: "1.33"
+                          - cell "1.60" [ref=e1143]:
+                            - paragraph [ref=e1144]:
+                              - strong [ref=e1145]: "1.60"
+                        - row "Total Support Estimate (TSE) 257 153 218 193 210 252" [ref=e1146]:
+                          - cell "Total Support Estimate (TSE)" [ref=e1147]:
+                            - paragraph [ref=e1148]:
+                              - strong [ref=e1149]: Total Support Estimate (TSE)
+                          - cell "257" [ref=e1150]:
+                            - paragraph [ref=e1151]:
+                              - strong [ref=e1152]: "257"
+                          - cell "153" [ref=e1153]:
+                            - paragraph [ref=e1154]:
+                              - strong [ref=e1155]: "153"
+                          - cell "218" [ref=e1156]:
+                            - paragraph [ref=e1157]:
+                              - strong [ref=e1158]: "218"
+                          - cell "193" [ref=e1159]:
+                            - paragraph [ref=e1160]:
+                              - strong [ref=e1161]: "193"
+                          - cell "210" [ref=e1162]:
+                            - paragraph [ref=e1163]:
+                              - strong [ref=e1164]: "210"
+                          - cell "252" [ref=e1165]:
+                            - paragraph [ref=e1166]:
+                              - strong [ref=e1167]: "252"
+                        - row "Transfers from consumers 158 68 90 72 76 122" [ref=e1168]:
+                          - cell "Transfers from consumers" [ref=e1169]:
+                            - paragraph [ref=e1170]: Transfers from consumers
+                          - cell "158" [ref=e1171]:
+                            - paragraph [ref=e1172]: "158"
+                          - cell "68" [ref=e1173]:
+                            - paragraph [ref=e1174]: "68"
+                          - cell "90" [ref=e1175]:
+                            - paragraph [ref=e1176]: "90"
+                          - cell "72" [ref=e1177]:
+                            - paragraph [ref=e1178]: "72"
+                          - cell "76" [ref=e1179]:
+                            - paragraph [ref=e1180]: "76"
+                          - cell "122" [ref=e1181]:
+                            - paragraph [ref=e1182]: "122"
+                        - row "Transfers from taxpayers 100 88 128 122 133 130" [ref=e1183]:
+                          - cell "Transfers from taxpayers" [ref=e1184]:
+                            - paragraph [ref=e1185]: Transfers from taxpayers
+                          - cell "100" [ref=e1186]:
+                            - paragraph [ref=e1187]: "100"
+                          - cell "88" [ref=e1188]:
+                            - paragraph [ref=e1189]: "88"
+                          - cell "128" [ref=e1190]:
+                            - paragraph [ref=e1191]: "128"
+                          - cell "122" [ref=e1192]:
+                            - paragraph [ref=e1193]: "122"
+                          - cell "133" [ref=e1194]:
+                            - paragraph [ref=e1195]: "133"
+                          - cell "130" [ref=e1196]:
+                            - paragraph [ref=e1197]: "130"
+                        - row "Budget revenues -1 -2 0 0 0 0" [ref=e1198]:
+                          - cell "Budget revenues" [ref=e1199]:
+                            - paragraph [ref=e1200]: Budget revenues
+                          - cell "-1" [ref=e1201]:
+                            - paragraph [ref=e1202]: "-1"
+                          - cell "-2" [ref=e1203]:
+                            - paragraph [ref=e1204]: "-2"
+                          - cell "0" [ref=e1205]:
+                            - paragraph [ref=e1206]: "0"
+                          - cell "0" [ref=e1207]:
+                            - paragraph [ref=e1208]: "0"
+                          - cell "0" [ref=e1209]:
+                            - paragraph [ref=e1210]: "0"
+                          - cell "0" [ref=e1211]:
+                            - paragraph [ref=e1212]: "0"
+                        - row "Percentage TSE (% of GDP) 4.94 1.72 0.70 0.67 0.67 0.76" [ref=e1213]:
+                          - cell "Percentage TSE (% of GDP)" [ref=e1214]:
+                            - paragraph [ref=e1215]:
+                              - strong [ref=e1216]: Percentage TSE (% of GDP)
+                          - cell "4.94" [ref=e1217]:
+                            - paragraph [ref=e1218]:
+                              - strong [ref=e1219]: "4.94"
+                          - cell "1.72" [ref=e1220]:
+                            - paragraph [ref=e1221]:
+                              - strong [ref=e1222]: "1.72"
+                          - cell "0.70" [ref=e1223]:
+                            - paragraph [ref=e1224]:
+                              - strong [ref=e1225]: "0.70"
+                          - cell "0.67" [ref=e1226]:
+                            - paragraph [ref=e1227]:
+                              - strong [ref=e1228]: "0.67"
+                          - cell "0.67" [ref=e1229]:
+                            - paragraph [ref=e1230]:
+                              - strong [ref=e1231]: "0.67"
+                          - cell "0.76" [ref=e1232]:
+                            - paragraph [ref=e1233]:
+                              - strong [ref=e1234]: "0.76"
+                        - row "Total Budgetary Support Estimate (TBSE) 78 81 124 119 131 123" [ref=e1235]:
+                          - cell "Total Budgetary Support Estimate (TBSE)" [ref=e1236]:
+                            - paragraph [ref=e1237]:
+                              - strong [ref=e1238]: Total Budgetary Support Estimate (TBSE)
+                          - cell "78" [ref=e1239]:
+                            - paragraph [ref=e1240]:
+                              - strong [ref=e1241]: "78"
+                          - cell "81" [ref=e1242]:
+                            - paragraph [ref=e1243]:
+                              - strong [ref=e1244]: "81"
+                          - cell "124" [ref=e1245]:
+                            - paragraph [ref=e1246]:
+                              - strong [ref=e1247]: "124"
+                          - cell "119" [ref=e1248]:
+                            - paragraph [ref=e1249]:
+                              - strong [ref=e1250]: "119"
+                          - cell "131" [ref=e1251]:
+                            - paragraph [ref=e1252]:
+                              - strong [ref=e1253]: "131"
+                          - cell "123" [ref=e1254]:
+                            - paragraph [ref=e1255]:
+                              - strong [ref=e1256]: "123"
+                        - row "Percentage TBSE (% of GDP) 1.52 0.91 0.40 0.41 0.42 0.37" [ref=e1257]:
+                          - cell "Percentage TBSE (% of GDP)" [ref=e1258]:
+                            - paragraph [ref=e1259]:
+                              - strong [ref=e1260]: Percentage TBSE (% of GDP)
+                          - cell "1.52" [ref=e1261]:
+                            - paragraph [ref=e1262]:
+                              - strong [ref=e1263]: "1.52"
+                          - cell "0.91" [ref=e1264]:
+                            - paragraph [ref=e1265]:
+                              - strong [ref=e1266]: "0.91"
+                          - cell "0.40" [ref=e1267]:
+                            - paragraph [ref=e1268]:
+                              - strong [ref=e1269]: "0.40"
+                          - cell "0.41" [ref=e1270]:
+                            - paragraph [ref=e1271]:
+                              - strong [ref=e1272]: "0.41"
+                          - cell "0.42" [ref=e1273]:
+                            - paragraph [ref=e1274]:
+                              - strong [ref=e1275]: "0.42"
+                          - cell "0.37" [ref=e1276]:
+                            - paragraph [ref=e1277]:
+                              - strong [ref=e1278]: "0.37"
+                        - row "GDP deflator (1986-88 = 100) 100 264 757 718 759 794" [ref=e1279]:
+                          - cell "GDP deflator (1986-88 = 100)" [ref=e1280]:
+                            - paragraph [ref=e1281]:
+                              - strong [ref=e1282]: GDP deflator (1986-88 = 100)
+                          - cell "100" [ref=e1283]:
+                            - paragraph [ref=e1284]:
+                              - strong [ref=e1285]: "100"
+                          - cell "264" [ref=e1286]:
+                            - paragraph [ref=e1287]:
+                              - strong [ref=e1288]: "264"
+                          - cell "757" [ref=e1289]:
+                            - paragraph [ref=e1290]:
+                              - strong [ref=e1291]: "757"
+                          - cell "718" [ref=e1292]:
+                            - paragraph [ref=e1293]:
+                              - strong [ref=e1294]: "718"
+                          - cell "759" [ref=e1295]:
+                            - paragraph [ref=e1296]:
+                              - strong [ref=e1297]: "759"
+                          - cell "794" [ref=e1298]:
+                            - paragraph [ref=e1299]:
+                              - strong [ref=e1300]: "794"
+                        - row "Exchange rate (national currency per USD) 40.93 89.23 137.06 135.28 137.94 137.96" [ref=e1301]:
+                          - cell "Exchange rate (national currency per USD)" [ref=e1302]:
+                            - paragraph [ref=e1303]:
+                              - strong [ref=e1304]: Exchange rate (national currency per USD)
+                          - cell "40.93" [ref=e1305]:
+                            - paragraph [ref=e1306]:
+                              - strong [ref=e1307]: "40.93"
+                          - cell "89.23" [ref=e1308]:
+                            - paragraph [ref=e1309]:
+                              - strong [ref=e1310]: "89.23"
+                          - cell "137.06" [ref=e1311]:
+                            - paragraph [ref=e1312]:
+                              - strong [ref=e1313]: "137.06"
+                          - cell "135.28" [ref=e1314]:
+                            - paragraph [ref=e1315]:
+                              - strong [ref=e1316]: "135.28"
+                          - cell "137.94" [ref=e1317]:
+                            - paragraph [ref=e1318]:
+                              - strong [ref=e1319]: "137.94"
+                          - cell "137.96" [ref=e1320]:
+                            - paragraph [ref=e1321]:
+                              - strong [ref=e1322]: "137.96"
+                    - generic [ref=e1324]:
+                      - paragraph [ref=e1326]: "Note: p: provisional. NPC: Nominal Protection Coefficient. NAC: Nominal Assistance Coefficient. A/An/R/I: Area planted/Animal numbers/Receipts/Income. 1. Market Price Support (MPS) is net of producer levies and excess feed cost. MPS commodities for Iceland are: milk, beef and veal, sheep meat, wool, pig meat, poultry and eggs."
+                      - paragraph [ref=e1328]:
+                        - text: "Source: OECD (2025), “Producer and Consumer Support Estimates”,"
+                        - emphasis [ref=e1329]: OECD Agricultural policy monitoring (database),
+                        - link "https://data-explorer.oecd.org/" [ref=e1330] [cursor=pointer]:
+                          - /url: https://data-explorer.oecd.org/
+                        - text: .
+                - generic [ref=e1332]:
+                  - heading "Policy landscape" [level=3] [ref=e1333]
+                  - link "Copy link to Policy landscape" [ref=e1334] [cursor=pointer]:
+                    - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#section-d1e75246-5c510ef4cf
+                    - generic [ref=e1335]: Copy link to Policy landscape
+                - heading "Main policy instruments" [level=4] [ref=e1338]
+                - generic [ref=e1340]:
+                  - paragraph [ref=e1341]:
+                    - text: Iceland’s key agricultural policy objective is to maintain and strengthen a diverse agricultural sector to the extent that physical and marketing conditions allow.
+                    - strong [ref=e1342]: Policies centre around price support and direct payments
+                    - text: ". Price support is provided for all livestock products and some horticultural products. Direct payments are provided to cattle (mainly dairy) and sheep producers, and on a smaller scale, to certain greenhouse producers. The key policy goals are to: meet domestic demand where realistically possible; maintain sustainable production of high-quality, healthy products; improve efficiency and competitiveness; improve farmers’ incomes; foster innovation and create job opportunities; and sustain livelihoods in rural areas."
+                  - paragraph [ref=e1343]: As a foundation of the support system for agriculture, the government negotiates, in regular intervals, with the Farmers’ Association concerning the general framework for support and production control in the cattle, sheep, and horticultural sectors. There is also an agreement on so-called horizontal support, such as advisory services, breeding, animal welfare, environmental protection, sustainable land management, organic farming, and land cultivation. The current agreements cover 2017-26, with extensive reviews in 2019 and again in 2023. The 2023 revisions focused on issues related to food security, environment, and climate change.
+                  - paragraph [ref=e1344]:
+                    - text: For dairy, direct payments depend on the size of a producer’s quota and the current number of animals. Headage payments are provided for up to 180 dairy cows and 260 beef cows per farm, with full payment for each of the first 50 dairy cows and 200 beef cows, then at a declining rate for each additional cow. A
+                    - strong [ref=e1345]: national dairy production quota
+                    - text: is divided among producers based on their annual quotas for the preceding year. Annual dairy quotas also determine entitlements for direct payments. Production in excess of quotas is permitted, provided all such production is for export.
+                    - strong [ref=e1346]: Wholesale prices are regulated
+                    - text: for approximately half of all dairy products based on the volume of raw milk required. A government-chaired committee representing both the Farmers’ Association and the labour union (acting on behalf of consumers) determines the guaranteed minimum prices for milk delivered within production quotas on an annual basis. Trade in support entitlements (basic payments to all active dairy and cattle farmers) between entitlement holders is allowed with quantity limitations and takes place in a market operated by the government. Dairy producers also benefit from support for breeding, land cultivation and development programmes.
+                  - paragraph [ref=e1347]:
+                    - text: For sheep, direct payments are connected to historical production. However, receiving a full payment requires
+                    - strong [ref=e1348]: keeping a minimum number of winter-fed sheep
+                    - text: on the farm. Additional payments to sheep farmers relate to a quality-control scheme for lamb meat based on animal welfare, product quality, traceability and sustainability criteria. Premium payments are provided at the wholesale level for purchasers of wool, and to farmers to co-operate in increasing added value for sheep products.
+                  - paragraph [ref=e1349]:
+                    - text: Imports of meat, dairy products, and some vegetables that compete with domestic production are subject to tariffs, often compound duties with an ad valorem component of 30% and a specific duty that varies from ISK 5/kg (USD 0.04/kg) to ISK 1 462/kg (USD 2/kg). The average applied most-favoured-nation (MFN) tariff (expressed as an ad valorem equivalent) on agricultural imports in 2023 was 23.5%, significantly above the 0.1% faced by non-agricultural products
+                    - link "(WTO, 2024[1])" [ref=e1350] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#WTO24_5c510ef4cf
+                    - text: . Certain sectors face higher MFN average rates, such as live animals and meat (67.3%) and dairy (72.7%). However, products originating in partner countries of the European Economic Area (EEA) or in one of the 41 countries with which Iceland has free trade agreements may be subject to lower tariffs. Iceland also applies Tariff Rate Quotas (TRQs) on a number of agricultural products
+                    - link "(WTO, 2024[1])" [ref=e1351] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#WTO24_5c510ef4cf
+                    - text: .
+                  - paragraph [ref=e1352]: Iceland is a member of the European Economic Area (EEA) and of the European Free Trade Association (EFTA). While the EEA Agreement does not apply to most trade in agricultural goods, it opens trade in several processed agricultural products and encourages bilateral agreements on primary commodities.
+                  - paragraph [ref=e1353]: As a member of EFTA, Iceland is also party to several Free Trade Agreements (FTAs), including with countries in Southeast Europe, North Africa and the Middle East, Latin America, and Asia, as well as with the South African Customs Union. In addition, Iceland has bilateral FTAs with the Faroe Islands, Greenland, and the People’s Republic of China.
+                - heading "Policies for trade and sustainability in agro-food markets" [level=4] [ref=e1356]
+                - generic [ref=e1358]:
+                  - paragraph [ref=e1359]:
+                    - text: Since 2010, the EFTA, to which Iceland belongs, has been giving increasing attention to environmental and social sustainability within its trade agreements
+                    - link "(EFTA, 2010[2])" [ref=e1360] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#EFT10_5c510ef4cf
+                    - text: . In addition to general commitments related to international sustainability objectives, specific attention is devoted to labour rights, climate change mitigation, sustainable agriculture, sustainable management of natural resources, biodiversity conservation, and responsible supply chains and business conduct. On the topic of sustainable agriculture, trade partners are required to establish a bilateral dialogue on best agricultural practices and sustainable food systems and report progress in those areas.
+                  - paragraph [ref=e1361]: In September 2024, EFTA released its first FTA Sustainable Impact Assessment before signing its trade agreement with Thailand in January 2025. The report examined, among other elements, issues related to trade in agricultural products in relation to risks of increased climate change, deforestation and biodiversity loss, with particular attention to products such as vegetable oils and poultry meat. It concluded that the trade agreement should deliver sustainability benefits, but that some environmental risks should remain closely monitored.
+                  - paragraph [ref=e1362]:
+                    - text: As part of the EFTA-Indonesia RTA, which entered in force in November 2021, Iceland has granted preferential tariffs to Indonesia for sustainably produced palm oil and its derivates. These conditional preferential tariffs are set in Annex III of the RTA, which include tariff concessions granted by Iceland to Indonesia. Annex III sets duty-free access for crude palm oil and its derivates (i.e. palm stearin and palm kernel oil) imported from Indonesia into Iceland. Annex III specifies that palm oil and its fractions imported into Iceland under the RTA shall meet the environmental objectives set out in Article 8.10 on “Sustainable Management of the Vegetable Oils Sector and Associated Trade”. Namely, they should be produced in accordance with the “laws, policies and practices aiming at protecting primary forests, peatlands, and related ecosystems, halting deforestation, peat drainage and fire clearing in land preparation, reducing air and water pollution…”
+                    - link "(Frezal and Deuss, 2025[3])" [ref=e1363] [cursor=pointer]:
+                      - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#Fre25_5c510ef4cf
+                    - text: .
+                - generic [ref=e1365]:
+                  - heading "Recent policy developments" [level=3] [ref=e1366]
+                  - link "Copy link to Recent policy developments" [ref=e1367] [cursor=pointer]:
+                    - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#section-d1e75341-5c510ef4cf
+                    - generic [ref=e1368]: Copy link to Recent policy developments
+                - heading "Domestic policy developments in 2024-25" [level=4] [ref=e1371]
+                - heading "New agricultural policy until 2040" [level=5] [ref=e1374]
+                - generic [ref=e1376]:
+                  - paragraph [ref=e1377]: In 2023, the Parliamentary Resolution in Agricultural Policy until 2040 was passed as a new comprehensive agricultural policy and after several years of co-operation and consultation with agricultural stakeholders. It sets guidelines for developing the agricultural system until 2040. The main objectives include strengthening and supporting Icelandic agriculture and strengthening its foundations for the future with sustainable development as a guiding principle. The policy is based on three key pillars including land use, climate and environmental protection, and technology and innovation.
+                  - paragraph [ref=e1378]:
+                    - text: The policy sets out a vision that affects the framework of the value chain of agriculture in a broad context.
+                    - strong [ref=e1379]: The agricultural vision
+                    - text: "covers the environment, society and competitiveness and some of its major ambitions are:"
+                  - generic [ref=e1380]:
+                    - paragraph [ref=e1382]:
+                      - generic [ref=e1383]: "1."
+                      - text: agriculture uses natural resources sustainably
+                    - paragraph [ref=e1385]:
+                      - generic [ref=e1386]: "2."
+                      - text: food security ensured
+                    - paragraph [ref=e1388]:
+                      - generic [ref=e1389]: "3."
+                      - text: greenhouse gas emissions are significantly reduced, and carbon neutrality and high adaptability to climate change are enhanced
+                    - paragraph [ref=e1391]:
+                      - generic [ref=e1392]: "4."
+                      - text: agriculture contributes to the conservation and promotion of biodiversity
+                    - paragraph [ref=e1394]:
+                      - generic [ref=e1395]: "5."
+                      - text: grazing and other land use should consider the state and capacity of ecosystems and be managed in accordance with sustainability criteria
+                    - paragraph [ref=e1397]:
+                      - generic [ref=e1398]: "6."
+                      - text: cultivation, land use and improved land quality support diverse economic activities and residences throughout the country
+                    - paragraph [ref=e1400]:
+                      - generic [ref=e1401]: "7."
+                      - text: agricultural education meets the needs of industry and the market, and producers have the skills and capacity to meet the challenges and opportunities of the future in line with consumer demand
+                    - paragraph [ref=e1403]:
+                      - generic [ref=e1404]: "8."
+                      - text: production practices consider the health, welfare and housing of animals.
+                  - paragraph [ref=e1405]: "The policy also focusses on environmental and social matters and improving the competitiveness of Icelandic agriculture. For example, agricultural support policy should:"
+                  - list [ref=e1406]:
+                    - listitem [ref=e1407]:
+                      - paragraph [ref=e1408]: Strengthen and expand agricultural production based on sustainable use for climate, environment and nature conservation and crop diversity.
+                    - listitem [ref=e1409]:
+                      - paragraph [ref=e1410]: Help diversify agricultural production, with increased emphasis on tillage and other land use, forestry, ecosystem restoration, nature conservation and land conservation based on economic, social and environmental sustainability.
+                    - listitem [ref=e1411]:
+                      - paragraph [ref=e1412]: Facilitate generational exchange and recruitment.
+                    - listitem [ref=e1413]:
+                      - paragraph [ref=e1414]: Provide a stable and solid basis for domestic food production and national food security.
+                  - paragraph [ref=e1415]: "The policy will be implemented through regular five-year action plans until 2040. Implementation of the first five-year action plan started in 2024. It contains 28 actions linked to the policy’s ten main issues: food security; adaptation and mitigation to climate change; biodiversity; land use and land preservation; circular economy; international market issues; consumers; innovation and technology; education and R&D; and the agricultural support system."
+                  - paragraph [ref=e1416]: Concrete actions under the first five-year plan include an initiative to promote cereal production, several measures for assessing and researching the carbon footprint of agricultural products, adapting to climate change and preserving biodiversity, actions to promote sustainable land use and enhance the circular agricultural economy, promoting innovation, and promotion of research and education in the field of agriculture.
+                  - paragraph [ref=e1417]: The agriculture policy is an integral part of a newly adopted food policy in Iceland until the year 2040. The food policy takes all major aspects of food production in Iceland into consideration, including fisheries, agriculture, and aquaculture. The focus is for instance on sustainability and the circular economy of food production, food security and safety, R&D, consumers, and society. A five-year action plan was also implemented for the food policy in 2024 and contain five actions.
+                - heading "Agricultural agreements between the government and the Farmers’ Association" [level=5] [ref=e1420]
+                - generic [ref=e1422]:
+                  - paragraph [ref=e1423]: In 2024, the ten-year agreements between the government and the Farmers’ Association were revised for a second time. Only minor adjustments were made, as the contracting parties agreed to begin focusing on developing the future of the agricultural support system. The main change was to delay the abolition of the support scheme for sheep farmers, which had been expected by the end of 2026. Minor changes were made to the horticulture agreement and to the general framework agreement to encourage organic production. In protocols to the 2024 revision agreement, contracting parties agreed for agriculture in Iceland to become carbon neutral no later than 2040, and for necessary steps to be taken to prepare implementation of climate accounting for agriculture.
+                  - paragraph [ref=e1424]: As a result of the second revision of the ten-year agreements between the government and the Farmers’ Association and as a part of the five-year action plan of the agricultural policy, work on developing the future of the agricultural support system started in 2024. The main objective of the agricultural support system is to strengthen and support Icelandic agriculture and strengthen its pillars for the future with sustainable development as a guiding principle. Emphasis is laid on creating an environment for diverse agriculture with focus on sustainability issues, including climate change mitigation, environmental sustainability and nature conservation as well as diversified production and cultivation. The emphasis is on crop cultivation and other land use, forestry, ecosystem restoration, nature conservation and land management. Consideration is also given to generational change and recruitment. Support for agriculture should create a stable and solid foundation for domestic food production and national food security.
+                - heading "Response to unexpected weather conditions" [level=5] [ref=e1427]
+                - paragraph [ref=e1430]: In the summer of 2024, many farmers experienced significant losses due to unexpected weather conditions, including cold temperatures, snow, heavy rain, strong winds and storms, and reduced sunlight. The government decided to establish a working group to investigate the financial effects of these weather anomalies and evaluate possibilities of granting farmers additional support measures. The support package is expected to be finalised in 2025.
+                - heading "National plan for eradication of scrapie" [level=5] [ref=e1433]
+                - paragraph [ref=e1436]: A national plan for the eradication of scrapie in sheep was published in July 2024. The measures are now being implemented and breeding against the disease is progressing well. The plan aims to eradicate this disease within 20 years.
+                - heading "Promotion of cereal production" [level=5] [ref=e1439]
+                - paragraph [ref=e1442]: In 2023, Iceland adopted an action plan to lay the foundations for increased cereal production. Iceland is reliant on imported cereals for human consumption. Domestic production is mainly of feed crops, especially barley. Following COVID-19 and Russia’s war of aggression against Ukraine and other market disruptions, cereal production and food security has received more attention, and the government has earmarked around ISK 2 000 million (USD 14.5 million) to be spent in the next five years in extensive research, development, and other measures to increase cereal production. Emphasis is given to developing and breeding varieties of barley, oats and wheat adapted to Icelandic climate and soil conditions and to building competence and capacity in plant breeding, as well as to investment support for building infrastructure in the sector. In 2024 the first investment support of ISK 144 million (USD 1 million) was allocated for investments in grain drying, grain storage and related equipment.
+                - generic [ref=e1444]:
+                  - heading "Policy context" [level=3] [ref=e1445]
+                  - link "Copy link to Policy context" [ref=e1446] [cursor=pointer]:
+                    - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#section-d1e75512-5c510ef4cf
+                    - generic [ref=e1447]: Copy link to Policy context
+                - heading "Key economic and agricultural statistics" [level=4] [ref=e1450]
+                - generic [ref=e1452]:
+                  - paragraph [ref=e1453]: Iceland is a small, sparsely populated country with a GDP per capita above the OECD average. Agriculture contributes about 4% both of GDP and of employment. Conditions for agriculture in Iceland are limited by the country’s geographical conditions. The growing season is short – around four months – yields are low, and production and transport costs are high. Approximately one-fifth of the total land area of Iceland is agricultural land, mostly suitable for fodder production and livestock raising. Only around 6% of agricultural land area is arable.
+                  - paragraph [ref=e1454]: Livestock-rearing is the main farm activity, with milk and sheep meat being the most important products. Livestock production is mostly grassland-based, and most farm animals are native breeds. The main crops are hay, cereals for animal feed and vegetables – the latter are cultivated primarily in greenhouses heated with geothermal energy.
+                - 'figure "Table 13.2. Iceland: Contextual indicators Copy link to Table 13.2. Iceland: Contextual indicators" [ref=e1456]':
+                  - generic [ref=e1459]:
+                    - 'heading "Table 13.2. Iceland: Contextual indicators" [level=3] [ref=e1460]'
+                    - 'link "Copy link to Table 13.2. Iceland: Contextual indicators" [ref=e1461] [cursor=pointer]':
+                      - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#title-ecdfc08671
+                      - generic [ref=e1462]: "Copy link to Table 13.2. Iceland: Contextual indicators"
+                  - button "expand" [ref=e1465] [cursor=pointer]:
+                    - generic [ref=e1466]: expand
+                  - generic [ref=e1467]:
+                    - table [ref=e1473]:
+                      - rowgroup [ref=e1480]:
+                        - row "Iceland International comparison" [ref=e1481]:
+                          - columnheader [ref=e1482]:
+                            - paragraph [ref=e1483]
+                          - columnheader "Iceland" [ref=e1484]:
+                            - paragraph [ref=e1485]: Iceland
+                          - columnheader "International comparison" [ref=e1486]:
+                            - paragraph [ref=e1487]: International comparison
+                        - row "2000* 2023* 2000* 2023*" [ref=e1488]:
+                          - columnheader [ref=e1489]:
+                            - paragraph [ref=e1490]
+                          - columnheader "2000*" [ref=e1491]:
+                            - paragraph [ref=e1492]: 2000*
+                          - columnheader "2023*" [ref=e1493]:
+                            - paragraph [ref=e1494]: 2023*
+                          - columnheader "2000*" [ref=e1495]:
+                            - paragraph [ref=e1496]: 2000*
+                          - columnheader "2023*" [ref=e1497]:
+                            - paragraph [ref=e1498]: 2023*
+                        - row "Economic context Share in total of all countries" [ref=e1499]:
+                          - columnheader "Economic context" [ref=e1500]:
+                            - paragraph [ref=e1501]: Economic context
+                          - columnheader [ref=e1502]:
+                            - paragraph [ref=e1503]
+                          - columnheader [ref=e1504]:
+                            - paragraph [ref=e1505]
+                          - columnheader "Share in total of all countries" [ref=e1506]:
+                            - paragraph [ref=e1507]: Share in total of all countries
+                      - rowgroup [ref=e1508]:
+                        - row "GDP (billion USD in PPPs) 8 30 0.02% 0.02%" [ref=e1509]:
+                          - cell "GDP (billion USD in PPPs)" [ref=e1510]:
+                            - paragraph [ref=e1511]: GDP (billion USD in PPPs)
+                          - cell "8" [ref=e1512]:
+                            - paragraph [ref=e1513]: "8"
+                          - cell "30" [ref=e1514]:
+                            - paragraph [ref=e1515]: "30"
+                          - cell "0.02%" [ref=e1516]:
+                            - paragraph [ref=e1517]: 0.02%
+                          - cell "0.02%" [ref=e1518]:
+                            - paragraph [ref=e1519]: 0.02%
+                        - row "Population (million) 0.3 0.4 0.01% 0.01%" [ref=e1520]:
+                          - cell "Population (million)" [ref=e1521]:
+                            - paragraph [ref=e1522]: Population (million)
+                          - cell "0.3" [ref=e1523]:
+                            - paragraph [ref=e1524]: "0.3"
+                          - cell "0.4" [ref=e1525]:
+                            - paragraph [ref=e1526]: "0.4"
+                          - cell "0.01%" [ref=e1527]:
+                            - paragraph [ref=e1528]: 0.01%
+                          - cell "0.01%" [ref=e1529]:
+                            - paragraph [ref=e1530]: 0.01%
+                        - row "Land area (thousand km2) 100 101 0.12% 0.12%" [ref=e1531]:
+                          - cell "Land area (thousand km2)" [ref=e1532]:
+                            - paragraph [ref=e1533]:
+                              - text: Land area (thousand km
+                              - superscript [ref=e1534]: "2"
+                              - text: )
+                          - cell "100" [ref=e1535]:
+                            - paragraph [ref=e1536]: "100"
+                          - cell "101" [ref=e1537]:
+                            - paragraph [ref=e1538]: "101"
+                          - cell "0.12%" [ref=e1539]:
+                            - paragraph [ref=e1540]: 0.12%
+                          - cell "0.12%" [ref=e1541]:
+                            - paragraph [ref=e1542]: 0.12%
+                        - row "Agricultural area (AA) (thousand ha) 1 889 1 872 0.06% 0.06%" [ref=e1543]:
+                          - cell "Agricultural area (AA) (thousand ha)" [ref=e1544]:
+                            - paragraph [ref=e1545]: Agricultural area (AA) (thousand ha)
+                          - cell "1 889" [ref=e1546]:
+                            - paragraph [ref=e1547]: 1 889
+                          - cell "1 872" [ref=e1548]:
+                            - paragraph [ref=e1549]: 1 872
+                          - cell "0.06%" [ref=e1550]:
+                            - paragraph [ref=e1551]: 0.06%
+                          - cell "0.06%" [ref=e1552]:
+                            - paragraph [ref=e1553]: 0.06%
+                      - rowgroup [ref=e1556]:
+                        - row "All countries1" [ref=e1557]:
+                          - columnheader [ref=e1558]:
+                            - paragraph [ref=e1559]
+                          - columnheader [ref=e1560]:
+                            - paragraph [ref=e1561]
+                          - columnheader [ref=e1562]:
+                            - paragraph [ref=e1563]
+                          - columnheader "All countries1" [ref=e1564]:
+                            - paragraph [ref=e1565]:
+                              - text: All countries
+                              - link "1" [ref=e1566] [cursor=pointer]:
+                                - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#tabnote-d1e75990-5c510ef4cf
+                      - rowgroup [ref=e1567]:
+                        - row "Population density (inhabitants/km2) 3 4 52 64" [ref=e1568]:
+                          - cell "Population density (inhabitants/km2)" [ref=e1569]:
+                            - paragraph [ref=e1570]:
+                              - text: Population density (inhabitants/km
+                              - superscript [ref=e1571]: "2"
+                              - text: )
+                          - cell "3" [ref=e1572]:
+                            - paragraph [ref=e1573]: "3"
+                          - cell "4" [ref=e1574]:
+                            - paragraph [ref=e1575]: "4"
+                          - cell "52" [ref=e1576]:
+                            - paragraph [ref=e1577]: "52"
+                          - cell "64" [ref=e1578]:
+                            - paragraph [ref=e1579]: "64"
+                        - row "GDP per capita (USD in PPPs) 29 783 78 939 9 368 29 013" [ref=e1580]:
+                          - cell "GDP per capita (USD in PPPs)" [ref=e1581]:
+                            - paragraph [ref=e1582]: GDP per capita (USD in PPPs)
+                          - cell "29 783" [ref=e1583]:
+                            - paragraph [ref=e1584]: 29 783
+                          - cell "78 939" [ref=e1585]:
+                            - paragraph [ref=e1586]: 78 939
+                          - cell "9 368" [ref=e1587]:
+                            - paragraph [ref=e1588]: 9 368
+                          - cell "29 013" [ref=e1589]:
+                            - paragraph [ref=e1590]: 29 013
+                        - row "Trade as % of GDP 24.9 26.0 12.3 14.9" [ref=e1591]:
+                          - cell "Trade as % of GDP" [ref=e1592]:
+                            - paragraph [ref=e1593]: Trade as % of GDP
+                          - cell "24.9" [ref=e1594]:
+                            - paragraph [ref=e1595]: "24.9"
+                          - cell "26.0" [ref=e1596]:
+                            - paragraph [ref=e1597]: "26.0"
+                          - cell "12.3" [ref=e1598]:
+                            - paragraph [ref=e1599]: "12.3"
+                          - cell "14.9" [ref=e1600]:
+                            - paragraph [ref=e1601]: "14.9"
+                      - rowgroup [ref=e1602]:
+                        - row "Agriculture in the economy All countries1" [ref=e1603]:
+                          - columnheader "Agriculture in the economy" [ref=e1604]:
+                            - paragraph [ref=e1605]: Agriculture in the economy
+                          - columnheader [ref=e1606]:
+                            - paragraph [ref=e1607]
+                          - columnheader [ref=e1608]:
+                            - paragraph [ref=e1609]
+                          - columnheader "All countries1" [ref=e1610]:
+                            - paragraph [ref=e1611]:
+                              - text: All countries
+                              - link "1" [ref=e1612] [cursor=pointer]:
+                                - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#tabnote-d1e75990-5c510ef4cf
+                      - rowgroup [ref=e1613]:
+                        - row "Agriculture in GDP (%) 8.1 4.3 2.9 3.5" [ref=e1614]:
+                          - cell "Agriculture in GDP (%)" [ref=e1615]:
+                            - paragraph [ref=e1616]: Agriculture in GDP (%)
+                          - cell "8.1" [ref=e1617]:
+                            - paragraph [ref=e1618]: "8.1"
+                          - cell "4.3" [ref=e1619]:
+                            - paragraph [ref=e1620]: "4.3"
+                          - cell "2.9" [ref=e1621]:
+                            - paragraph [ref=e1622]: "2.9"
+                          - cell "3.5" [ref=e1623]:
+                            - paragraph [ref=e1624]: "3.5"
+                        - row "Agriculture share in employment (%) 8.3 3.7 - -" [ref=e1625]:
+                          - cell "Agriculture share in employment (%)" [ref=e1626]:
+                            - paragraph [ref=e1627]: Agriculture share in employment (%)
+                          - cell "8.3" [ref=e1628]:
+                            - paragraph [ref=e1629]: "8.3"
+                          - cell "3.7" [ref=e1630]:
+                            - paragraph [ref=e1631]: "3.7"
+                          - cell "-" [ref=e1632]:
+                            - paragraph [ref=e1633]: "-"
+                          - cell "-" [ref=e1634]:
+                            - paragraph [ref=e1635]: "-"
+                        - row "Agro-food exports (% of total exports) 7.9 6.5 6.4 8.1" [ref=e1636]:
+                          - cell "Agro-food exports (% of total exports)" [ref=e1637]:
+                            - paragraph [ref=e1638]: Agro-food exports (% of total exports)
+                          - cell "7.9" [ref=e1639]:
+                            - paragraph [ref=e1640]: "7.9"
+                          - cell "6.5" [ref=e1641]:
+                            - paragraph [ref=e1642]: "6.5"
+                          - cell "6.4" [ref=e1643]:
+                            - paragraph [ref=e1644]: "6.4"
+                          - cell "8.1" [ref=e1645]:
+                            - paragraph [ref=e1646]: "8.1"
+                        - row "Agro-food imports (% of total imports) 7.3 10.0 5.8 7.3" [ref=e1647]:
+                          - cell "Agro-food imports (% of total imports)" [ref=e1648]:
+                            - paragraph [ref=e1649]: Agro-food imports (% of total imports)
+                          - cell "7.3" [ref=e1650]:
+                            - paragraph [ref=e1651]: "7.3"
+                          - cell "10.0" [ref=e1652]:
+                            - paragraph [ref=e1653]: "10.0"
+                          - cell "5.8" [ref=e1654]:
+                            - paragraph [ref=e1655]: "5.8"
+                          - cell "7.3" [ref=e1656]:
+                            - paragraph [ref=e1657]: "7.3"
+                      - rowgroup [ref=e1660]:
+                        - row "Characteristics of the agricultural sector All countries1" [ref=e1661]:
+                          - columnheader "Characteristics of the agricultural sector" [ref=e1662]:
+                            - paragraph [ref=e1663]: Characteristics of the agricultural sector
+                          - columnheader [ref=e1664]:
+                            - paragraph [ref=e1665]
+                          - columnheader [ref=e1666]:
+                            - paragraph [ref=e1667]
+                          - columnheader "All countries1" [ref=e1668]:
+                            - paragraph [ref=e1669]:
+                              - text: All countries
+                              - link "1" [ref=e1670] [cursor=pointer]:
+                                - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#tabnote-d1e75990-5c510ef4cf
+                      - rowgroup [ref=e1671]:
+                        - row "Crop in total agricultural production (%) 86.9 88.7 - -" [ref=e1672]:
+                          - cell "Crop in total agricultural production (%)" [ref=e1673]:
+                            - paragraph [ref=e1674]: Crop in total agricultural production (%)
+                          - cell "86.9" [ref=e1675]:
+                            - paragraph [ref=e1676]: "86.9"
+                          - cell "88.7" [ref=e1677]:
+                            - paragraph [ref=e1678]: "88.7"
+                          - cell "-" [ref=e1679]:
+                            - paragraph [ref=e1680]: "-"
+                          - cell "-" [ref=e1681]:
+                            - paragraph [ref=e1682]: "-"
+                        - row "Livestock in total agricultural production (%) 13.1 11.3 - -" [ref=e1683]:
+                          - cell "Livestock in total agricultural production (%)" [ref=e1684]:
+                            - paragraph [ref=e1685]: Livestock in total agricultural production (%)
+                          - cell "13.1" [ref=e1686]:
+                            - paragraph [ref=e1687]: "13.1"
+                          - cell "11.3" [ref=e1688]:
+                            - paragraph [ref=e1689]: "11.3"
+                          - cell "-" [ref=e1690]:
+                            - paragraph [ref=e1691]: "-"
+                          - cell "-" [ref=e1692]:
+                            - paragraph [ref=e1693]: "-"
+                        - row "Share of arable land in AA (%) 6.8 6.5 31.8 33.3" [ref=e1694]:
+                          - cell "Share of arable land in AA (%)" [ref=e1695]:
+                            - paragraph [ref=e1696]: Share of arable land in AA (%)
+                          - cell "6.8" [ref=e1697]:
+                            - paragraph [ref=e1698]: "6.8"
+                          - cell "6.5" [ref=e1699]:
+                            - paragraph [ref=e1700]: "6.5"
+                          - cell "31.8" [ref=e1701]:
+                            - paragraph [ref=e1702]: "31.8"
+                          - cell "33.3" [ref=e1703]:
+                            - paragraph [ref=e1704]: "33.3"
+                    - generic [ref=e1706]:
+                      - paragraph [ref=e1708]: "Note: *or closest available year."
+                      - paragraph [ref=e1710]: 1. Average of all countries covered in this report.
+                      - paragraph [ref=e1712]: "Sources: OECD statistical databases; International Labour Organisation (ILO); UN Comtrade; World Bank, WDI; FAO database and national data."
+                - paragraph [ref=e1715]:
+                  - text: In 2024 Iceland’s real GDP growth was 0.66%, the unemployment rate was 3.6%, and consumer price inflation was about 5.9%. The economy is projected to grow by 2.3% in 2025 and 2.8% in 2026, the unemployment rate is expected to be around 3.5% and consumer price inflation remains high, at close to 5% and is projected to approach the 2.5% target only by the end of 2026
+                  - link "(OECD, 2024[4])" [ref=e1716] [cursor=pointer]:
+                    - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#OEC24_5c510ef4cf
+                  - text: . Iceland’s prosperity has been built on the sustainable management of its abundant natural resources, including the comprehensive fisheries management system based on individual transferable quotas, renewable energy (geothermal and hydro) and carbon sequestration opportunities (afforestation, revegetation).
+                - paragraph [ref=e1724]: The main agricultural exports are pure-bred horses for breeding, sheep meat products and fur skins. The range of Iceland’s agricultural products is limited and meets approximately 50% of total domestic food requirements. Consequently, Iceland is a net importer of agricultural products (excluding fishery goods). Imports are more diversified than exports and have increased steadily in recent years.
+                - paragraph [ref=e1737]: Output growth in agriculture (9.3%) has clearly outpaced the global average over the 2012‑21 period, which has been driven by commensurately robust growth in total factor productivity (TFP) of about 10% per year –which was also much higher than the global average TFP growth (0.8%). This is mostly related to a significant output growth in aquaculture and much less so in crop and livestock output. At the same time input growth has decreased.
+                - paragraph [ref=e1745]:
+                  - text: A harsh climate, lack of suitable land, small average farm size, and the narrow genetic base for traditional livestock present significant constraints to the sector. Due to its relatively low livestock densities, Iceland’s nutrient balances show a comparatively small surplus of both nitrogen and phosphorus. The share of agriculture sector of the total energy use has fallen over time. Agriculture continues to represent a significant share in the country’s total GHG emissions – well above the OECD average – mainly due to the importance of the ruminant livestock sector. Emissions of CH
+                  - subscript [ref=e1746]: "4"
+                  - text: emissions from enteric fermentation and manure management, and N
+                  - subscript [ref=e1747]: "2"
+                  - text: O emissions from manure management and fertilisers have historically accounted for over 99% of the total emissions from agriculture, with less than 1% arising from CO
+                  - subscript [ref=e1748]: "2"
+                  - text: . With abundant water and a small population, total water abstraction in Iceland is less than 1% of total available freshwater resources. This is one of the lowest intensities of water resource use in the OECD, although the freshwater abstractions per capita are the highest in the OECD area
+                  - link "(OECD, 2019[5];" [ref=e1749] [cursor=pointer]:
+                    - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#OEC19_5c510ef4cf
+                  - link "OECD, 2024[6])" [ref=e1750] [cursor=pointer]:
+                    - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#Kapp_74da57ed_5c510ef4cf
+                  - text: . The share of agriculture in total water abstractions has decreased over the past two decades.
+                - 'figure "Table 13.3. Iceland: Productivity and environmental indicators Copy link to Table 13.3. Iceland: Productivity and environmental indicators" [ref=e1752]':
+                  - generic [ref=e1755]:
+                    - 'heading "Table 13.3. Iceland: Productivity and environmental indicators" [level=3] [ref=e1756]'
+                    - 'link "Copy link to Table 13.3. Iceland: Productivity and environmental indicators" [ref=e1757] [cursor=pointer]':
+                      - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#title-2d9671d423
+                      - generic [ref=e1758]: "Copy link to Table 13.3. Iceland: Productivity and environmental indicators"
+                  - button "expand" [ref=e1761] [cursor=pointer]:
+                    - generic [ref=e1762]: expand
+                  - generic [ref=e1763]:
+                    - table [ref=e1769]:
+                      - rowgroup [ref=e1776]:
+                        - row "Iceland International comparison" [ref=e1777]:
+                          - columnheader [ref=e1778]:
+                            - paragraph [ref=e1779]
+                          - columnheader "Iceland" [ref=e1780]:
+                            - paragraph [ref=e1781]: Iceland
+                          - columnheader "International comparison" [ref=e1782]:
+                            - paragraph [ref=e1783]: International comparison
+                        - row "1991-2000 2013-2022 1991-2000 2013-2022" [ref=e1784]:
+                          - columnheader [ref=e1785]:
+                            - paragraph [ref=e1786]
+                          - columnheader "1991-2000" [ref=e1787]:
+                            - paragraph [ref=e1788]: 1991-2000
+                          - columnheader "2013-2022" [ref=e1789]:
+                            - paragraph [ref=e1790]: 2013-2022
+                          - columnheader "1991-2000" [ref=e1791]:
+                            - paragraph [ref=e1792]: 1991-2000
+                          - columnheader "2013-2022" [ref=e1793]:
+                            - paragraph [ref=e1794]: 2013-2022
+                        - row "World" [ref=e1795]:
+                          - columnheader [ref=e1796]:
+                            - paragraph [ref=e1797]
+                          - columnheader [ref=e1798]:
+                            - paragraph [ref=e1799]
+                          - columnheader [ref=e1800]:
+                            - paragraph [ref=e1801]
+                          - columnheader "World" [ref=e1802]:
+                            - paragraph [ref=e1803]: World
+                      - rowgroup [ref=e1804]:
+                        - row "TFP annual growth rate (%) -0.3% 9.7% 1.7% 0.8%" [ref=e1805]:
+                          - cell "TFP annual growth rate (%)" [ref=e1806]:
+                            - paragraph [ref=e1807]: TFP annual growth rate (%)
+                          - cell "-0.3%" [ref=e1808]:
+                            - paragraph [ref=e1809]: "-0.3%"
+                          - cell "9.7%" [ref=e1810]:
+                            - paragraph [ref=e1811]: 9.7%
+                          - cell "1.7%" [ref=e1812]:
+                            - paragraph [ref=e1813]: 1.7%
+                          - cell "0.8%" [ref=e1814]:
+                            - paragraph [ref=e1815]: 0.8%
+                      - rowgroup [ref=e1818]:
+                        - row "OECD average" [ref=e1819]:
+                          - columnheader [ref=e1820]:
+                            - paragraph [ref=e1821]
+                          - columnheader [ref=e1822]:
+                            - paragraph [ref=e1823]
+                          - columnheader "OECD average" [ref=e1824]:
+                            - paragraph [ref=e1825]: OECD average
+                        - row "Environmental indicators 2000* 2023* 2000* 2023*" [ref=e1826]:
+                          - columnheader "Environmental indicators" [ref=e1827]:
+                            - paragraph [ref=e1828]: Environmental indicators
+                          - columnheader "2000*" [ref=e1829]:
+                            - paragraph [ref=e1830]: 2000*
+                          - columnheader "2023*" [ref=e1831]:
+                            - paragraph [ref=e1832]: 2023*
+                          - columnheader "2000*" [ref=e1833]:
+                            - paragraph [ref=e1834]: 2000*
+                          - columnheader "2023*" [ref=e1835]:
+                            - paragraph [ref=e1836]: 2023*
+                      - rowgroup [ref=e1837]:
+                        - row "Nitrogen balance, kg/ha 8.0 5.5 32.0 29.7" [ref=e1838]:
+                          - cell "Nitrogen balance, kg/ha" [ref=e1839]:
+                            - paragraph [ref=e1840]: Nitrogen balance, kg/ha
+                          - cell "8.0" [ref=e1841]:
+                            - paragraph [ref=e1842]: "8.0"
+                          - cell "5.5" [ref=e1843]:
+                            - paragraph [ref=e1844]: "5.5"
+                          - cell "32.0" [ref=e1845]:
+                            - paragraph [ref=e1846]: "32.0"
+                          - cell "29.7" [ref=e1847]:
+                            - paragraph [ref=e1848]: "29.7"
+                        - row "Phosphorus balance, kg/ha 1.8 0.7 3.3 2.5" [ref=e1849]:
+                          - cell "Phosphorus balance, kg/ha" [ref=e1850]:
+                            - paragraph [ref=e1851]: Phosphorus balance, kg/ha
+                          - cell "1.8" [ref=e1852]:
+                            - paragraph [ref=e1853]: "1.8"
+                          - cell "0.7" [ref=e1854]:
+                            - paragraph [ref=e1855]: "0.7"
+                          - cell "3.3" [ref=e1856]:
+                            - paragraph [ref=e1857]: "3.3"
+                          - cell "2.5" [ref=e1858]:
+                            - paragraph [ref=e1859]: "2.5"
+                        - row "Agriculture share of total energy use (%) 1.9 1.4 1.7 2.0" [ref=e1860]:
+                          - cell "Agriculture share of total energy use (%)" [ref=e1861]:
+                            - paragraph [ref=e1862]: Agriculture share of total energy use (%)
+                          - cell "1.9" [ref=e1863]:
+                            - paragraph [ref=e1864]: "1.9"
+                          - cell "1.4" [ref=e1865]:
+                            - paragraph [ref=e1866]: "1.4"
+                          - cell "1.7" [ref=e1867]:
+                            - paragraph [ref=e1868]: "1.7"
+                          - cell "2.0" [ref=e1869]:
+                            - paragraph [ref=e1870]: "2.0"
+                        - row "Agriculture share of GHG emissions (%) 15.4 13.3 8.7 10.1" [ref=e1871]:
+                          - cell "Agriculture share of GHG emissions (%)" [ref=e1872]:
+                            - paragraph [ref=e1873]: Agriculture share of GHG emissions (%)
+                          - cell "15.4" [ref=e1874]:
+                            - paragraph [ref=e1875]: "15.4"
+                          - cell "13.3" [ref=e1876]:
+                            - paragraph [ref=e1877]: "13.3"
+                          - cell "8.7" [ref=e1878]:
+                            - paragraph [ref=e1879]: "8.7"
+                          - cell "10.1" [ref=e1880]:
+                            - paragraph [ref=e1881]: "10.1"
+                        - row "Share of irrigated land in AA (%) .. .. - -" [ref=e1882]:
+                          - cell "Share of irrigated land in AA (%)" [ref=e1883]:
+                            - paragraph [ref=e1884]: Share of irrigated land in AA (%)
+                          - cell ".." [ref=e1885]:
+                            - paragraph [ref=e1886]: ..
+                          - cell ".." [ref=e1887]:
+                            - paragraph [ref=e1888]: ..
+                          - cell "-" [ref=e1889]:
+                            - paragraph [ref=e1890]: "-"
+                          - cell "-" [ref=e1891]:
+                            - paragraph [ref=e1892]: "-"
+                        - row "Share of agriculture in water abstractions (%) 42.9 22.3 47.0 49.5" [ref=e1893]:
+                          - cell "Share of agriculture in water abstractions (%)" [ref=e1894]:
+                            - paragraph [ref=e1895]: Share of agriculture in water abstractions (%)
+                          - cell "42.9" [ref=e1896]:
+                            - paragraph [ref=e1897]: "42.9"
+                          - cell "22.3" [ref=e1898]:
+                            - paragraph [ref=e1899]: "22.3"
+                          - cell "47.0" [ref=e1900]:
+                            - paragraph [ref=e1901]: "47.0"
+                          - cell "49.5" [ref=e1902]:
+                            - paragraph [ref=e1903]: "49.5"
+                        - row "Water stress indicator .. .. 8.7 .." [ref=e1904]:
+                          - cell "Water stress indicator" [ref=e1905]:
+                            - paragraph [ref=e1906]: Water stress indicator
+                          - cell ".." [ref=e1907]:
+                            - paragraph [ref=e1908]: ..
+                          - cell ".." [ref=e1909]:
+                            - paragraph [ref=e1910]: ..
+                          - cell "8.7" [ref=e1911]:
+                            - paragraph [ref=e1912]: "8.7"
+                          - cell ".." [ref=e1913]:
+                            - paragraph [ref=e1914]: ..
+                    - generic [ref=e1916]:
+                      - paragraph [ref=e1918]: "Note: * or closest available year."
+                      - paragraph [ref=e1920]: "Sources: USDA Economic Research Service, Agricultural Productivity database; OECD statistical databases; FAO database and national data."
+                - heading "Historical trends in agricultural policies" [level=4] [ref=e1923]
+                - generic [ref=e1925]:
+                  - paragraph [ref=e1926]: Iceland’s agricultural policy has focused on food security, safety and quality; strengthening rural activity; environmental sustainability; and maintaining farm income.
+                  - paragraph [ref=e1927]: Iceland supports agriculture heavily and reforms over time have been relatively limited. Support consists mainly of price support sustained with border measures and quotas. Dairy producers receive payments based on output. In 1996, support to sheep meat producers changed from price support to direct payments based on historic entitlements. A regional scheme for sheep farmers implemented in 2008 provides additional direct payments based on historic entitlements. Individual non-transferrable quotas for milk producers were introduced in 1980 and went through a number of reforms. In 1992, the current system of freely transferable quotas was introduced, and production-based payments were linked to the quota, paid directly to the farmer.
+                  - paragraph [ref=e1928]: Since the mid-1990s, tariffs on agricultural products were reduced. However, tariffs on several agriculture product groups, particularly meat, dairy and flowers, remain high and complicated. Many compound duties with both ad valorem and specific duties apply. Export subsidies for agricultural products have not been provided since the early 1990s.
+                - 'figure "Table 13.4. Iceland: Agricultural policy trends Copy link to Table 13.4. Iceland: Agricultural policy trends" [ref=e1930]':
+                  - generic [ref=e1933]:
+                    - 'heading "Table 13.4. Iceland: Agricultural policy trends" [level=3] [ref=e1934]'
+                    - 'link "Copy link to Table 13.4. Iceland: Agricultural policy trends" [ref=e1935] [cursor=pointer]':
+                      - /url: https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/iceland_f418d854.html#title-4ad07eafb2
+                      - generic [ref=e1936]: "Copy link to Table 13.4. Iceland: Agricultural policy trends"
+                  - button "expand" [ref=e1939] [cursor=pointer]:
+                    - generic [ref=e1940]: expand
+                  - table [ref=e1947]:
+                    - rowgroup [ref=e1952]:
+                      - row "Period Framework Changes in agricultural policies" [ref=e1953]:
+                        - columnheader "Period" [ref=e1954]:
+                          - paragraph [ref=e1955]: Period
+                        - columnheader "Framework" [ref=e1956]:
+                          - paragraph [ref=e1957]: Framework
+                        - columnheader "Changes in agricultural policies" [ref=e1958]:
+                          - paragraph [ref=e1959]: Changes in agricultural policies
+                    - rowgroup [ref=e1960]:
+                      - row "Prior to mid-1990s Closed economy Minimum prices Agricultural tariffs and non-tariff measures Consumer subsidies" [ref=e1961]:
+                        - cell "Prior to mid-1990s" [ref=e1962]:
+                          - paragraph [ref=e1963]: Prior to mid-1990s
+                        - cell "Closed economy" [ref=e1964]:
+                          - paragraph [ref=e1965]: Closed economy
+                        - cell "Minimum prices Agricultural tariffs and non-tariff measures Consumer subsidies" [ref=e1966]:
+                          - paragraph [ref=e1967]: Minimum prices
+                          - paragraph [ref=e1968]: Agricultural tariffs and non-tariff measures
+                          - paragraph [ref=e1969]: Consumer subsidies
+                      - row "Mid-1990s-2016 Gradual reforms to open market EFTA, EEA Phase out of administered prices (except milk) Decoupled payments introduced to substitute price support measures Act Production, Pricing and Sale of Agricultural Products No. 99/1993 Act on Agriculture No. 70/1998" [ref=e1970]:
+                        - cell "Mid-1990s-2016" [ref=e1971]:
+                          - paragraph [ref=e1972]: Mid-1990s-2016
+                        - cell "Gradual reforms to open market" [ref=e1973]:
+                          - paragraph [ref=e1974]: Gradual reforms to open market
+                        - cell "EFTA, EEA Phase out of administered prices (except milk) Decoupled payments introduced to substitute price support measures Act Production, Pricing and Sale of Agricultural Products No. 99/1993 Act on Agriculture No. 70/1998" [ref=e1975]:
+                          - paragraph [ref=e1976]: EFTA, EEA
+                          - paragraph [ref=e1977]: Phase out of administered prices (except milk)
+                          - paragraph [ref=e1978]: Decoupled payments introduced to substitute price support measures
+                          - paragraph [ref=e1979]: Act Production, Pricing and Sale of Agricultural Products No. 99/1993
+                          - paragraph [ref=e1980]: Act on Agriculture No. 70/1998
+                      - row "2017-2022 Continuation of gradual reforms Revisions of agreements for sheep and cattle farmers Several FTAs signed EEA agreement enhanced Reduction of agricultural tariffs" [ref=e1981]:
+                        - cell "2017-2022" [ref=e1982]:
+                          - paragraph [ref=e1983]: 2017-2022
+                        - cell "Continuation of gradual reforms" [ref=e1984]:
+                          - paragraph [ref=e1985]: Continuation of gradual reforms
+                        - cell "Revisions of agreements for sheep and cattle farmers Several FTAs signed EEA agreement enhanced Reduction of agricultural tariffs" [ref=e1986]:
+                          - paragraph [ref=e1987]: Revisions of agreements for sheep and cattle farmers
+                          - paragraph [ref=e1988]: Several FTAs signed
+                          - paragraph [ref=e1989]: EEA agreement enhanced
+                          - paragraph [ref=e1990]: Reduction of agricultural tariffs
+                      - 'row "2024 New comprehensive agricultural policy and new food policy Implementation of the first five-year action plan of Iceland’s new agricultural policy (passed by parliament in 2023) started in 2024. The plan contains 28 actions linked to the policy’s ten main issues: food security; adaptation and mitigation to climate change; biodiversity; land use and land preservation; circular economy; international market issues; consumers; innovation and technology; education and R&D; and the agricultural support system. New food policy takes all major aspects of food production in Iceland into consideration, including fisheries, agriculture, and aquaculture. The focus is on sustainability and the circular economy of food production, food security and safety, R&D, consumers, and society. A five-year action plan has been implemented for the food policy in 2024 and contain five actions." [ref=e1991]':
+                        - cell "2024" [ref=e1992]:
+                          - paragraph [ref=e1993]: "2024"
+                        - cell "New comprehensive agricultural policy and new food policy" [ref=e1994]:
+                          - paragraph [ref=e1995]: New comprehensive agricultural policy and new food policy
+                        - 'cell "Implementation of the first five-year action plan of Iceland’s new agricultural policy (passed by parliament in 2023) started in 2024. The plan contains 28 actions linked to the policy’s ten main issues: food security; adaptation and mitigation to climate change; biodiversity; land use and land preservation; circular economy; international market issues; consumers; innovation and technology; education and R&D; and the agricultural support system. New food policy takes all major aspects of food production in Iceland into consideration, including fisheries, agriculture, and aquaculture. The focus is on sustainability and the circular economy of food production, food security and safety, R&D, consumers, and society. A five-year action plan has been implemented for the food policy in 2024 and contain five actions." [ref=e1996]':
+                          - paragraph [ref=e1997]: "Implementation of the first five-year action plan of Iceland’s new agricultural policy (passed by parliament in 2023) started in 2024. The plan contains 28 actions linked to the policy’s ten main issues: food security; adaptation and mitigation to climate change; biodiversity; land use and land preservation; circular economy; international market issues; consumers; innovation and technology; education and R&D; and the agricultural support system."
+                          - paragraph [ref=e1998]: New food policy takes all major aspects of food production in Iceland into consideration, including fisheries, agriculture, and aquaculture. The focus is on sustainability and the circular economy of food production, food security and safety, R&D, consumers, and society. A five-year action plan has been implemented for the food policy in 2024 and contain five actions.
+                - paragraph [ref=e2001]: Although total level of support has reduced over time market price support measures, payments based on output and inputs dominate producer support. Thus, about 70% of farm support is potentially most-distorting to production and trade. Largely decoupled payments (based on non-current production parameters with production required) to sheep meat producers represent most of the “Other payments” category.
+                - heading "References" [level=4] [ref=e2009]
+                - generic [ref=e2011]:
+                  - paragraph [ref=e2012]:
+                    - text: "[2] EFTA (2010),"
+                    - emphasis [ref=e2013]: "Trade and Sustainable development: EFTA’s experience and outlook, https://www.efta.int/trade-relations/horizontal-work/trade-and-sustainable-development"
+                    - text: .
+                  - paragraph [ref=e2014]:
+                    - text: "[3] Frezal, C. and A. Deuss (2025),"
+                    - emphasis [ref=e2015]: "Trade-related measures linked to the environmental sustainability of agriculture: A stocktake and typology"
+                    - text: ","
+                    - link "https://doi.org/10.1787/ebfdca09-en" [ref=e2016] [cursor=pointer]:
+                      - /url: https://doi.org/10.1787/ebfdca09-en
+                    - text: .
+                  - paragraph [ref=e2017]:
+                    - text: "[6] OECD (2024),"
+                    - emphasis [ref=e2018]: "Agricultural Policy Monitoring and Evaluation 2024: Innovation for Sustainable Productivity Growth"
+                    - text: ", OECD Publishing, Paris,"
+                    - link "https://doi.org/10.1787/74da57ed-en" [ref=e2019] [cursor=pointer]:
+                      - /url: https://doi.org/10.1787/74da57ed-en
+                    - text: .
+                  - paragraph [ref=e2020]:
+                    - text: "[4] OECD (2024),"
+                    - emphasis [ref=e2021]: "OECD Economic Outlook: Volume 2024 Issue 2"
+                    - text: ","
+                    - link "https://doi.org/10.1787/d8814e8b-en." [ref=e2022] [cursor=pointer]:
+                      - /url: https://doi.org/10.1787/d8814e8b-en.
+                  - paragraph [ref=e2023]:
+                    - text: "[5] OECD (2019),"
+                    - emphasis [ref=e2024]: "OECD Environment Statistics (database): Freshwater abstractions"
+                    - text: ","
+                    - link "https://doi.org/10.1787/09a848f4-en" [ref=e2025] [cursor=pointer]:
+                      - /url: https://doi.org/10.1787/09a848f4-en
+                    - text: .
+                  - paragraph [ref=e2026]:
+                    - text: "[1] WTO (2024),"
+                    - emphasis [ref=e2027]: Trade Policy Review of Iceland (WT/TPR/S/454/Rev.1)
+                    - text: .
+              - generic [ref=e2029]:
+                - link "Previous" [ref=e2031] [cursor=pointer]:
+                  - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/european-union_2e29a59b.html#chapter-d1e19-da54ec07c9
+                  - generic [ref=e2032]: Previous
+                - link "Next" [ref=e2034] [cursor=pointer]:
+                  - /url: /en/publications/agricultural-policy-monitoring-and-evaluation-2025_a80ac398-en/full-report/india_a08610a6.html#chapter-d1e76696-81a2c68bff
+                  - generic [ref=e2035]: Next
+    - contentinfo [ref=e2036]:
+      - generic [ref=e2038]:
+        - generic [ref=e2039]:
+          - link "oecd" [ref=e2040] [cursor=pointer]:
+            - /url: /en.html
+            - img [ref=e2042]
+            - generic [ref=e2080]: oecd
+          - paragraph [ref=e2083]: © Organisation for Economic Co-operation and Development
+        - generic [ref=e2087]:
+          - generic [ref=e2090]:
+            - heading "Topics" [level=2] [ref=e2093]
+            - link "All Topics" [ref=e2097] [cursor=pointer]:
+              - /url: /en/topics.html
+          - generic [ref=e2100]:
+            - heading "Countries & regions" [level=2] [ref=e2103]
+            - generic [ref=e2105]:
+              - link "All Countries" [ref=e2107] [cursor=pointer]:
+                - /url: /en/countries.html
+              - link "Regional and global engagement" [ref=e2109] [cursor=pointer]:
+                - /url: /en/regions.html
+          - generic [ref=e2112]:
+            - heading "Data" [level=2] [ref=e2115]
+            - generic [ref=e2117]:
+              - link "Indicators" [ref=e2119] [cursor=pointer]:
+                - /url: /en/data/indicators.html
+              - link "Dashboards & Tools" [ref=e2121] [cursor=pointer]:
+                - /url: /en/data/dashboards-and-tools.html
+          - generic [ref=e2124]:
+            - heading "Publications" [level=2] [ref=e2127]
+            - generic [ref=e2129]:
+              - link "Reports" [ref=e2131] [cursor=pointer]:
+                - /url: /en/publications/reports.html
+              - link "Policy briefs" [ref=e2133] [cursor=pointer]:
+                - /url: /en/publications/briefs.html
+          - generic [ref=e2136]:
+            - heading "News & Events" [level=2] [ref=e2139]
+            - generic [ref=e2141]:
+              - link "Newsroom" [ref=e2143] [cursor=pointer]:
+                - /url: /en/about/newsroom.html
+              - link "Events" [ref=e2145] [cursor=pointer]:
+                - /url: /en/events.html
+              - link "Blogs & podcasts" [ref=e2147] [cursor=pointer]:
+                - /url: /en/blogs.html
+          - generic [ref=e2150]:
+            - heading "About" [level=2] [ref=e2153]
+            - generic [ref=e2155]:
+              - link "About the organisation" [ref=e2157] [cursor=pointer]:
+                - /url: /en/about.html
+              - link "Accession to the OECD" [ref=e2159] [cursor=pointer]:
+                - /url: /en/about/legal/oecd-accession-process.html
+              - link "Careers" [ref=e2161] [cursor=pointer]:
+                - /url: /en/about/careers.html
+              - link "Networks" [ref=e2163] [cursor=pointer]:
+                - /url: /en/networks.html
+              - link "Procurement at the OECD" [ref=e2165] [cursor=pointer]:
+                - /url: /en/about/calls-for-tenders.html
+              - link "Contact us" [ref=e2167] [cursor=pointer]:
+                - /url: /en/about/contact.html
+              - link "Newsletters" [ref=e2169] [cursor=pointer]:
+                - /url: /en/about/newsletters.html
+              - link "OECD legal framework" [ref=e2171] [cursor=pointer]:
+                - /url: /en/about/legal.html
+              - link "Web accessibility" [ref=e2173] [cursor=pointer]:
+                - /url: /en/about/web-accessibility.html
+              - link "Ethics and integrity" [ref=e2175] [cursor=pointer]:
+                - /url: /en/about/ethics-and-integrity.html
+        - generic [ref=e2176]:
+          - generic [ref=e2177]:
+            - heading "Social media links" [level=2] [ref=e2178]
+            - generic [ref=e2179]:
+              - link "Facebook" [ref=e2181] [cursor=pointer]:
+                - /url: https://www.facebook.com/theOECD/
+                - generic [ref=e2182]: Facebook
+              - link "Twitter" [ref=e2184] [cursor=pointer]:
+                - /url: https://x.com/OECD
+                - generic [ref=e2185]: Twitter
+              - link "Youtube" [ref=e2187] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCR-Ja1yBcjkhuQblxnroZJg
+                - generic [ref=e2188]: Youtube
+              - link "LinkedIn" [ref=e2190] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/organisation-eco-cooperation-development-organisation-cooperation-developpement-eco?originalSubdomain=fr
+                - generic [ref=e2191]: LinkedIn
+              - link "Instagram" [ref=e2193] [cursor=pointer]:
+                - /url: https://www.instagram.com/the_oecd/
+                - generic [ref=e2194]: Instagram
+              - link "Newsletters" [ref=e2196] [cursor=pointer]:
+                - /url: /en/about/newsletters.html
+                - generic [ref=e2197]: Newsletters
+              - link "Podcast" [ref=e2199] [cursor=pointer]:
+                - /url: https://soundcloud.com/oecd
+                - generic [ref=e2200]: Podcast
+              - link "Whatsapp" [ref=e2202] [cursor=pointer]:
+                - /url: https://www.whatsapp.com/channel/0029VbBj7l4BKfhuxpqydc3y
+                - generic [ref=e2203]: Whatsapp
+          - generic [ref=e2204]:
+            - heading "Utility links" [level=2] [ref=e2205]
+            - generic [ref=e2206]:
+              - link "Terms & Conditions" [ref=e2208] [cursor=pointer]:
+                - /url: /en/about/terms-conditions.html
+              - link "Privacy Policy" [ref=e2210] [cursor=pointer]:
+                - /url: /en/about/privacy.html
+  - navigation "Go to top":
+    - link "Go to top" [ref=e2211] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e2212]: Go to top
