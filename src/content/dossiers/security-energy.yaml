@@ -1,0 +1,163 @@
+order: 7
+
+title:
+  is: "Öryggi og orka"
+  en: "Security & energy"
+
+tldr:
+  is: "Aðild bætir annarri varnarskuldbindingu ofan á NATO — en NATO er áfram grunnurinn, og enginn her þarf. Stærsta breytingin er sæti og atkvæði í utanríkis- og öryggismálum ESB."
+  en: "Membership adds a second defence guarantee on top of NATO — but NATO stays the foundation, and no army is required. The biggest change is a seat and vote in EU foreign and security policy."
+
+summary:
+  is: >-
+    Í varnarmálum bætir aðild við bindandi gagnkvæmri aðstoð (42. gr. 7. mgr.
+    sáttmálans) ofan á 5. gr. NATO — en sáttmálarnir sjálfir segja NATO vera „grunn
+    sameiginlegra varna“, svo viðbótin er fremur viðbót en umbylting fyrir herlaust
+    NATO-ríki. Öryggi Íslands hvílir áfram á tveimur stoðum: NATO og varnarsamningi
+    við Bandaríkin frá 1951. Í orkumálum er „Orkupakka 3“-óttinn lagalega
+    ástæðulaus eins og staðan er (einangrað kerfi, eftirlit hjá ESA en ekki ACER) —
+    en full aðild fjarlægir þennan EES-varnagla ef sæstrengur yrði lagður. Áþreifanleg
+    breyting: Ísland fengi formlegt sæti og atkvæði í stað þess að samræma sig
+    valkvætt.
+  en: >-
+    On defence, membership adds a binding mutual-assistance duty (Art. 42(7) of the
+    Treaty) on top of NATO's Article 5 — but the treaties themselves call NATO "the
+    foundation of collective defence," so it's additive rather than transformative
+    for a non-military NATO state. Iceland's security still rests on two pillars: NATO
+    and the 1951 defence agreement with the US. On energy, the "Orkupakki 3" fear is
+    legally unfounded as things stand (isolated grid, oversight via ESA not ACER) —
+    but full membership would remove that EEA buffer if a subsea cable were ever
+    built. The tangible change: Iceland would gain a formal seat and vote instead of
+    aligning voluntarily.
+
+today:
+  is: >-
+    Ísland hefur engan her; öryggið hvílir á NATO (stofnaðili 1949) og
+    varnarsamningi við Bandaríkin frá 1951, auk Landhelgisgæslu, lögreglu og
+    loftvarnakerfis. Gegnum EES á Ísland aðeins „samráð“ við utanríkisstefnu ESB og
+    er ekki skylt að taka þátt í varnarsamstarfinu (CSDP) — en samræmir sig oftast
+    yfirlýsingum ESB og beitir refsiaðgerðum gegn Rússlandi. Í orku er þriðji
+    orkupakkinn þegar bindandi gegnum EES; þar sem kerfið er einangrað hafa
+    ACER-ákvæðin „engin áþreifanleg áhrif“ og ákvarðanir um sæstreng „liggja
+    algjörlega“ hjá Íslandi. Öryggis- og varnarsamstarf ESB og Íslands var
+    undirritað 18. mars 2026 (óbindandi, til viðbótar við NATO).
+  en: >-
+    Iceland has no army; its security rests on NATO (founding member, 1949) and the
+    1951 defence agreement with the US, plus a Coast Guard, police and air-defence
+    system. Through the EEA, Iceland only has a "dialogue" with EU foreign policy and
+    is not obliged to take part in EU defence (CSDP) — but it usually aligns with EU
+    declarations and applies sanctions on Russia. On energy, the Third Energy Package
+    already binds Iceland via the EEA; because the grid is isolated, the ACER
+    provisions have "no tangible impact" and decisions on a subsea cable "lie
+    entirely" with Iceland. An EU–Iceland Security and Defence Partnership was signed
+    18 March 2026 (non-binding, complementing NATO).
+
+asMember:
+  is: >-
+    Aðild bætir við bindandi gagnkvæmri varnarskuldbindingu (42. gr. 7. mgr.) sem er
+    þó „í samræmi við“ og víkur fyrir NATO. Ísland fengi bindandi þátttöku í
+    utanríkis- og varnarstefnu ESB — og formlegt sæti og atkvæði í stað valkvæðrar
+    samræmingar. Í orku hyrfi EES-tveggja-stoða varnaglinn: ACER fengi beint vald
+    gagnvart íslenskum eftirlitsaðila ef sæstrengur væri til staðar. Aðild myndi
+    leggja á bindandi 90/61 daga eldsneytisbirgðaskyldu og tengja Ísland við
+    neyðarsamhæfingu ESB. Enginn her er gerður að skilyrði.
+  en: >-
+    Membership adds a binding mutual-defence duty (Art. 42(7)) that is nonetheless
+    "consistent with" and defers to NATO. Iceland would gain binding participation in
+    EU foreign and defence policy — and a formal seat and vote instead of voluntary
+    alignment. On energy, the EEA two-pillar buffer would disappear: ACER would gain
+    direct authority over the Icelandic regulator if a subsea cable existed.
+    Membership would impose a binding 90/61-day fuel-reserve obligation and plug
+    Iceland into EU crisis coordination. No army is required.
+
+gains:
+  - claim:
+      is: "Önnur gagnkvæm varnarskuldbinding (42. gr. 7. mgr.) bætist ofan á 5. gr. NATO — aukið öryggisnet, þótt NATO sé áfram grunnurinn."
+      en: "A second mutual-defence guarantee (Art. 42(7)) is added on top of NATO's Article 5 — extra redundancy, though NATO remains the foundation."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Article 42(7) TEU — the EU's mutual assistance clause"
+        url: "https://www.eeas.europa.eu/eeas/article-427-teu-eus-mutual-assistance-clause_en"
+        publisher: "European External Action Service"
+        tier: primary
+  - claim:
+      is: "Ísland fengi formlegt sæti og atkvæði í utanríkis- og öryggisákvörðunum ESB, í stað þess að samræma sig þeim valkvætt án atkvæðisréttar."
+      en: "Iceland would gain a formal seat and vote in EU foreign and security decisions, instead of aligning with them voluntarily and without a vote."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Iceland — external relations, common foreign and security policy"
+        url: "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html"
+        publisher: "EUR-Lex / European Commission"
+        tier: primary
+  - claim:
+      is: "Aðild legði á bindandi eldsneytisbirgðaskyldu (90/61 dagar) og tengdi Ísland við neyðarsamhæfingu ESB — Ísland hefur í dag engar lögbundnar neyðarbirgðir af eldsneyti."
+      en: "Membership would impose a binding fuel-reserve obligation (90/61 days) and plug Iceland into EU crisis coordination — today Iceland has no statutory emergency fuel reserve at all."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Directive 2009/119/EC — minimum stocks of crude oil / petroleum products"
+        url: "https://eur-lex.europa.eu/eli/dir/2009/119/oj/eng"
+        publisher: "EUR-Lex"
+        tier: primary
+      - title: "Birgðastaða eldsneytis á Íslandi — ráðherraræða (5. mars 2026)"
+        url: "https://www.althingi.is/altext/raeda/157/rad20260305T105952.html"
+        publisher: "Alþingi"
+        tier: primary
+
+losses:
+  - claim:
+      is: "Tvíverknaður við NATO: ESB hefur engan sameiginlegan her sem jafnast á við NATO, svo raunveruleg hervörn hvílir áfram á Bandaríkjunum og NATO."
+      en: "Duplication of NATO: the EU has no standing collective-defence force comparable to NATO, so actual military defence still rests on the US and NATO."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Iceland's security policy and European defence cooperation (SIPRI)"
+        url: "https://www.sipri.org/sites/default/files/files/books/SIPRI06BaHeSu/SIPRI06BaHeSu20.pdf"
+        publisher: "SIPRI"
+        tier: academic
+  - claim:
+      is: "EES-varnaglinn í orkumálum hyrfi: ef sæstrengur yrði einhvern tímann lagður fengi ACER beint vald gagnvart íslenskum eftirlitsaðila í stað ESA."
+      en: "The EEA energy buffer would disappear: if a subsea cable were ever built, ACER would gain direct authority over the Icelandic regulator instead of ESA."
+    affects: ["everyone"]
+    confidence: high
+    sources:
+      - title: "Joint Understanding on the application of the Third Energy Package towards Iceland (2019)"
+        url: "https://commission.europa.eu/news/joint-understanding-application-third-energy-package-towards-iceland-2019-03-22_en"
+        publisher: "European Commission"
+        tier: primary
+  - claim:
+      is: "Sumar neyðarákvarðanir ESB (t.d. virkjun neyðarstigs á innri markaði) eru teknar með auknum meirihluta í Brussel, ekki í Reykjavík."
+      en: "Some EU crisis decisions (e.g. triggering the internal-market emergency phase) are taken by qualified-majority vote in Brussels, not in Reykjavík."
+    affects: ["everyone"]
+    confidence: medium
+    sources:
+      - title: "Internal Market Emergency and Resilience Act (IMERA)"
+        url: "https://www.consilium.europa.eu/en/policies/internal-market-emergency-and-resilience-act/"
+        publisher: "Council of the EU"
+        tier: primary
+
+uncertain:
+  - claim:
+      is: "Raunverulegt hernaðargildi 42. gr. 7. mgr. er óljóst þar sem ESB hefur engan fastaher, og óvíst er hvort aðild breytti viðveru Bandaríkjanna/NATO á Keflavíkursvæðinu og á GIUK-hliðinu."
+      en: "The real military value of Art. 42(7) is unclear since the EU has no standing force, and it is uncertain whether membership would change the US/NATO presence at Keflavík and in the GIUK gap."
+    confidence: medium
+    sources:
+      - title: "Article 42(7) TEU — the EU's mutual assistance clause"
+        url: "https://www.eeas.europa.eu/eeas/article-427-teu-eus-mutual-assistance-clause_en"
+        publisher: "European External Action Service"
+        tier: primary
+  - claim:
+      is: "Óvíst er hvort aðild gæfi Íslandi raunveruleg áhrif í norðurslóða- og Norður-Atlantshafsöryggi umfram það sem öryggissamstarfið frá mars 2026 og NATO-aðild veita nú þegar."
+      en: "It is uncertain whether membership would give Iceland real influence over Arctic and North-Atlantic security beyond what the March 2026 partnership and NATO membership already provide."
+    confidence: medium
+    sources:
+      - title: "EU–Iceland Security and Defence Partnership (signed 18 March 2026)"
+        url: "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
+        publisher: "European External Action Service"
+        tier: primary
+
+calculator: false
+lastReviewed: 2026-06-17
+confidence: high

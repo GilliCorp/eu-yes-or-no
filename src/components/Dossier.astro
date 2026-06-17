@@ -36,6 +36,10 @@ const affectsLabel: Record<string, { is: string; en: string }> = {
   borrowers: { is: 'lántakar', en: 'borrowers' },
   taxpayers: { is: 'skattgreiðendur', en: 'taxpayers' },
   everyone: { is: 'almenningur', en: 'everyone' },
+  consumers: { is: 'neytendur', en: 'consumers' },
+  farmers: { is: 'bændur', en: 'farmers' },
+  workers: { is: 'launafólk', en: 'workers' },
+  businesses: { is: 'fyrirtæki', en: 'businesses' },
 };
 const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
 ---

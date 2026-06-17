@@ -1,0 +1,147 @@
+order: 2
+
+title:
+  is: "Matarkarfan þín"
+  en: "Your grocery bill"
+
+tldr:
+  is: "Matur er svæðið þar sem ESB-aðild breytir mestu — því hann er að mestu utan EES. Tollar á mjólkurvörur og kjöt gætu lækkað verulega, en innlendur landbúnaður stæði frammi fyrir samkeppni."
+  en: "Food is where EU membership changes the most — because it's largely outside the EEA. Tariffs on dairy and meat could fall substantially, but domestic farming would face competition."
+
+summary:
+  is: >-
+    Ólíkt flestum sviðum stendur matur og landbúnaður að mestu utan EES — svo hér
+    myndi aðild raunverulega breyta miklu. Ísland verndar innlenda framleiðslu með
+    einhverjum hæstu landbúnaðartollum í þróaða heiminum, sem heldur matvælaverði
+    háu (hæsta verð á mjólkurvörum og eggjum af 36 Evrópulöndum árið 2024). Aðild
+    myndi setja Ísland í tollabandalag ESB og sameiginlegu landbúnaðarstefnuna,
+    fjarlægja tolla á matvæli frá ESB og líklega lækka verð á vernduðu vörunum. En
+    ekki er allt hátt verð tollum að kenna — flutningur, smár markaður og há laun
+    spila líka inn í — og innlendur landbúnaður stæði frammi fyrir samkeppni.
+  en: >-
+    Unlike most areas, food and agriculture sit largely outside the EEA — so here
+    membership really would change a lot. Iceland protects domestic production with
+    some of the highest agricultural tariffs in the developed world, which keeps
+    food prices high (the highest dairy and egg prices of 36 European countries in
+    2024). Membership would put Iceland in the EU customs union and the Common
+    Agricultural Policy, remove tariffs on food from the EU, and most likely lower
+    the price of the protected goods. But not all the high price is tariffs —
+    transport, a small market and high wages all play a part — and domestic farming
+    would face competition.
+
+today:
+  is: >-
+    Ísland er nær tollalaust hagkerfi með einni undantekningu: mat. Meðaltollur á
+    landbúnaðarvörur er um 20% á móti 0,1% á annað. Hæstu tollarnir eru á
+    mjólkurvörur (~73%) og kjöt (~62–67%), auk tollkvóta og verndarákvæða. Tollarnir
+    beinast að vörum sem keppa við innlenda framleiðslu (mjólk, kjöt, egg, sumt
+    grænmeti); korn, ávextir og flest grænmeti koma tollfrjáls inn. OECD metur að
+    verndin haldi verði til bænda ~60% yfir heimsmarkaðsverði.
+  en: >-
+    Iceland is a near-tariff-free economy with one exception: food. The average
+    agricultural tariff is about 20% versus 0.1% on everything else. The highest
+    tariffs are on dairy (~73%) and meat (~62–67%), plus tariff quotas and
+    safeguards. The tariffs target goods that compete with domestic production
+    (dairy, meat, eggs, some vegetables); grains, fruit and most vegetables enter
+    tariff-free. The OECD estimates this protection keeps farm-gate prices ~60%
+    above world levels.
+
+asMember:
+  is: >-
+    Aðild myndi skipta innlenda tollkerfinu út fyrir tollabandalag ESB og
+    sameiginlega tollskrá: matvæli frá ESB-löndum kæmu inn án núverandi hárra tolla.
+    Ísland gengi í sameiginlegu landbúnaðarstefnuna (CAP), sem verndar enn ytri
+    landamæri ESB en hefur fært kostnaðinn frá neytendum (verðstuðningi) yfir á
+    skattgreiðendur (beingreiðslur). Þar sem landbúnaður er utan EES er þetta svæðið
+    sem breytist mest — en skilmálar voru aldrei útkljáðir (landbúnaðarkaflinn var
+    aldrei opnaður í viðræðunum 2010–2013).
+  en: >-
+    Membership would replace the national tariff regime with the EU customs union
+    and Common Customs Tariff: food from EU countries would enter without today's
+    high tariffs. Iceland would join the Common Agricultural Policy (CAP), which
+    still protects the EU's external border but has shifted the cost from consumers
+    (price support) to taxpayers (direct payments). Because agriculture is outside
+    the EEA, this is the area that changes most — but the terms were never settled
+    (the agriculture chapter was never opened in the 2010–2013 talks).
+
+gains:
+  - claim:
+      is: "Verð á vernduðum undirstöðuvörum — mjólkurvörum, kjöti, eggjum — gæti lækkað mest, því það eru einmitt vörurnar með hæstu tollana og hæsta verðið."
+      en: "Prices of protected staples — dairy, meat, eggs — could fall most, since those are exactly the goods with the highest tariffs and the highest prices."
+    affects: ["consumers"]
+    confidence: high
+    sources:
+      - title: "Agricultural Policy Monitoring and Evaluation 2025 — Iceland"
+        url: "https://www.oecd.org/en/publications/2025/10/agricultural-policy-monitoring-and-evaluation-2025_354e7040/full-report/iceland_f418d854.html"
+        publisher: "OECD"
+        tier: primary
+      - title: "Comparative price levels for food, beverages and tobacco (2024)"
+        url: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Comparative_price_levels_for_food%2C_beverages_and_tobacco"
+        publisher: "Eurostat"
+        tier: primary
+  - claim:
+      is: "Kostnaður við stuðning við landbúnað færðist frá búðarkassanum yfir á skattkerfið: CAP byggir á beingreiðslum til bænda fremur en háu verði til neytenda."
+      en: "The cost of farm support shifts from the till to the tax system: CAP relies on direct payments to farmers rather than high prices for consumers."
+    affects: ["consumers", "taxpayers"]
+    confidence: medium
+    sources:
+      - title: "The Common Agricultural Policy (CAP)"
+        url: "https://www.ers.usda.gov/topics/international-markets-us-trade/countries-regions/european-union/common-agricultural-policy"
+        publisher: "USDA Economic Research Service"
+        tier: primary
+
+losses:
+  - claim:
+      is: "Innlendur landbúnaður stæði frammi fyrir mun meiri samkeppni. Stjórnvöld og bændur telja verndina nauðsynlega til að framleiðsla lifi af við erfið skilyrði Íslands."
+      en: "Domestic farming would face far more competition. The government and farmers argue the protection is necessary for production to survive Iceland's harsh conditions."
+    affects: ["farmers"]
+    confidence: high
+    sources:
+      - title: "Accession negotiations — Chapter 11 (Agriculture and Rural Development)"
+        url: "https://www.stjornarradid.is/media/utanrikisraduneyti-media/media/esb_svor/11_-_agriculture/ch._11_-_agriculture-final.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Fæðuöryggi og afkoma í dreifbýli gætu veikst ef innlend mjólkur-, kjöt- og sauðfjárframleiðsla dregst saman."
+      en: "Food security and rural livelihoods could weaken if domestic dairy, meat and sheep production shrinks."
+    affects: ["farmers", "everyone"]
+    confidence: medium
+    sources:
+      - title: "Accession negotiations — Chapter 11 (Agriculture and Rural Development)"
+        url: "https://www.stjornarradid.is/media/utanrikisraduneyti-media/media/esb_svor/11_-_agriculture/ch._11_-_agriculture-final.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Stuðningur CAP er greiddur af skattgreiðendum, svo nettóáhrifin á heimilið eru sparnaður í búð að frádregnum breytingum á sköttum — sem var ekki tölusett."
+      en: "CAP support is taxpayer-funded, so the net effect on the household is grocery savings minus any tax changes — which was not quantified."
+    affects: ["taxpayers"]
+    confidence: medium
+    sources:
+      - title: "The Common Agricultural Policy (CAP)"
+        url: "https://www.ers.usda.gov/topics/international-markets-us-trade/countries-regions/european-union/common-agricultural-policy"
+        publisher: "USDA Economic Research Service"
+        tier: primary
+
+uncertain:
+  - claim:
+      is: "Engin trú­verðug króna­tala fannst fyrir það hve mikið matarreikningur heimilis myndi lækka — það er opin spurning sem þarf verðkönnun (t.d. frá ASÍ eða Hagstofu) til að svara."
+      en: "No credible krónur figure was found for how much a household's grocery bill would fall — an open question that needs a price survey (e.g. from ASÍ or Hagstofa) to answer."
+    confidence: high
+    sources:
+      - title: "Agricultural Policy Monitoring and Evaluation 2025 — Iceland"
+        url: "https://www.oecd.org/en/publications/2025/10/agricultural-policy-monitoring-and-evaluation-2025_354e7040/full-report/iceland_f418d854.html"
+        publisher: "OECD"
+        tier: primary
+  - claim:
+      is: "Hve stór hluti hás matvælaverðs er tollum að kenna — á móti flutningi, smáum markaði og háum launum — hefur ekki verið greint í sundur með tölum."
+      en: "How much of the high food price is due to tariffs — versus transport, a small market and high wages — has not been broken down with numbers."
+    confidence: medium
+    sources:
+      - title: "WTO Tariff Profile — Iceland (2024)"
+        url: "https://www.wto.org/english/res_e/statis_e/daily_update_e/tariff_profiles/is_e.pdf"
+        publisher: "World Trade Organization"
+        tier: primary
+
+calculator: false
+lastReviewed: 2026-06-17
+confidence: high

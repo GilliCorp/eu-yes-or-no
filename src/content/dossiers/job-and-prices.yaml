@@ -1,0 +1,137 @@
+order: 3
+
+title:
+  is: "Vinnan og verðlagið"
+  en: "Your job & prices"
+
+tldr:
+  is: "Fyrir vinnumarkaðinn breytir aðild litlu — frjáls för fólks og samkeppnisreglur ESB gilda nú þegar gegnum EES. Helsti munurinn er fjárhagslegur: evran gæti lækkað fjármagnskostnað."
+  en: "For the labour market, membership changes little — free movement and EU competition rules already apply via the EEA. The main difference is financial: the euro could lower the cost of capital."
+
+summary:
+  is: >-
+    Stór hluti þess sem fólk heldur að fylgi ESB-aðild — frjáls för launafólks,
+    innri markaðurinn, samkeppnis- og ríkisaðstoðarreglur — er nú þegar í gildi á
+    Íslandi gegnum EES. Fyrir störf og vinnumarkað breytir full aðild því litlu. Það
+    sem helst breytist er fjárhagslegt: evran gæti lækkað fjármagnskostnað fyrir
+    fyrirtæki og ríkið. Ísland hefur bæði há laun og hátt verðlag (að hluta vegna
+    fákeppni) — og ekki er allt verðlag eitthvað sem ESB-aðild myndi laga.
+  en: >-
+    A lot of what people assume comes with EU membership — free movement of workers,
+    the single market, competition and State-aid rules — already applies in Iceland
+    through the EEA. So for jobs and the labour market, full membership changes
+    little. What does change is financial: the euro could lower the cost of capital
+    for firms and the state. Iceland has both high wages and high prices (partly from
+    market concentration) — and not all of that is something EU membership would fix.
+
+today:
+  is: >-
+    Frjáls för launafólks er þegar í gildi: borgarar allra 30 EES-ríkja mega búa og
+    vinna hér, og árið 2023 voru 11,8% vinnuaflsins frá öðrum ESB-ríkjum og 7,7%
+    utan EES. Samkeppnis- og ríkisaðstoðarreglur ESB hafa þegar verið teknar upp í
+    gegnum EES. Ísland er hins vegar EKKI í myntbandalaginu (evru), tollabandalaginu
+    eða sameiginlegri skattastefnu. Laun eru há (meðallaun einstaklings €6.184/mán á
+    móti €3.417 í ESB27) og verðlag líka — hæst af 36 Evrópulöndum í nokkrum flokkum,
+    að hluta vegna fákeppni á litlum markaði.
+  en: >-
+    Free movement of workers is already in force: citizens of all 30 EEA countries
+    may live and work here, and in 2023 11.8% of the workforce was from other EU
+    states and 7.7% from outside the EEA. EU competition and State-aid rules have
+    already been adopted via the EEA. Iceland is, however, NOT in the monetary union
+    (the euro), the customs union, or common tax policy. Wages are high (average for
+    a single person €6,184/mo vs €3,417 in the EU27) and so are prices — the highest
+    of 36 European countries in several categories, partly due to concentration in a
+    small market.
+
+asMember:
+  is: >-
+    Á vinnumarkaði myndi lítið breytast, því fjórfrelsið gildir nú þegar. Aðild setur
+    Ísland á leið að evru, sem lækkaði sögulega fjármagnskostnað hjá nýjum
+    evruríkjum um 25–100 punkta og fjarlægir gengisáhættuálag. Dýpri samþætting og
+    samkeppni gæti með tímanum lækkað milligöngukostnað og iðgjöld (trygginga og
+    lífeyris) og þannig aukið framleiðni og kjör.
+  en: >-
+    On the labour market little would change, since the four freedoms already apply.
+    Membership puts Iceland on the path to the euro, which historically cut the cost
+    of capital for new euro states by 25–100 basis points and removes the
+    exchange-rate risk premium. Deeper integration and competition could, over time,
+    lower intermediation costs and premiums (insurance and pensions), raising
+    productivity and living standards.
+
+gains:
+  - claim:
+      is: "Evran gæti lækkað fjármagnskostnað fyrir fyrirtæki og ríkið — ný evruríki sáu vaxtakostnað lækka um 25–100 punkta — og fjarlægir gengisáhættuálagið sem fylgir krónunni."
+      en: "The euro could lower the cost of capital for firms and the state — new euro states saw borrowing costs fall 25–100 basis points — and removes the exchange-rate risk premium tied to the króna."
+    affects: ["businesses", "borrowers"]
+    confidence: high
+    sources:
+      - title: "Skýrsla um valkosti Íslands í gjaldmiðlamálum (currency-options report)"
+        url: "https://www.stjornarradid.is/library/02-Rit--skyrslur-og-skrar/Sk%C3%BDrsla%20um%20valkosti%20%C3%8Dslands%20%C3%AD%20gjaldmi%C3%B0lam%C3%A1lum%20-%20001.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Skilvirkari fjármálageiri og meiri samkeppni gætu með tímanum lækkað þjónustugjöld og iðgjöld trygginga og lífeyris."
+      en: "A more efficient financial sector and greater competition could, over time, lower service fees and insurance and pension premiums."
+    affects: ["consumers"]
+    confidence: medium
+    sources:
+      - title: "Skýrsla um valkosti Íslands í gjaldmiðlamálum (currency-options report)"
+        url: "https://www.stjornarradid.is/library/02-Rit--skyrslur-og-skrar/Sk%C3%BDrsla%20um%20valkosti%20%C3%8Dslands%20%C3%AD%20gjaldmi%C3%B0lam%C3%A1lum%20-%20001.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Innri markaðurinn hefur sögulega aukið verga landsframleiðslu ESB um 3–4% og skapað 3,6 milljónir starfa — þótt Ísland njóti nú þegar megnið af þeim aðgangi gegnum EES."
+      en: "The single market has historically raised EU GDP by 3–4% and created 3.6 million jobs — though Iceland already gets most of that access via the EEA."
+    affects: ["everyone"]
+    confidence: medium
+    sources:
+      - title: "The single market"
+        url: "https://commission.europa.eu/topics/single-market_en"
+        publisher: "European Commission"
+        tier: primary
+
+losses:
+  - claim:
+      is: "Ísland missir gengið sem höggdeyfi. Launakostnaður á einingu óx um 5,6% (2016–25), um tvöfalt á við nágranna á Norðurlöndum; utan evru getur gengisfall jafnað slíkt út, innan hennar ekki."
+      en: "Iceland loses the exchange rate as a shock absorber. Unit labour costs rose 5.6% (2016–25), about double its Nordic neighbours; outside the euro a currency fall can offset that, inside it cannot."
+    affects: ["workers", "everyone"]
+    confidence: high
+    sources:
+      - title: "Skýrsla um valkosti Íslands í gjaldmiðlamálum (currency-options report)"
+        url: "https://www.stjornarradid.is/library/02-Rit--skyrslur-og-skrar/Sk%C3%BDrsla%20um%20valkosti%20%C3%8Dslands%20%C3%AD%20gjaldmi%C3%B0lam%C3%A1lum%20-%20001.pdf"
+        publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Hátt verðlag á Íslandi er að hluta heimatilbúið — fákeppni í þjónustu og flutningum — og ESB-aðild lagar ekki endilega það sem liggur utan innri markaðarins."
+      en: "Iceland's high prices are partly home-grown — concentration in services and transport — and EU membership would not necessarily fix what lies outside the single market."
+    affects: ["consumers"]
+    confidence: medium
+    sources:
+      - title: "OECD Economic Survey: Iceland 2025 — boosting business dynamism"
+        url: "https://www.oecd.org/en/publications/oecd-economic-surveys-iceland-2025_890dbe05-en/full-report/reforming-regulatory-frameworks-to-boost-business-dynamism_722b9c58.html"
+        publisher: "OECD"
+        tier: primary
+
+uncertain:
+  - claim:
+      is: "Hvort samkeppnisreglur ESB myndu raunverulega lækka verð til neytenda á Íslandi er enn óvíst — beinu gögnin um það náðust ekki að fullu í þessari yfirferð og þarf að staðfesta."
+      en: "Whether EU competition rules would actually lower consumer prices in Iceland is still uncertain — the direct evidence was not fully captured in this pass and needs confirming."
+    confidence: medium
+    sources:
+      - title: "EPRS briefing on EU–Iceland relations (2026)"
+        url: "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+  - claim:
+      is: "Þar sem flest áhrif á vinnumarkað eru þegar komin fram gegnum EES er viðbótaráhrif fullrar aðildar á störf og laun lítil og erfitt að festa hendur á þeim."
+      en: "Because most labour-market effects already exist via the EEA, the additional impact of full membership on jobs and wages is modest and hard to pin down."
+    confidence: high
+    sources:
+      - title: "EPRS briefing on EU–Iceland relations (2026)"
+        url: "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf"
+        publisher: "European Parliament"
+        tier: primary
+
+calculator: false
+lastReviewed: 2026-06-17
+confidence: high
