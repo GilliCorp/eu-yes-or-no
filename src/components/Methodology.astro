@@ -1,0 +1,50 @@
+---
+import type { Lang } from '../i18n/ui';
+import { header, sections } from '../data/methodology';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+---
+
+<article class="methodology">
+  <header class="m-hero">
+    <h1>{header.title[lang]}</h1>
+    <p class="lead">{header.lead[lang]}</p>
+  </header>
+
+  {sections.map((s) => (
+    <section class="m-section">
+      <h2>{s.heading[lang]}</h2>
+      {s.body.map((p) => <p>{p[lang]}</p>)}
+      {s.links && (
+        <ul class="m-links">
+          {s.links.map((l) => (
+            <li>
+              <a href={l.url} target="_blank" rel="noopener">{l.label[lang]}</a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  ))}
+</article>
+
+<style>
+  .methodology { max-width: 44rem; margin: 0 auto; padding: 2.5rem clamp(1rem, 5vw, 2.5rem) 4rem; }
+  .m-hero { margin-bottom: 2.5rem; }
+  .m-hero h1 { font-size: clamp(2rem, 5.5vw, 3rem); margin: 0 0 1rem; }
+  .lead {
+    font-family: var(--display); font-weight: 500; font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+    line-height: 1.35; color: var(--ink); margin: 0;
+  }
+  .m-section { margin-bottom: 2.5rem; }
+  .m-section h2 { font-size: 1.4rem; margin: 0 0 0.75rem; }
+  .m-section p { margin: 0 0 0.9rem; font-size: 1.0625rem; }
+  .m-links { list-style: none; padding: 0; margin: 0.4rem 0 0; }
+  .m-links a {
+    font-family: var(--mono); font-size: 0.8rem; color: var(--slate);
+    text-underline-offset: 2px;
+  }
+</style>
