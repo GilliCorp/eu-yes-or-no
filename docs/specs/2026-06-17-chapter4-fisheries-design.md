@@ -48,7 +48,8 @@ Port the verified fisheries research into the standard dossier structure — the
    - Sources: Summary Conclusions; Council Reg. (EC) 813/2004 — **primary**. `confidence: high`.
 3. *Outside 12 nm, EU vessels would have equal access to Icelandic waters (the core "control of our waters" concern) — though catch remains bound by quota shares.*
    - Sources: Reg. (EU) 1380/2013 (Art. 5); EP factsheet 114 — **primary**. `confidence: high`.
-   - *(Optional 4th, if the ledger reads thin: loss of independent international advocacy — Iceland's voice subsumed into the EU's single seat in bodies like NEAFC. Source: Summary Conclusions. `confidence: medium`.)*
+
+> **No 4th loss.** The "loss of independent international advocacy" concern is **not** added as a padded loss — it lives in the uncertain bucket (uncertain #3), where it honestly belongs, since *how* shared-stock/coastal-state disputes (the mackerel war, the NEAFC seat) would be handled post-accession is genuinely unresolved. Padding the loss column with a medium-confidence item to make the ledger look fuller would be the opposite of the honesty this chapter is built on.
 
 **`uncertain[]`** (3 items):
 1. *What quota shares Iceland would actually receive is unknown — most of its key stocks (cod, capelin, mackerel) are not currently shared EU stocks and there is no EU historic-catch record in its EEZ to base a key on.* (Source: Reg. 1380/2013 relative-stability principle + research open question.) `confidence: low`.
@@ -122,8 +123,10 @@ All Icelandic text in `fisheries.yaml` and the new `ui.ts` key is **AI-drafted a
 ## Open / follow-up
 1. **Source the single-market access argument.** Targeted check (EUR-Lex/EEAS/SFS) for whether/at-what-tariff Icelandic seafood enters the single market today vs as a member; if sourced, add as a `gains` point. Until then, excluded.
 2. **Live data:** the 39–40% / 7% figures are 2011–2012 (the accession-era EP briefing); set the chapter's `lastReviewed` and refresh against Statistics Iceland before launch if newer figures exist.
-3. Resolve the optional 4th `loss` (independent advocacy) during drafting — include if the ledger reads thin, drop if redundant with loss #1.
+3. ~~Optional 4th loss (independent advocacy)~~ — **dropped**; covered in uncertain #3 (no padding).
+4. **Methodology page principle (site-wide, separate task):** add a short "we don't pad the weaker side to fake balance — count the sources, not the bullet points" statement so the loss-leaning shape of chapters like fisheries is explained once, globally, rather than per-chapter.
 
 ## Assumptions stated openly
 - The chapter is intentionally **asymmetric** (more/stronger losses than gains) because that is what the sourced record shows; this is honest, not biased. The structure (forced gains/losses/uncertain buckets) and the uncertainty box carry the neutrality.
+- **No per-chapter "we lean losses" note** (decided with Gísli). Neutrality stays *structural* — no narrator voice on the chapter. The "we don't pad the weaker side to fake balance; count the sources, not the bullet points" principle is stated **once, site-wide, on the Methodology page** (a separate future task — logged in follow-up #4). This keeps fisheries clean while putting the honest explanation exactly where a skeptic looks.
 - The stakes bars are a **sourced snapshot** (2011–2012), clearly dated, with the goods-vs-total-exports caveat on-screen.
