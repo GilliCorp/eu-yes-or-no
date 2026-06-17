@@ -1,0 +1,242 @@
+---
+import type { Lang } from '../i18n/ui';
+import { t } from '../i18n/ui';
+import { ASSUMPTIONS, PRESETS } from '../data/assumptions';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+// Pass server-side data + localized labels into the client script.
+const labels = {
+  presetAlone: t(lang, 'calc.preset.alone'),
+  presetCouple: t(lang, 'calc.preset.couple'),
+  presetFamily: t(lang, 'calc.preset.family'),
+  indexed: t(lang, 'calc.scenario.indexed'),
+  nonindexed: t(lang, 'calc.scenario.nonindexed'),
+  euro: t(lang, 'calc.scenario.euro'),
+  now: t(lang, 'calc.now'),
+  in10: t(lang, 'calc.in10'),
+  indexedNote: t(lang, 'calc.indexedNote'),
+  flatNote: t(lang, 'calc.flatNote'),
+  provisional: t(lang, 'calc.provisional'),
+  rate: t(lang, 'calc.rate'),
+  perMonth: t(lang, 'calc.perMonth'),
+  locale: lang === 'is' ? 'is-IS' : 'en-GB',
+};
+const presetKeys = ['alone', 'couple', 'family'] as const;
+---
+
+<section class="calc" aria-labelledby="calc-h">
+  <header class="calc-head">
+    <p class="eyebrow">⚖ {t(lang, 'calc.title')}</p>
+    <h2 id="calc-h">{t(lang, 'calc.sub')}</h2>
+  </header>
+
+  <div class="controls">
+    <div class="presets" role="group" aria-label={t(lang, 'calc.preset')}>
+      <span class="ctrl-label">{t(lang, 'calc.preset')}</span>
+      <div class="preset-btns">
+        {presetKeys.map((k) => (
+          <button type="button" class="preset" data-preset={k}>
+            {t(lang, `calc.preset.${k}` as const)}
+          </button>
+        ))}
+        <button type="button" class="preset is-active" data-preset="custom">
+          {t(lang, 'calc.preset.custom')}
+        </button>
+      </div>
+    </div>
+
+    <label class="field">
+      <span class="ctrl-label">{t(lang, 'calc.amount')}</span>
+      <span class="field-row">
+        <input type="number" id="amount" min="5000000" max="120000000" step="1000000" value="60000000" />
+        <span class="unit">kr.</span>
+      </span>
+      <input type="range" id="amount-range" min="5000000" max="120000000" step="1000000" value="60000000" aria-hidden="true" tabindex="-1" />
+    </label>
+
+    <label class="field">
+      <span class="ctrl-label">{t(lang, 'calc.term')}</span>
+      <span class="field-row">
+        <input type="number" id="term" min="5" max="40" step="1" value="30" />
+        <span class="unit">{t(lang, 'calc.years')}</span>
+      </span>
+      <input type="range" id="term-range" min="5" max="40" step="1" value="30" aria-hidden="true" tabindex="-1" />
+    </label>
+  </div>
+
+  <div class="results" id="results">
+    <!-- three scenario cards injected by the script -->
+  </div>
+
+  <p class="disclaimer">⚠ {t(lang, 'calc.disclaimer')}</p>
+
+  <details class="assumptions">
+    <summary>{t(lang, 'calc.assumptions')}</summary>
+    <ul>
+      {Object.entries(ASSUMPTIONS).map(([key, a]) => (
+        <li>
+          <code>{key}</code>: {a.typical}% ({a.min}–{a.max}%)
+          {a.provisional && <span class="prov">{t(lang, 'calc.provisional')}</span>}
+          <a href={a.source.url} target="_blank" rel="noopener">{a.source.publisher}</a>
+        </li>
+      ))}
+    </ul>
+  </details>
+</section>
+
+<script define:vars={{ A: ASSUMPTIONS, PRESETS, L: labels }}>
+  const fmt = new Intl.NumberFormat(L.locale, { maximumFractionDigits: 0 });
+  const money = (n) => fmt.format(Math.round(n / 1000) * 1000);
+  const range = (lo, hi) =>
+    Math.abs(hi - lo) / Math.max(hi, 1) < 0.02 ? money(lo) : `${money(lo)} – ${money(hi)}`;
+
+  // Standard annuity: monthly payment for principal P at annual % rate over `years`.
+  const annuity = (P, ratePct, years) => {
+    const r = ratePct / 100 / 12;
+    const n = years * 12;
+    return r === 0 ? P / n : (P * r) / (1 - Math.pow(1 + r, -n));
+  };
+
+  const $ = (id) => document.getElementById(id);
+  const amount = $('amount'), amountRange = $('amount-range');
+  const term = $('term'), termRange = $('term-range');
+  const results = $('results');
+
+  function compute() {
+    const P = Number(amount.value) || 0;
+    const yrs = Number(term.value) || 1;
+    const inflLo = A.inflation.min / 100, inflHi = A.inflation.max / 100;
+
+    // Indexed (verðtryggt): annuity at the REAL rate; nominal payment grows with inflation.
+    const idxNowLo = annuity(P, A.indexedReal.min, yrs);
+    const idxNowHi = annuity(P, A.indexedReal.max, yrs);
+    const idx10Lo = idxNowLo * Math.pow(1 + inflLo, 10);
+    const idx10Hi = idxNowHi * Math.pow(1 + inflHi, 10);
+
+    // Non-indexed (óverðtryggt): nominal annuity, flat over time.
+    const nonLo = annuity(P, A.nonIndexedNominal.min, yrs);
+    const nonHi = annuity(P, A.nonIndexedNominal.max, yrs);
+
+    // Euro loan: nominal annuity, flat, low inflation.
+    const euroLo = annuity(P, A.euroNominal.min, yrs);
+    const euroHi = annuity(P, A.euroNominal.max, yrs);
+
+    const cards = [
+      { kind: 'idx', label: L.indexed, a: A.indexedReal, now: [idxNowLo, idxNowHi], in10: [idx10Lo, idx10Hi], note: L.indexedNote },
+      { kind: 'non', label: L.nonindexed, a: A.nonIndexedNominal, now: [nonLo, nonHi], in10: [nonLo, nonHi], note: L.flatNote },
+      { kind: 'eur', label: L.euro, a: A.euroNominal, now: [euroLo, euroHi], in10: [euroLo, euroHi], note: L.flatNote },
+    ];
+
+    results.innerHTML = cards.map((c) => `
+      <div class="rcard ${c.kind}">
+        <p class="rlabel">${c.label}</p>
+        <p class="rrate">${L.rate}: ${c.a.min}–${c.a.max}%${c.a.provisional ? ` <span class="prov">${L.provisional}</span>` : ''}</p>
+        <div class="rline"><span>${L.now}</span><strong>${range(c.now[0], c.now[1])}</strong></div>
+        <div class="rline"><span>${L.in10}</span><strong>${range(c.in10[0], c.in10[1])}</strong></div>
+        <p class="rnote">${c.note}</p>
+      </div>`).join('');
+  }
+
+  // Keep number + range inputs in sync; clear preset highlight on manual edit.
+  const setActive = (key) => document.querySelectorAll('.preset').forEach((b) =>
+    b.classList.toggle('is-active', b.dataset.preset === key));
+
+  function bindPair(numEl, rangeEl, onManual) {
+    const sync = (from, to) => { to.value = from.value; compute(); };
+    numEl.addEventListener('input', () => { sync(numEl, rangeEl); onManual(); });
+    rangeEl.addEventListener('input', () => { sync(rangeEl, numEl); onManual(); });
+  }
+  bindPair(amount, amountRange, () => setActive('custom'));
+  bindPair(term, termRange, () => setActive('custom'));
+
+  document.querySelectorAll('.preset').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.preset;
+      const p = PRESETS.find((x) => x.key === key);
+      if (p) {
+        amount.value = amountRange.value = p.amount;
+        term.value = termRange.value = p.term;
+        compute();
+      }
+      setActive(key);
+    });
+  });
+
+  compute();
+</script>
+
+<style>
+  .calc {
+    border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper-raised);
+    padding: clamp(1.25rem, 4vw, 2rem); margin: 0 0 3rem;
+  }
+  .calc-head { margin-bottom: 1.5rem; }
+  .calc-head .eyebrow {
+    font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--brass); margin: 0 0 0.4rem;
+  }
+  .calc-head h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); margin: 0; max-width: 36rem; }
+
+  .controls { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-bottom: 1.75rem; }
+  @media (min-width: 38rem) { .controls { grid-template-columns: 1.4fr 1fr 1fr; align-items: start; } }
+
+  .ctrl-label {
+    display: block; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.5rem;
+  }
+  .preset-btns { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .preset {
+    font-family: var(--mono); font-size: 0.78rem; cursor: pointer; color: var(--slate);
+    background: var(--paper); border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.4rem 0.7rem;
+  }
+  .preset:hover { border-color: var(--slate-soft); }
+  .preset.is-active { background: var(--slate); color: var(--paper); border-color: var(--slate); }
+
+  .field { display: block; }
+  .field-row { display: flex; align-items: baseline; gap: 0.4rem; }
+  .field input[type='number'] {
+    width: 100%; font-family: var(--mono); font-size: 1.05rem; color: var(--ink);
+    background: var(--paper); border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.45rem 0.55rem;
+  }
+  .unit { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+  .field input[type='range'] { width: 100%; margin-top: 0.6rem; accent-color: var(--slate); }
+
+  .results { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+  @media (min-width: 38rem) { .results { grid-template-columns: repeat(3, 1fr); } }
+
+  /* Result cards are injected by the client script, so they don't receive Astro's
+     scoped attribute — target them with :global(), namespaced under .results. */
+  .results :global(.rcard) { border: 1px solid var(--line-strong); border-radius: 3px; padding: 1rem; background: var(--paper); border-top: 3px solid var(--line-strong); }
+  .results :global(.rcard.idx) { border-top-color: var(--brass); }
+  .results :global(.rcard.non) { border-top-color: var(--loss); }
+  .results :global(.rcard.eur) { border-top-color: var(--gain); }
+  .results :global(.rlabel) { font-family: var(--display); font-weight: 600; font-size: 1.05rem; margin: 0 0 0.2rem; }
+  .results :global(.rrate) { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); margin: 0 0 0.85rem; }
+  .results :global(.rline) { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; padding: 0.35rem 0; border-top: 1px dotted var(--line); }
+  .results :global(.rline span) { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); }
+  .results :global(.rline strong) { font-family: var(--mono); font-size: 1.02rem; font-weight: 500; color: var(--ink); }
+  .results :global(.rnote) { font-size: 0.85rem; color: #4a463f; margin: 0.75rem 0 0; }
+
+  :global(.prov) {
+    font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--loss); border: 1px solid var(--loss); border-radius: 2px; padding: 0 0.3rem; margin-left: 0.3rem;
+  }
+
+  .disclaimer {
+    font-size: 0.85rem; color: #4a463f; background: #f4e9cf; border: 1px solid #e2cf9c;
+    border-radius: 3px; padding: 0.7rem 0.9rem; margin: 1.5rem 0 0;
+  }
+
+  .assumptions { margin-top: 1rem; }
+  .assumptions summary {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--slate); cursor: pointer;
+  }
+  .assumptions ul { list-style: none; margin: 0.85rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
+  .assumptions li { font-size: 0.85rem; }
+  .assumptions code { font-family: var(--mono); font-size: 0.8rem; color: var(--ink); }
+  .assumptions a { margin-left: 0.4rem; font-size: 0.8rem; }
+</style>

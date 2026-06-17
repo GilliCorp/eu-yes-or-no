@@ -51,6 +51,8 @@ const dossiers = defineCollection({
     gains: z.array(point).default([]),
     losses: z.array(point).default([]),
     uncertain: z.array(point).default([]),
+    // Render the "build your household" calculator on this chapter.
+    calculator: z.boolean().default(false),
     lastReviewed: z.coerce.date(),
     confidence: z.enum(['high', 'medium', 'low']),
   }),

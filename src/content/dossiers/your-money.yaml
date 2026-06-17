@@ -158,5 +158,7 @@ uncertain:
         publisher: "Central Bank of Iceland"
         tier: primary
 
+calculator: true
+
 lastReviewed: 2026-06-17
 confidence: high
