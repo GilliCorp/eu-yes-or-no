@@ -5,6 +5,8 @@ import type { Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
 import Calculator from './Calculator.astro';
 import Basket from './Basket.astro';
+import Stakes from './Stakes.astro';
+import { tierLabel } from '../i18n/tiers';
 
 interface Props {
   entry: CollectionEntry<'dossiers'>;
@@ -24,13 +26,6 @@ const dateFmt = new Intl.DateTimeFormat(lang === 'is' ? 'is-IS' : 'en-GB', {
 
 const confLabel = (c: 'high' | 'medium' | 'low') =>
   t(lang, `dossier.confidence.${c}` as const);
-
-const tierLabel: Record<string, { is: string; en: string }> = {
-  primary: { is: 'frumheimild', en: 'primary' },
-  academic: { is: 'fræðigrein', en: 'academic' },
-  press: { is: 'fjölmiðill', en: 'press' },
-  advocacy: { is: 'málsvari', en: 'advocacy' },
-};
 
 const affectsLabel: Record<string, { is: string; en: string }> = {
   homeowners: { is: 'húseigendur', en: 'homeowners' },
@@ -54,6 +49,8 @@ const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
     <p class="lead">{d.tldr[lang]}</p>
     <p class="summary">{d.summary[lang]}</p>
   </header>
+
+  {d.stakes && d.stakes.length > 0 && <Stakes bars={d.stakes} lang={lang} />}
 
   <!-- Today vs. As a member: the before/after spine -->
   <section class="compare" aria-label={`${t(lang, 'dossier.today')} / ${t(lang, 'dossier.asMember')}`}>
