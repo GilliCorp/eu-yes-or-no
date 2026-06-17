@@ -55,6 +55,11 @@ const tagKey = (p: BasketDataItem['protection']) =>
     <p class="eu-effect">{t(lang, 'basket.euEffect')}</p>
   </div>
 
+  <aside class="why-no">
+    <p class="why-no-title">{t(lang, 'basket.whyNoTitle')}</p>
+    <p class="why-no-body">{t(lang, 'basket.whyNoBody')}</p>
+  </aside>
+
   <details class="detail">
     <summary>{t(lang, 'basket.detail')}</summary>
     <div class="detail-body">
@@ -161,6 +166,10 @@ const tagKey = (p: BasketDataItem['protection']) =>
   .summary .total { font-family: var(--mono); font-size: 1.1rem; margin: 0 0 0.3rem; }
   .summary .split { font-size: 0.9rem; color: #34322d; margin: 0 0 0.75rem; }
   .summary .eu-effect { font-size: 0.9rem; color: #4a463f; background: #f4e9cf; border: 1px solid #e2cf9c; border-radius: 3px; padding: 0.7rem 0.9rem; margin: 0; }
+
+  .why-no { margin-top: 1rem; border-left: 3px solid var(--slate-soft); padding: 0.1rem 0 0.1rem 0.9rem; }
+  .why-no-title { font-family: var(--display); font-weight: 600; font-size: 0.95rem; margin: 0 0 0.3rem; }
+  .why-no-body { font-size: 0.86rem; color: #4a463f; margin: 0; max-width: 44rem; }
 
   .detail { margin-top: 1rem; }
   .detail summary { font-family: var(--mono); font-size: 0.78rem; color: var(--slate); cursor: pointer; }
