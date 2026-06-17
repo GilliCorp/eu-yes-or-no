@@ -80,13 +80,20 @@ yet, unlike almost every other developed importer, it is bound by **neither the 
 90-day oil-reserve rules** and has **no statutory strategic fuel reserve.** This is the clearest
 concrete way EU membership would change resilience.
 
-- ✅ **Not an IEA member** — one of ~5 OECD states outside the IEA, so the IEA 90-day oil-stock
-  obligation doesn't apply. (IEA membership list) — *corrects the common assumption that it is.*
-- ⚠️ **Not bound by the EU oil-stocks Directive 2009/119** either — deemed *not* EEA-relevant, so not
-  incorporated into the EEA. *(load-bearing — from EFTA EEA-Lex factsheet snippet; verify live page.)*
-- ⚠️ **No statutory strategic oil reserve;** fuel security rests on undisclosed private commercial
-  inventories; mandatory stockholding **under government review since 2025.** *(Nordic Energy Research
-  snippet; verify.)*
+- ✅ **Not an IEA member** — one of the few OECD states outside the IEA (its 32-member list omits
+  Iceland), so the IEA 90-day oil-stock obligation doesn't apply. (IEA membership list) — *corrects the
+  common assumption that it is.* **[verified 2026-06-17]**
+- ✅ **Not bound by the EU oil-stocks Directive 2009/119/EC** either — the EFTA EEA-Lex register marks
+  it *"considered … not to be relevant for incorporation into the EEA Agreement"* (the strong status —
+  actively judged out of scope, not merely "pending"). So it does not bind Iceland via the EEA. (EFTA
+  EEA-Lex factsheet 32009L0119; verified via Internet Archive snapshot) **[verified 2026-06-17]**
+- ✅ **No statutory strategic oil reserve;** fuel security rests on undisclosed private commercial
+  inventories; mandatory stockholding **under review, with a bill expected.** The Minister for the
+  Environment, Energy and Climate told Alþingi (5 Mar 2026) Iceland *"cannot just conjure up 90-day
+  emergency oil reserves, at a cost of billions"* and that he expects to **present a bill next
+  legislative session.** (Alþingi ministerial speech, 2026-03-05; corroborated by Nordic Energy
+  Research 2026). Note: Orkustofnun has merged into the Environment & Energy Agency (Umhverfis- og
+  orkustofnun), which monitors the private reserves. **[verified 2026-06-17]**
 - ✅ **Food is import-dependent** — Iceland doesn't grow enough; imported food/beverages >$967M in 2024
   (~11.5% of merchandise imports); ~57% of all imports come from the EEA (Norway, NL, UK, DK, DE). After
   COVID + Ukraine the govt earmarked **~ISK 2bn over 5 yrs** to raise domestic cereal production. (US
@@ -111,8 +118,9 @@ CFP exposure over fisheries (its food-export backbone); geography is the real co
 membership doesn't change it.
 
 **Gaps (not guessed):** no sourced sea-vs-air import split; no public figure for days of fuel actually
-held; no statutory food stockpile found; the two ⚠️ load-bearing claims came from search snippets —
-verify against live pages before publishing.
+held; no statutory food stockpile found. *(The two load-bearing oil-reserve claims were independently
+verified 2026-06-17 against primary sources — IEA list, EFTA EEA-Lex register, Alþingi ministerial
+speech.)*
 
 ## UNCERTAIN / HONEST UNKNOWNS
 - ✅ ~~Crisis resilience / supply lines~~ — now covered above (follow-up gather). Remaining sub-gaps
@@ -138,8 +146,9 @@ Commission *Joint Understanding on the Third Energy Package towards Iceland* (20
 
 ## TO FINISH
 1. ~~Dedicated follow-up on island crisis resilience / supply-line / food-fuel security.~~ ✅ DONE
-   2026-06-17 (see Crisis Resilience section). Still verify the 2 ⚠️ snippet-sourced claims (no
-   IEA/EU oil-stock obligation; reserve under review) against live pages.
+   2026-06-17 (see Crisis Resilience section). ~~Verify the 2 snippet-sourced oil-reserve claims.~~
+   ✅ VERIFIED 2026-06-17 (IEA list, EFTA EEA-Lex register, Alþingi ministerial speech 2026-03-05) —
+   all three confirmed high confidence.
 2. Confirm current **US/NATO presence** at Keflavík (rotational air policing) — the 2006 SIPRI source is
    stale; use a current source before writing.
 3. Frame neutrally: the headline nuance is "EU defence **complements** NATO, doesn't replace it" + "the
