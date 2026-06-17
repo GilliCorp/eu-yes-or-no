@@ -307,13 +307,26 @@ git commit -m "content: chapter 4 fisheries dossier (verified research; is/en, s
 ### Task 3: Build the `Stakes.astro` component and render it as the hook
 
 **Files:**
+- Create: `src/i18n/tiers.ts` (shared `tierLabel` map — extracted for DRY)
 - Modify: `src/i18n/ui.ts` (add `stakes.title` to both `is` and `en` blocks)
 - Create: `src/components/Stakes.astro`
-- Modify: `src/components/Dossier.astro` (import + render after the hero)
+- Modify: `src/components/Dossier.astro` (import `tierLabel` from the new shared module + remove its inline copy; import + render `Stakes` after the hero)
 
 **Interfaces:**
-- Consumes: the `stakes` array from `entry.data.stakes` (Task 2 data, Task 1 schema); the `t()` helper and `Lang` type from `src/i18n/ui.ts`.
-- Produces: `<Stakes bars={...} lang={...} />` — a zero-JS section rendering each bar's label, percentage, neutral fill bar, caption, and source chips.
+- Consumes: the `stakes` array from `entry.data.stakes` (Task 2 data, Task 1 schema); the `t()` helper and `Lang` type from `src/i18n/ui.ts`; the shared `tierLabel` from `src/i18n/tiers.ts`.
+- Produces: `tierLabel` (exported from `src/i18n/tiers.ts`, used by both `Dossier.astro` and `Stakes.astro`); `<Stakes bars={...} lang={...} />` — a zero-JS section rendering each bar's label, percentage, neutral fill bar, caption, and source chips.
+
+- [ ] **Step 1a: Create the shared `tierLabel` module** — create `src/i18n/tiers.ts` (DRY: single source of truth for source-tier display labels, consumed by both `Dossier.astro` and `Stakes.astro`):
+
+```ts
+/** Source-tier display labels (primary/academic/press/advocacy), bilingual. */
+export const tierLabel: Record<string, { is: string; en: string }> = {
+  primary: { is: 'frumheimild', en: 'primary' },
+  academic: { is: 'fræðigrein', en: 'academic' },
+  press: { is: 'fjölmiðill', en: 'press' },
+  advocacy: { is: 'málsvari', en: 'advocacy' },
+};
+```
 
 - [ ] **Step 1: Add the i18n key** — in `src/i18n/ui.ts`, add to the `is` block (e.g. right after the `'dossier.back': 'Allir kaflar',` line):
 
@@ -333,6 +346,7 @@ and to the `en` block (right after `'dossier.back': 'All chapters',`):
 ---
 import type { Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
+import { tierLabel } from '../i18n/tiers';
 
 interface Bar {
   label: { is: string; en: string };
@@ -345,13 +359,6 @@ interface Props {
   lang: Lang;
 }
 const { bars, lang } = Astro.props;
-
-const tierLabel: Record<string, { is: string; en: string }> = {
-  primary: { is: 'frumheimild', en: 'primary' },
-  academic: { is: 'fræðigrein', en: 'academic' },
-  press: { is: 'fjölmiðill', en: 'press' },
-  advocacy: { is: 'málsvari', en: 'advocacy' },
-};
 ---
 
 <section class="stakes" aria-label={t(lang, 'stakes.title')}>
@@ -412,13 +419,29 @@ const tierLabel: Record<string, { is: string; en: string }> = {
 </style>
 ```
 
-- [ ] **Step 3: Wire it into `Dossier.astro`** — add the import beside the existing component imports (after `import Basket from './Basket.astro';` on line 7):
+- [ ] **Step 3: Wire it into `Dossier.astro`** — three edits:
+
+(a) Add the imports beside the existing component imports (after `import Basket from './Basket.astro';` on line 7):
 
 ```astro
 import Stakes from './Stakes.astro';
+import { tierLabel } from '../i18n/tiers';
 ```
 
-Then render it between the closing `</header>` (line 56) and the `<!-- Today vs. As a member -->` comment (line 58):
+(b) **Remove** the now-duplicated inline `tierLabel` const from `Dossier.astro`'s frontmatter (the block at lines 28–33):
+
+```astro
+const tierLabel: Record<string, { is: string; en: string }> = {
+  primary: { is: 'frumheimild', en: 'primary' },
+  academic: { is: 'fræðigrein', en: 'academic' },
+  press: { is: 'fjölmiðill', en: 'press' },
+  advocacy: { is: 'málsvari', en: 'advocacy' },
+};
+```
+
+(The existing `tierLabel[s.tier]?.[lang] ?? s.tier` usages in the chip markup now resolve to the imported map — no change needed at the call sites.)
+
+(c) Render `Stakes` between the closing `</header>` (line 56) and the `<!-- Today vs. As a member -->` comment (line 58):
 
 ```astro
   </header>
@@ -452,8 +475,8 @@ Expected: `0`.
 - [ ] **Step 7: Commit**
 
 ```bash
-git add src/i18n/ui.ts src/components/Stakes.astro src/components/Dossier.astro
-git commit -m "feat: generic Stakes stat-bar component, rendered as the fisheries hook"
+git add src/i18n/tiers.ts src/i18n/ui.ts src/components/Stakes.astro src/components/Dossier.astro
+git commit -m "feat: generic Stakes stat-bar component (shared tierLabel), fisheries hook"
 ```
 
 ---
