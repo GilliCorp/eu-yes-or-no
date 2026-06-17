@@ -53,6 +53,7 @@ const dossiers = defineCollection({
     uncertain: z.array(point).default([]),
     // Render the "build your household" calculator on this chapter.
     calculator: z.boolean().default(false),
+    basket: z.boolean().default(false),
     lastReviewed: z.coerce.date(),
     confidence: z.enum(['high', 'medium', 'low']),
   }),
