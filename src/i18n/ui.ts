@@ -78,6 +78,9 @@ export const ui = {
     'basket.verifyTitle': 'Sjáðu raunverð sjálf',
     'basket.verifyNote': 'Verð erlendis er ólíkt af fleiri ástæðum en tollum — launum, flutningi og stærð markaðar. Lestu því ekki allt verðbilið sem ESB-áhrif.',
     'basket.qty': 'Fjöldi',
+    'basket.col.item': 'Vara',
+    'basket.col.price': 'Verð',
+    'basket.col.tag': 'Tollvernd',
     'footer.neutral':
       'Hlutlaus, heimildastudd síða. Hver fullyrðing vísar í frumheimild. Allt efni er opið á GitHub — saga breytinga er sýnileg.',
     'footer.bullshit': 'Sástu villu? Leiðréttu hana',
@@ -154,6 +157,9 @@ export const ui = {
     'basket.verifyTitle': 'See real prices yourself',
     'basket.verifyNote': "Prices abroad differ for more reasons than tariffs — wages, transport and market size — so don't read the whole price gap as the EU effect.",
     'basket.qty': 'Qty',
+    'basket.col.item': 'Item',
+    'basket.col.price': 'Price',
+    'basket.col.tag': 'Tariff protection',
     'footer.neutral':
       'A neutral, sourced site. Every claim cites a primary source. All content is open on GitHub — the edit history is visible.',
     'footer.bullshit': 'Spotted an error? Fix it',
