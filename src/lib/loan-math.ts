@@ -34,12 +34,12 @@ function simulate(
   const basePay = annuity(principal, ratePct, years); // indexed: real annuity; others: nominal flat
   let totalNominal = 0;
   let totalReal = 0;
-  for (let m = 1; m <= months; m++) {
+  for (let m = 0; m < months; m++) {
     const nominalPay = kind === 'indexed' ? basePay * Math.pow(1 + inflM, m) : basePay;
     totalNominal += nominalPay;
     totalReal += nominalPay / Math.pow(1 + inflM, m);
   }
-  const monthlyStart = kind === 'indexed' ? basePay : basePay; // year-0 price level
+  const monthlyStart = basePay; // year-0 price level
   const monthlyAfter10 = basePay * Math.pow(1 + (kind === 'indexed' ? inflPct / 100 : 0), 10);
   return { totalNominal, totalReal, monthlyStart, monthlyAfter10 };
 }

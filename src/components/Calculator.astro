@@ -103,7 +103,7 @@ const scenarios = [
   import { computeLoan } from '../lib/loan-math';
   import { ASSUMPTIONS } from '../data/assumptions';
 
-  const root = document.currentScript?.closest('.calc') ?? document.querySelector('.calc');
+  const root = document.querySelector('.calc');
   if (root) initCalc(root as HTMLElement);
 
   function initCalc(root: HTMLElement) {
@@ -126,10 +126,12 @@ const scenarios = [
       ({ min: a.min, typ: a.typical, max: a.max });
 
     function compute() {
-      const P = Math.max(0, (Number(price.value) || 0) - (Number(equity.value) || 0));
+      const priceVal = Number(price.value) || 0;
+      const equityVal = Math.min(Number(equity.value) || 0, priceVal);
+      const P = Math.max(0, priceVal - equityVal);
       const yrs = Number(term.value) || 1;
       const infl = band(ASSUMPTIONS.inflation);
-      const ltv = Number(price.value) > 0 ? Math.round((P / Number(price.value)) * 100) : 0;
+      const ltv = priceVal > 0 ? Math.round((P / priceVal) * 100) : 0;
       fill('loanAmount', money(P));
       fill('ltv', ltv + '%');
 
