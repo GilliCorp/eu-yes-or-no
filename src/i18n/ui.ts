@@ -58,6 +58,11 @@ export const ui = {
     'calc.disclaimer':
       'Skýringardæmi byggt á uppgefnum forsendum — ekki spá. Evru-upptaka er háð skilyrðum og mörg ár í burtu.',
     'calc.assumptions': 'Forsendur og heimildir',
+    'calc.verifyTitle': 'Prófaðu alvöru reiknivélar sjálf',
+    'calc.verifyNote':
+      'Þetta er skýringardæmi byggt á uppgefnum forsendum og tölunum sem þú slóst inn — ekki raunverulegt lánatilboð. Ertu efins? Prófaðu reiknivélar bankanna sjálf.',
+    'calc.banksIceland': 'Íslenskir bankar',
+    'calc.banksEuro': 'Evrusvæðið — dæmi til samanburðar',
     'footer.neutral':
       'Hlutlaus, heimildastudd síða. Hver fullyrðing vísar í frumheimild. Allt efni er opið á GitHub — saga breytinga er sýnileg.',
     'footer.bullshit': 'Sástu villu? Leiðréttu hana',
@@ -114,6 +119,11 @@ export const ui = {
     'calc.disclaimer':
       'Illustrative scenario based on stated assumptions — not a prediction. Euro adoption is conditional and years away.',
     'calc.assumptions': 'Assumptions & sources',
+    'calc.verifyTitle': "Try real calculators yourself",
+    'calc.verifyNote':
+      "This is an illustrative example based on our stated assumptions and the numbers you entered — not a real loan offer. Skeptical? Try the banks' own calculators.",
+    'calc.banksIceland': 'Icelandic banks',
+    'calc.banksEuro': 'Eurozone — examples to compare',
     'footer.neutral':
       'A neutral, sourced site. Every claim cites a primary source. All content is open on GitHub — the edit history is visible.',
     'footer.bullshit': 'Spotted an error? Fix it',

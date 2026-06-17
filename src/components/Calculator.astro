@@ -2,6 +2,7 @@
 import type { Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
 import { ASSUMPTIONS } from '../data/assumptions';
+import { ICELANDIC_BANKS, EUROZONE_BANKS } from '../data/bank-calculators';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -97,6 +98,29 @@ const scenarios = [
       ))}
     </ul>
   </details>
+
+  <aside class="verify">
+    <p class="verify-title">{t(lang, 'calc.verifyTitle')}</p>
+    <p class="verify-note">{t(lang, 'calc.verifyNote')}</p>
+    <div class="verify-cols">
+      <div>
+        <p class="verify-group">{t(lang, 'calc.banksIceland')}</p>
+        <ul>
+          {ICELANDIC_BANKS.map((b) => (
+            <li><a href={b.url} target="_blank" rel="noopener">{b.bank} ↗</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <p class="verify-group">{t(lang, 'calc.banksEuro')}</p>
+        <ul>
+          {EUROZONE_BANKS.map((b) => (
+            <li><a href={b.url} target="_blank" rel="noopener">{b.country[lang]}: {b.bank} ↗</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </aside>
 </section>
 
 <script>
@@ -231,4 +255,14 @@ const scenarios = [
   .assumptions li { font-size: 0.85rem; }
   .assumptions code { font-family: var(--mono); font-size: 0.8rem; color: var(--ink); }
   .assumptions a { margin-left: 0.4rem; font-size: 0.8rem; }
+
+  .verify { margin-top: 1.5rem; border-top: 1px solid var(--line-strong); padding-top: 1.25rem; }
+  .verify-title { font-family: var(--display); font-weight: 600; font-size: 1rem; margin: 0 0 0.3rem; }
+  .verify-note { font-size: 0.85rem; color: #4a463f; margin: 0 0 1rem; max-width: 42rem; }
+  .verify-cols { display: grid; grid-template-columns: 1fr; gap: 1rem 2rem; }
+  @media (min-width: 38rem) { .verify-cols { grid-template-columns: 1fr 1fr; } }
+  .verify-group { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.5rem; }
+  .verify-cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+  .verify-cols a { font-family: var(--mono); font-size: 0.82rem; color: var(--slate); text-decoration: none; }
+  .verify-cols a:hover { color: var(--ink); text-decoration: underline; }
 </style>
