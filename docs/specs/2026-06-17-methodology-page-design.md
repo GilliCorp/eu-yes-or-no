@@ -3,7 +3,9 @@
 **Date:** 2026-06-17
 **Status:** Approved (design); ready for implementation planning
 **Page:** `/methodology` (is) + `/en/methodology` (en) — the site's first non-chapter content page
-**Related:** original design `docs/specs/2026-06-16-eu-yes-or-no-design.md` (names Methodology + Sources index as non-negotiable trust pages); fisheries spec `2026-06-17-chapter4-fisheries-design.md` (follow-up #4: the "we don't pad to fake balance" principle lives here)
+**Related:** original design `docs/specs/2026-06-16-eu-yes-or-no-design.md` (names Methodology + Sources index as non-negotiable trust pages)
+
+> **No chapter-specific references** (Gísli): the methodology page describes the site's *general* method only. It must not name, cite, or allude to any individual chapter — not in the page copy and not in this design doc. Principles (e.g. "we don't pad to fake balance") are stated as universal rules, never tied to a specific topic.
 
 ## Purpose
 
@@ -48,7 +50,7 @@ Optional sourced links inside a section (e.g. the 2010–13 accession docs) may 
 5. **How each chapter is researched.** For each topic we deliberately seek the strongest argument *for* and the strongest *against*, then check each against primary sources. Claims are cross-examined by multiple independent checks; those that fail are **removed**, not softened. A claim that survives only in advocacy sources is flagged *uncertain* rather than stated as fact. (We use automated deep-research tooling to fan out and fact-check, but every published claim still ties back to a citable source.)
 
 6. **Our honesty rules.**
-   - **We don't pad the weaker side to fake balance.** Some topics genuinely have a stronger case one way; we show what the sources support and let the imbalance stand. *Count the sources, not the bullet points.* (← the fisheries-decision principle, stated here site-wide.)
+   - **We don't pad the weaker side to fake balance.** Some topics genuinely have a stronger case one way; we show what the sources support and let the imbalance stand. *Count the sources, not the bullet points.*
    - **The "uncertain" box.** Every chapter flags honestly what we don't know.
    - **"Last reviewed" dates.** Every chapter is dated — facts go stale.
    - **The Icelandic text is currently AI-drafted** and being reviewed by a native speaker; we flag this honestly until it's done.
