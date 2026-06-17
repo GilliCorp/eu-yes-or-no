@@ -76,16 +76,3 @@ export const ASSUMPTIONS: Record<string, Assumption> = {
     },
   },
 };
-
-/** Household presets — set a typical loan size + term. Custom keeps current values. */
-export interface Preset {
-  key: string;
-  amount: number; // ISK
-  term: number; // years
-}
-
-export const PRESETS: Preset[] = [
-  { key: 'alone', amount: 38_000_000, term: 30 },
-  { key: 'couple', amount: 60_000_000, term: 30 },
-  { key: 'family', amount: 85_000_000, term: 30 },
-];
