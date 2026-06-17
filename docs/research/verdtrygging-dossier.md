@@ -2,7 +2,7 @@
 
 **Topic:** How would Iceland joining the EU affect verðtrygging (CPI-indexation of household mortgages)?
 **Chapter:** "Your money" (chapter 1)
-**Status:** Draft from two deep-research passes. Pass 1 fully verified; Pass 2 partially verified (see flags).
+**Status:** Verified. Two deep-research passes + a targeted re-verification pass (all Pass-2 claims re-checked and confirmed high-confidence).
 **Last updated:** 2026-06-17
 
 > **How to read the confidence flags**
@@ -98,25 +98,42 @@ from 2027 — all independent of the EU. And it's all newly topical because **Ic
   — verified 2-0) *Quote:* "Með reglum um lágmarkshraða afborgana til að minnka vægi verðtryggðra
   íbúðalána sem taki gildi á árinu 2027."
 
-### ⚠️ Unverified — abstained due to session limit, NOT refuted. RE-CHECK before publishing.
-These are highly relevant and mostly from primary/strong sources:
-- **14 Oct 2025 — Hæstiréttur** partially invalidated **Íslandsbanki's variable-interest terms** (case by
-  Neytendasamtökin): rate changes may not be tied to anything other than clear benchmarks like the
-  Central Bank policy rate (stýrivextir). (RÚV; mbl)
-- **After that ruling, commercial banks suspended issuance of indexed (verðtryggð) loans.** (mbl)
-- **22 Dec 2025 — Hæstiréttur** rulings in Landsbankinn / Arion "vaxtamálið" cases (Íslandsbanki: rate
-  changes can't rest on subjective criteria; Arion: terms clear enough). (mbl; ns.is)
-- Govt plans to have the **Central Bank publish an interest-rate benchmark (vaxtaviðmið)** to base indexed
-  loans on, responding to the Supreme Court ruling's market uncertainty. (stjórnarráðið)
-- **Referendum on resuming EU accession talks: 29 Aug 2026.** Question: *"Á Ísland að hefja á ný
-  aðildarviðræður við Evrópusambandið?"* (Yes/No), per Parliamentary Resolution 14/157 adopted 28 May
-  2026. (stjórnarráðið; Wikipedia)
-- **Market share:** by 2022 non-indexed (óverðtryggð) loans ≈ **60%** of household mortgages (record
-  high); from 2023 a **shift back toward indexed** as rates rose (indexed payment burden rose less);
-  autumn 2024 banks **tightened** indexed-mortgage terms (max term ~25 yrs from 40; equal-payment indexed
-  loans limited to first-time buyers). (Seðlabanki)
-- **Inflation:** 12-month CPI **5.1% as of May 2026**; CPI index **684.3** (base May 1988=100); that
-  May 2026 value is the reference applied to indexed loans for July 2026. (Hagstofa)
+### ✅ Verified in re-verification pass (all confirmed, high confidence; nuances folded in)
+**The domestic "vaxtamálið" (interest-rate case) saga — bigger live pressure on verðtrygging than the EU:**
+- **14 Oct 2025 — Hæstiréttur** partially invalidated ("ógiltir að hluta") the variable-rate terms of an
+  **unindexed (óverðtryggt)** Íslandsbanki loan — a test case by **Neytendasamtökin** for ~3,000
+  borrowers. Banks may **not** change rates on **subjective ("huglæg") criteria**; must use objective
+  benchmarks tied to the **Central Bank's reference rates.** *Nuance:* the borrower won the principle but
+  the **monetary claim was rejected** (CB rate had risen more than the loan rate), so the bank paid
+  nothing. (RÚV, ns.is, Heimildin, mbl)
+- **After the ruling (20–21 Oct 2025) all three big banks PAUSED issuing indexed (verðtryggð) mortgages**
+  citing legal uncertainty (Landsbankinn 20 Oct; Íslandsbanki + Arion 21 Oct). *Nuance:* targeted
+  subtypes (esp. variable-rate indexed), not a blanket halt; banks resumed with **revised** indexed terms
+  within weeks (e.g. Íslandsbanki 4.75% fixed, floor 3.5%, ceiling 5.25%). (vb.is, mbl, Heimildin, Vísir)
+- **22 Dec 2025 — Hæstiréttur** ruled in the Landsbankinn cases (no. **32/2025 & 35/2025**) + Íslandsbanki:
+  rate-adjustment terms **invalid except where they reference Central Bank rates**, but **banks acquitted**
+  of borrowers' repayment claims. *Nuance:* the related **Arion** ruling came earlier, **10 Dec 2025**
+  (claim had grouped it with the 22 Dec batch). Anchored to **§34 of the 2016 Consumer Mortgage Act**:
+  rate-change criteria must be "clear, accessible, objective and verifiable." (ns.is, mbl, RÚV)
+- **Govt fix:** in the **29 Oct 2025 housing package**, the govt will have the **Central Bank publish an
+  interest-rate benchmark (vaxtaviðmið)** "as soon as possible" to base indexed loans on, to remove the
+  ruling's market uncertainty. (stjórnarráðið, Alþingi)
+
+**The political moment:**
+- ✅ **Referendum on resuming EU accession talks: Saturday 29 Aug 2026.** Question: *"Á Ísland að hefja á
+  ný aðildarviðræður við Evrópusambandið?"* (Yes/No), per **Parliamentary Resolution No. 14/157, adopted
+  28 May 2026** (34 for, 8 against, 14 abstain). *Key:* it is **ADVISORY, not binding** — and a *separate*
+  referendum would be needed to approve any actual accession agreement. A "No" would end the process.
+  (stjórnarráðið, Wikipedia, govt.is, Brussels Signal, Arctic Portal)
+
+**Market & macro (Seðlabanki / Hagstofa):**
+- ✅ By **2022 non-indexed (óverðtryggð) loans ≈ 60%** of the household mortgage stock (record high). From
+  **2023** households **shifted back to indexed** as rates rose (indexed payment burden rose less). In
+  **autumn 2024** the big-3 tightened indexed terms: typical max term cut to **~25 yrs (from 40)**;
+  **equal-payment (jafngreiðslu) indexed loans limited to first-time buyers.** *Nuance:* "~25 yr" is the
+  sector typical (Arion 25; Landsbankinn kept 30 for general indexed loans). (Seðlabanki, Landsbankinn, Arion)
+- ✅ **Inflation: 12-mo CPI 5.1% as of May 2026**; CPI index **684.3** (base May 1988=100). That May 2026
+  value (684.3) is the reference applied to indexed loans for **July 2026.** (Hagstofa)
 
 ---
 
@@ -129,8 +146,10 @@ government accession summary; IoES/Univ. of Iceland.
 **Advocacy (framing only):** esbvaktin.is, evrópuvefur, DV/Vísir op-eds.
 
 ## OPEN QUESTIONS / TO FINISH
-1. Re-verify all ⚠️ Pass-2 claims (the limit interrupted fact-checking).
-2. Resolve whether MCD Art. 24 (variable *rate* benchmarks) even covers ex-post CPI re-indexation of
-   *principal*, or whether that's solely a 93/13 unfair-terms question.
-3. Confirm exact holdings/effects of the Oct & Dec 2025 Hæstiréttur rulings and current bank practice.
-4. Confirm referendum mechanics (turnout rules, binding vs advisory).
+1. ~~Re-verify all ⚠️ Pass-2 claims.~~ ✅ DONE 2026-06-17 — all confirmed high-confidence.
+2. ~~Confirm referendum mechanics (binding vs advisory).~~ ✅ DONE — advisory; separate referendum needed
+   for any actual accession agreement.
+3. (Still open, minor/legal-nuance) Resolve whether MCD Art. 24 (variable *rate* benchmarks) even covers
+   ex-post CPI re-indexation of *principal*, or whether that's solely a 93/13 unfair-terms question.
+4. (Living data) The vaxtaviðmið benchmark rollout and any post-Dec-2025 indexed-loan litigation/practice
+   will keep evolving — set a `lastReviewed` date and revisit before launch.
