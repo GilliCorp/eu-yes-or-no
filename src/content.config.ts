@@ -60,6 +60,10 @@ const dossiers = defineCollection({
     summary: loc, // plain-language paragraph
     today: loc, // what's already true under the EEA / Schengen now
     asMember: loc, // what changes with full EU membership
+    // Optional unsourced "scope note" callout rendered near the top of a chapter —
+    // narrative prose (like summary/today), NOT a sourced ledger point. Used to flag
+    // a topic that isn't directly an EU matter but earns a place for context.
+    contextNote: loc.optional(),
     gains: z.array(point).default([]),
     losses: z.array(point).default([]),
     uncertain: z.array(point).default([]),

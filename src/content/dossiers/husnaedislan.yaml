@@ -1,4 +1,4 @@
-order: 2
+order: 1
 
 title:
   is: "Húsnæðislán"
@@ -53,6 +53,31 @@ asMember:
     with fiscal discipline — and with the euro the European Central Bank also sets rates
     for the whole area, not tailored to Iceland's cycle.
 
+contextNote:
+  is: >-
+    Verðtrygging — vísitölubinding lána — er ekki hluti af aðildarviðræðum við ESB,
+    og aðild myndi hvorki banna hana né breyta henni beint; EES-reglurnar sem gilda um
+    hana eru þegar í gildi, og mesti þrýstingurinn á hana í dag er innlendur (dómar
+    Hæstaréttar 2025, tímabundið hlé á verðtryggðum lánum og áform stjórnvalda um að
+    minnka vægi þeirra frá 2027). Hún á heima í þessum kafla af tveimur heiðarlegum
+    ástæðum: hún er það sem Íslendingar tengja helst við evruna, og hún verður fyrir
+    óbeinum áhrifum — á löngu, margra ára evruferli myndi lág verðbólga fjarlægja það
+    sem lætur verðtrygginguna bíta (þau evruáhrif eru í ávinningnum hér að neðan). Og
+    hún er tvíeggjuð: verðtrygging heldur mánaðarlegum greiðslum lægri þegar vextir eru
+    háir, og venjan er lífseig — þegar vextir hækkuðu eftir 2023 færðu heimili sig aftur
+    í verðtryggð lán.
+  en: >-
+    Verðtrygging — the CPI-indexing of loans — is not part of the EU accession talks,
+    and membership would neither ban nor change it directly; the EEA rules that govern
+    it already apply, and today's real pressure on it is domestic (2025 Supreme Court
+    rulings, a pause in indexed lending, and a government plan to cut its weight from
+    2027). It earns a place in this chapter for two honest reasons: it's the issue
+    Icelanders most associate with the euro, and it's indirectly affected — over a slow,
+    multi-year euro path, low inflation would remove what makes indexing bite (those
+    euro effects are the gains below). And it's double-edged, not just a burden:
+    indexing keeps monthly payments lower when rates are high, and habit makes it
+    sticky — when rates rose after 2023, households moved back toward indexed loans.
+
 gains:
   - claim:
       is: "Evran gæti lækkað fjármagnskostnað um 25–100 punkta og fjarlægt gengisáhættuálagið sem krónan ber með sér — lægri vextir á húsnæðislán heimila."
@@ -73,6 +98,26 @@ gains:
       - title: "Skýrsla um valkosti Íslands í gjaldmiðlamálum (currency-options report)"
         url: "https://www.stjornarradid.is/library/02-Rit--skyrslur-og-skrar/Sk%C3%BDrsla%20um%20valkosti%20%C3%8Dslands%20%C3%AD%20gjaldmi%C3%B0lam%C3%A1lum%20-%20001.pdf"
         publisher: "Government of Iceland"
+        tier: primary
+  - claim:
+      is: "Evran fjarlægir gengisfall krónunnar sem keyrir verðbólgu beint inn í verðtryggð lán. Eftir hrunið 2008 féll krónan um meira en helming og um 80% skulda heimila voru verðtryggð — hækkunin lenti beint á lántökum."
+      en: "The euro removes the króna devaluation that drives inflation straight into indexed loans. After the 2008 crash the króna fell by more than half and about 80% of household debt was indexed — the rise landed directly on borrowers."
+    affects: ["homeowners", "borrowers"]
+    confidence: high
+    sources:
+      - title: "Economic Affairs No. 6 — Iceland's currency and exchange rate policy options"
+        url: "https://www.cb.is/library/Skraarsafn---EN/Economic-Affairs/Economic%20Affairs_no%206.pdf"
+        publisher: "Central Bank of Iceland"
+        tier: primary
+  - claim:
+      is: "Til að taka upp evru þarf lága og stöðuga verðbólgu (Maastricht-skilyrðin) — einmitt þær aðstæður þar sem verðtryggingin missir tilgang sinn."
+      en: "Adopting the euro requires low, stable inflation (the Maastricht criteria) — exactly the conditions under which verðtrygging loses its purpose."
+    affects: ["borrowers"]
+    confidence: high
+    sources:
+      - title: "Convergence criteria for joining the euro area"
+        url: "https://www.ecb.europa.eu/ecb/orga/escb/html/convergence-criteria.en.html"
+        publisher: "European Central Bank"
         tier: primary
 
 losses:
@@ -128,5 +173,5 @@ uncertain:
         tier: primary
 
 calculator: true
-lastReviewed: 2026-06-17
+lastReviewed: 2026-06-18
 confidence: high
