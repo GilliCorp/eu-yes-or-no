@@ -3,6 +3,7 @@
 **Topic:** How would Iceland joining the EU affect sovereignty and democratic say? (EEA-member-today vs full-EU-member — what actually changes for democratic voice.)
 **Chapter:** "Sovereignty" (ch6)
 **Status:** Verified. Solo deep-research pass (107 agents, 25 sources, 107 claims extracted → top 25 adversarially fact-checked; **25 confirmed, 0 killed**), plus 7 EEA-baseline claims confirmed in an earlier partial run (w9d2b5y2e). NB: an earlier attempt was cut off by a token/session limit mid-verification; this is the clean completion.
+**Follow-up (2026-06-18):** a light targeted verification pass (single agent, ~48k tokens) closed the three open angles — the **unanimity/veto list** (confirmed, with treaty bases), the **Icelandic constitutional transfer-of-powers** question (confirmed: no transfer clause, amendment likely needed; EEA-vs-EU primacy contested), and the **EEA-law share** figure (EFTA: ~5,000 acts in force). Folded into the ledger. Caught a trap: the "revocable transfer + referendum" clause people cite is the FAILED 2011 draft, not the in-force constitution.
 **Last updated:** 2026-06-18
 
 > **How to read the confidence flags**
@@ -67,14 +68,25 @@ The honest finding is **a genuine trade, not a win for either side** — and the
 - ✅ **Double-majority strengthens LARGE states' blocking power** more than their passing power (Banzhaf-index modelling). *(Hosli — hypothetical EU-15 model; see caveat)*
 - ✅ **Formal transfer of sovereignty** in agriculture, fisheries, trade, CFSP, monetary union (areas now outside the EEA).
 
----
+### The veto a member keeps — unanimity areas (the anti-EU "vote where it matters" point, now verified)
+QMV is the default, but the Council still votes by **unanimity** in the most sovereignty-sensitive areas — so even Iceland, the smallest member, would hold a **veto** there. Confirmed via the Council's own "unanimity" page + treaty bases:
+- ✅ **Common Foreign & Security Policy** (Art. 31 TEU) — "most CFSP issues."
+- ✅ **EU enlargement / accession of new members** (Art. 49 TEU).
+- ✅ **Tax harmonisation**, incl. indirect tax / VAT / excise (Arts 113 & 115 TFEU) — relevant to the resource-rent/tax point in the natural-resources chapter.
+- ✅ **EU finances:** the **own-resources** system (Art. 311 TFEU, + ratification by every member) **and** the **Multiannual Financial Framework** (Art. 312 TFEU: "a Council regulation to be adopted unanimously… subject to the consent of the European Parliament").
+- ✅ **Granting new rights to EU citizens / citizenship** (Art. 25 TFEU).
+- ✅ **Treaty revision** (Art. 48 TEU) — the strongest veto: every state ratifies per its own constitution.
+- ✅ **Specific** JHA & social-security/social-protection measures (e.g. Arts 153, 81(3), 87(3) TFEU) — unanimity for those sub-areas only, **not** JHA wholesale (most JHA is QMV). *(Consilium "unanimity"; EP MFF factsheet; TEU/TFEU as cited)*
 
-## ⚠️ REQUESTED BUT NOT VERIFIED THIS PASS (must be primary-sourced before publishing)
-The caveats explicitly flag that three brief angles are **not** backed by any verified claim in this set:
-- ⚠️ **The unanimity/veto list (angle 4).** Which areas still need unanimity — and thus give even the smallest member a real veto: **CFSP, EU enlargement/accession, harmonisation of indirect taxation, EU finances (own resources + the MFF), granting new citizen rights, certain JHA/social-security**. Asserted as standard knowledge but **must be sourced** (TEU/TFEU via EUR-Lex; Consilium "unanimity" page — both were *fetched* as sources but their specific claims weren't in the confirmed top-25). High priority: the veto point is central to the anti-EU "you keep a veto where it matters" rebuttal.
-- ⚠️ **The Icelandic constitutional transfer-of-powers question (angle 5).** Iceland's constitution has **no explicit clause** authorising transfer of sovereign powers to supranational bodies — so would full membership require a **constitutional amendment**, and how does that differ legally from the EEA? Sources fetched (Icelandic Constitution; ESA Protocol 35 reasoned opinion; Méndez-Pinedo) but not in the confirmed set.
-- ⚠️ **The 2009–2015 process narrative (angle 6).** How sovereignty featured in the 2010–13 talks, and the stated reasons for the 2013 suspension / 2015 withdrawal. (Some of this is already verified in the **accession-process dossier** — cross-reference rather than duplicate.)
-- ⚠️ **A hard number for "how much EU law Iceland already adopts via the EEA."** The brief asserts it; no claim delivered a specific percentage/count. Worth a targeted lookup (commonly-cited figures exist but need sourcing).
+### The Icelandic constitutional question — does membership need an amendment? (verified; partly contested)
+- ✅ **Iceland's constitution has NO explicit transfer-of-powers clause.** The in-force Constitution (No. 33/1944, as amended to 1999) contains only **Article 21** (the President concludes treaties; Althingi approval needed if they "require changes in the State system") and **Article 2** (legislative power vested in Althingi + President, no supranational carve-out) — unlike Germany (Basic Law 23/24), Denmark (§20) or Ireland (Art. 29.4). *(Constitution of Iceland, government.is)*
+- ✅ **Full EU membership is widely argued to require a constitutional amendment first** — and the amendment route (**Art. 79**) is heavy: passage by **two successive parliaments with a general election in between**. The government's own roadmap and reporting acknowledge constitutional change may be needed before ratifying any deal. *(Iceland Review; 2026-referendum coverage)*
+- ⚠️ **CONTESTED — report as a live debate, not a verdict:** the EEA-vs-EU distinction. The official/dualist defence: the EEA's two-pillar structure **avoids** transferring legislative power (EEA law isn't automatically supreme; Althingi must transpose). The counter: the **Protocol 35** dispute — ESA opened infringement proceedings (2015–17) arguing Iceland gives EEA law insufficient primacy, while the **Icelandic Supreme Court has repeatedly set EEA law aside** in favour of national law (Méndez-Pinedo). Present all three positions; don't pick a winner.
+- 🚩 **Trap to avoid:** many online summaries describe Iceland's constitution as already allowing a "revocable" transfer of powers with a mandatory referendum — **that's the FAILED 2011/2013 draft constitution, which never became law.** Do not cite it as current.
+
+### How much EU law Iceland already takes via the EEA (figure + honest caveat)
+- ✅ **EFTA's own count:** "more than **9,500** EU directives, regulations and decisions have been part of the EEA Agreement, of which **around 5,000 are in force today**." This counts **EEA-incorporated acts**, NOT a percentage of Icelandic statute law. *(EFTA / EEA-Lex)*
+- ⚠️ The popular **"two-thirds of EU legislation"** line is **Commissioner Olli Rehn's contested estimate** of *acquis uptake* (he argued Iceland's accession could take under a year because it had "already adopted two-thirds of EU legislation") — **not** "two-thirds of Icelandic law," and not a measured statistic. Use the EFTA act-count as the hard number; treat any "X% of our law is from Brussels" headline as a contested estimate that depends on what's counted.
 
 ### Caveats on what IS verified
 - **Hosli's Council figures (Gini 0.085→0.14; the 54%/70% blocking split) are PRE-Lisbon** (1958/1995, EU-15, weighted-vote era) — present as **historical/illustrative**, not as today's EU-27 double-majority numbers. (Two claims here were 2-1, not 3-0: the population-minority and large-state-blocking points — keep them hedged.)
@@ -86,7 +98,12 @@ The caveats explicitly flag that three brief angles are **not** backed by any ve
 ## SOURCES (primary unless noted)
 - Council/Consilium — qualified majority voting: https://www.consilium.europa.eu/en/council-eu/voting-system/qualified-majority/
 - Council/Consilium — how the Council votes: https://www.consilium.europa.eu/en/council-eu/how-does-the-council-vote/
-- Council/Consilium — unanimity (for the ⚠️ veto list): https://www.consilium.europa.eu/en/council-eu/voting-system/unanimity/
+- Council/Consilium — unanimity (verified veto list): https://www.consilium.europa.eu/en/council-eu/how-does-the-council-vote/unanimity/
+- Council/Consilium — EU tax policy (tax unanimity): https://www.consilium.europa.eu/en/policies/eu-tax-policy/
+- Constitution of Iceland (No. 33/1944; Arts 2, 21, 79): https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf
+- Méndez-Pinedo — constitutional/judicial resistance to EEA law in Iceland (Protocol 35; primacy debate): https://www.tribunajuridica.eu/arhiva/An10v3/3.%20Elvira%20Mendez%20Pinedo%20-%20Lucrarea%201.pdf
+- EFTA — EEA-Lex (~9,500 acts incorporated / ~5,000 in force): https://www.efta.int/eea-lex
+- Iceland Review — steps required for potential EU membership (constitutional amendment): https://www.icelandreview.com/news/iceland-sets-out-steps-required-for-potential-eu-membership/
 - European Parliament — MEPs per country 2024–2029: https://www.europarl.europa.eu/topics/en/article/20180126STO94114/2024-2029-european-parliament-how-many-meps-per-country
 - European Parliament study — EP composition / degressive proportionality / EU-40 model: https://www.europarl.europa.eu/RegData/etudes/IDAN/2024/759467/IPOL_IDA(2024)759467_EN.pdf
 - EUR-Lex — Treaty of Nice summary (Commissioner reform): https://eur-lex.europa.eu/EN/legal-content/summary/treaty-of-nice.html
