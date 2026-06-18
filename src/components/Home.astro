@@ -28,6 +28,12 @@ const dateFmt = new Intl.DateTimeFormat(lang === 'is' ? 'is-IS' : 'en-GB', {
     <p class="draft">{t(lang, 'home.draft')}</p>
   </section>
 
+  <a class="start-here" href={getRelativeLocaleUrl(lang, 'start-here')}>
+    <span class="sh-eyebrow">{t(lang, 'nav.startHere')} →</span>
+    <span class="sh-title">{t(lang, 'home.startHere.title')}</span>
+    <span class="sh-lead">{t(lang, 'home.startHere.lead')}</span>
+  </a>
+
   <h2 class="section-label">{t(lang, 'home.chapters')}</h2>
   <ul class="chapters">
     {
@@ -66,6 +72,21 @@ const dateFmt = new Intl.DateTimeFormat(lang === 'is' ? 'is-IS' : 'en-GB', {
     display: inline-block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em;
     color: #7a5a1e; background: #f4e9cf; border: 1px solid #e2cf9c; padding: 0.25rem 0.65rem; border-radius: 2px;
   }
+
+  .start-here {
+    display: block; text-decoration: none; color: inherit;
+    border: 1px solid var(--line-strong); border-left: 4px solid var(--brass);
+    background: var(--paper-raised); border-radius: 4px;
+    padding: 1.25rem clamp(1rem, 3vw, 1.6rem); margin: 0 0 2.5rem;
+    transition: border-color 0.15s;
+  }
+  .start-here:hover { border-color: var(--slate); }
+  .sh-eyebrow {
+    display: block; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--brass); margin-bottom: 0.4rem;
+  }
+  .sh-title { display: block; font-family: var(--display); font-weight: 600; font-size: 1.2rem; margin-bottom: 0.3rem; }
+  .sh-lead { display: block; color: #34322d; font-size: 1rem; }
 
   .section-label {
     font-family: var(--mono); font-size: 0.78rem; font-weight: 500; text-transform: uppercase;
