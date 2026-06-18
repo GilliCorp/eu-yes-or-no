@@ -50,6 +50,13 @@ const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
     <p class="summary">{d.summary[lang]}</p>
   </header>
 
+  {d.contextNote && (
+    <aside class="context-note">
+      <p class="cn-label">{t(lang, 'dossier.contextNote')}</p>
+      <p class="cn-body">{d.contextNote[lang]}</p>
+    </aside>
+  )}
+
   {d.stakes && d.stakes.length > 0 && <Stakes bars={d.stakes} lang={lang} />}
 
   <!-- Today vs. As a member: the before/after spine -->
@@ -171,6 +178,18 @@ const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
     line-height: 1.3; color: var(--ink); margin: 0 0 1.25rem;
   }
   .summary { font-size: 1.125rem; color: #34322d; margin: 0; }
+
+  /* Context note — an unsourced aside, distinct from the gain/loss ledger */
+  .context-note {
+    border: 1px solid var(--line-strong); border-left: 4px solid var(--brass);
+    border-radius: 4px; background: var(--paper-raised);
+    padding: 1.25rem clamp(1rem, 3vw, 1.6rem); margin: 0 0 3.5rem; max-width: 44rem;
+  }
+  .cn-label {
+    font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--brass); margin: 0 0 0.6rem;
+  }
+  .cn-body { margin: 0; font-size: 1rem; color: #34322d; }
 
   /* Compare: today vs. as member */
   .compare {
