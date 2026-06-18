@@ -35,11 +35,11 @@ export const header: { eyebrow: Loc; title: Loc; lead: Loc } = {
 
 export const bottomLine: Loc[] = [
   {
-    is: 'Ísland er nú þegar um tveir þriðju „inni" í ESB gegnum EES-samninginn. Þjóðaratkvæðagreiðslan snýst aðeins um hvort hefja eigi viðræður á ný — ekki um aðild sjálfa.',
+    is: 'Ísland er nú þegar um tveir þriðju „inni“ í ESB gegnum EES-samninginn. Þjóðaratkvæðagreiðslan snýst aðeins um hvort hefja eigi viðræður á ný — ekki um aðild sjálfa.',
     en: 'Iceland is already about two-thirds "in" the EU through the EEA Agreement. The referendum is only about whether to reopen talks — not about membership itself.',
   },
   {
-    is: 'Að „kíkja í pakkann" skuldbindur ekki til neins: hægt er að ganga frá borði, eins og Ísland gerði 2013–2015. En það sem ekki er í boði er að velja úr reglubókinni — aðild þýðir að taka upp regluverk ESB í heild. Varanlegar sérlausnir eru til, en sjaldgæfar og þröngar.',
+    is: 'Að „kíkja í pakkann“ skuldbindur ekki til neins: hægt er að ganga frá borði, eins og Ísland gerði 2013–2015. En það sem ekki er í boði er að velja úr reglubókinni — aðild þýðir að taka upp regluverk ESB í heild. Varanlegar sérlausnir eru til, en sjaldgæfar og þröngar.',
     en: 'Peeking in the package commits you to nothing — you can walk away, as Iceland did in 2013–2015. What is not on offer is cherry-picking the rulebook: membership means adopting the EU acquis in full. Permanent carve-outs exist, but they are rare and narrow.',
   },
 ];
@@ -68,7 +68,7 @@ export const sections: Section[] = [
         sources: [MFA],
       },
       {
-        text: { is: 'Ekkert verður bindandi fyrr en fullgerður aðildarsamningur er undirritaður og fullgiltur af öllum aðildarríkjum og Evrópuþinginu. Kaflarnir sem Ísland „lokaði til bráðabirgða" bundu því ekkert.', en: 'Nothing becomes binding until a complete Accession Treaty is signed and ratified by every member state and the European Parliament. So the chapters Iceland "provisionally closed" bound nothing.' },
+        text: { is: 'Ekkert verður bindandi fyrr en fullgerður aðildarsamningur er undirritaður og fullgiltur af öllum aðildarríkjum og Evrópuþinginu. Kaflarnir sem Ísland „lokaði til bráðabirgða“ bundu því ekkert.', en: 'Nothing becomes binding until a complete Accession Treaty is signed and ratified by every member state and the European Parliament. So the chapters Iceland "provisionally closed" bound nothing.' },
         sources: [EC_STEPS],
       },
       {
@@ -103,7 +103,7 @@ export const precedents: Precedent[] = [
   { deal: { is: 'Svíþjóð — snus (munntóbak)', en: 'Sweden — snus (oral tobacco)' }, instrument: { is: '151. gr. aðildarsamnings 1994; tilskipun 2014/40/ESB, 17. gr.', en: 'Art. 151, 1994 Act of Accession; Directive 2014/40/EU, Art. 17' }, permanence: 'permanent', sources: [SNUS_DIR] },
   { deal: { is: 'Finnland/Svíþjóð — norðlægur landbúnaðarstuðningur', en: 'Finland/Sweden — northern farm aid' }, instrument: { is: '142. gr. aðildarsamnings 1994', en: 'Art. 142, 1994 Act of Accession' }, permanence: 'permanent', sources: [NORTHERN_DEC] },
   { deal: { is: 'Pólland — kaup á landbúnaðarlandi', en: 'Poland — farmland acquisition' }, instrument: { is: 'Aðlögunartími (12 ár, til 2016), aðildarsamningur 2003', en: 'Transition period (12 yrs, to 2016), 2003 Act of Accession' }, permanence: 'temporary', sources: [ACT_2003] },
-  { deal: { is: '2004-ríkin — frjáls för launafólks', en: '2004 entrants — free movement of workers' }, instrument: { is: '„2+3+2" aðlögun (lauk 2011), aðildarsamningur 2003', en: '"2+3+2" transition (ended 2011), 2003 Act of Accession' }, permanence: 'temporary', sources: [ACT_2003] },
+  { deal: { is: '2004-ríkin — frjáls för launafólks', en: '2004 entrants — free movement of workers' }, instrument: { is: '„2+3+2“ aðlögun (lauk 2011), aðildarsamningur 2003', en: '"2+3+2" transition (ended 2011), 2003 Act of Accession' }, permanence: 'temporary', sources: [ACT_2003] },
   { deal: { is: 'Bretland — endurgreiðsla úr sameiginlegum sjóðum', en: 'United Kingdom — budget rebate' }, instrument: { is: 'Fontainebleau-fundurinn 1984 / ákvörðun um eigin tekjur 1985 — EKKI aðildarskilmáli', en: '1984 Fontainebleau Council / 1985 Own Resources Decision — NOT an accession term' }, permanence: 'none', sources: [EPRS_REBATE] },
 ];
 
