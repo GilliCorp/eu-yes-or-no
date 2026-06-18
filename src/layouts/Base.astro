@@ -47,6 +47,7 @@ const favicon = `${import.meta.env.BASE_URL}/favicon.svg`.replace(/\/+/g, '/');
     <footer>
       <p class="neutral">{t(lang, 'footer.neutral')}</p>
       <nav class="footer-links">
+        <a class="method" href={getRelativeLocaleUrl(lang, 'start-here')}>{t(lang, 'nav.startHere')}</a>
         <a class="method" href={getRelativeLocaleUrl(lang, 'methodology')}>{t(lang, 'nav.methodology')}</a>
         <a class="callout" href={REPO_URL}>{t(lang, 'footer.bullshit')} →</a>
       </nav>

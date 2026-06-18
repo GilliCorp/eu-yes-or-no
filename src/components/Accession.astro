@@ -1,0 +1,163 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import type { Lang } from '../i18n/ui';
+import SourceChips from './SourceChips.astro';
+import { header, bottomLine, sections, fixed, negotiable, precedents, decisive, close } from '../data/accession';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const homeHref = getRelativeLocaleUrl(lang, '');
+
+const permanenceLabel: Record<string, { is: string; en: string }> = {
+  permanent: { is: 'Varanlegt', en: 'Permanent' },
+  temporary: { is: 'Tímabundið — rann út', en: 'Temporary — expired' },
+  none: { is: 'Ekki aðildarskilmáli', en: 'Not an accession term' },
+};
+const readChapters = { is: 'Lesa kaflana', en: 'Read the chapters' };
+const fixedLabel = { is: 'Fast — ekki samningsatriði', en: 'Fixed — not negotiable' };
+const negotiableLabel = { is: 'Samningsatriði', en: 'What you can bargain for' };
+const precedentsLabel = { is: 'Hvað fengu önnur ríki?', en: 'What other countries actually got' };
+---
+
+<article class="accession">
+  <header class="a-hero">
+    <p class="eyebrow">{header.eyebrow[lang]}</p>
+    <h1>{header.title[lang]}</h1>
+    <p class="lead">{header.lead[lang]}</p>
+  </header>
+
+  <aside class="bottom-line">
+    {bottomLine.map((p) => <p>{p[lang]}</p>)}
+  </aside>
+
+  {sections.map((s) => (
+    <section class="a-section">
+      <h2>{s.heading[lang]}</h2>
+      {s.body.map((p) => <p class="body">{p[lang]}</p>)}
+      {s.points && (
+        <ul class="points">
+          {s.points.map((pt) => (
+            <li>
+              <p class="claim">{pt.text[lang]}</p>
+              <SourceChips sources={pt.sources} lang={lang} />
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  ))}
+
+  <section class="a-section split">
+    <div class="col fixed">
+      <h3>{fixedLabel[lang]}</h3>
+      <ul class="points">
+        {fixed.map((pt) => (
+          <li><p class="claim">{pt.text[lang]}</p><SourceChips sources={pt.sources} lang={lang} /></li>
+        ))}
+      </ul>
+    </div>
+    <div class="col negotiable">
+      <h3>{negotiableLabel[lang]}</h3>
+      <ul class="points">
+        {negotiable.map((pt) => (
+          <li><p class="claim">{pt.text[lang]}</p><SourceChips sources={pt.sources} lang={lang} /></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="a-section">
+    <h2>{precedentsLabel[lang]}</h2>
+    <ul class="precedents">
+      {precedents.map((p) => (
+        <li class={`prec ${p.permanence}`}>
+          <span class={`tag ${p.permanence}`}>{permanenceLabel[p.permanence][lang]}</span>
+          <span class="deal">{p.deal[lang]}</span>
+          <span class="instrument">{p.instrument[lang]}</span>
+          <SourceChips sources={p.sources} lang={lang} />
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <aside class="decisive">
+    <p class="claim">{decisive.text[lang]}</p>
+    <SourceChips sources={decisive.sources} lang={lang} />
+  </aside>
+
+  <section class="a-close">
+    {close.body.map((p) => <p>{p[lang]}</p>)}
+    <a class="read-chapters" href={homeHref}>{readChapters[lang]} →</a>
+  </section>
+</article>
+
+<style>
+  .accession { max-width: 48rem; margin: 0 auto; padding: 2.5rem clamp(1rem, 5vw, 2.5rem) 4rem; }
+  .a-hero { margin-bottom: 2rem; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--brass); margin: 0 0 0.75rem;
+  }
+  .a-hero h1 { font-size: clamp(2rem, 5.5vw, 3rem); margin: 0 0 1rem; }
+  .lead {
+    font-family: var(--display); font-weight: 500; font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+    line-height: 1.35; color: var(--ink); margin: 0;
+  }
+
+  .bottom-line {
+    border: 1px solid var(--line-strong); border-left: 4px solid var(--brass);
+    background: var(--paper-raised); border-radius: 4px;
+    padding: 1.25rem clamp(1rem, 3vw, 1.6rem); margin: 0 0 3rem;
+  }
+  .bottom-line p { margin: 0 0 0.75rem; font-size: 1.0625rem; }
+  .bottom-line p:last-child { margin-bottom: 0; }
+
+  .a-section { margin-bottom: 2.75rem; }
+  .a-section h2 { font-size: 1.5rem; margin: 0 0 0.75rem; }
+  .a-section h3 { font-size: 1.15rem; margin: 0 0 0.75rem; }
+  .a-section .body { font-size: 1.0625rem; margin: 0 0 1rem; }
+
+  .points { list-style: none; margin: 0; padding: 0; }
+  .points li { padding: 0.9rem 0; border-top: 1px solid var(--line); }
+  .points li:first-child { border-top: none; }
+  .claim { margin: 0 0 0.6rem; font-size: 1.02rem; }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .col.fixed { border-left: 3px solid var(--loss-bg); padding-left: 1rem; }
+  .col.negotiable { border-left: 3px solid var(--gain-bg); padding-left: 1rem; }
+
+  .precedents { list-style: none; margin: 0; padding: 0; }
+  .prec {
+    display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 0.9rem; align-items: baseline;
+    padding: 0.9rem 0; border-top: 1px solid var(--line);
+  }
+  .prec:first-child { border-top: none; }
+  .prec .tag {
+    grid-row: 1 / span 1; font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase;
+    letter-spacing: 0.06em; padding: 0.15rem 0.45rem; border-radius: 2px; white-space: nowrap; align-self: start;
+  }
+  .prec .tag.permanent { color: var(--gain); border: 1px solid var(--gain-bg); }
+  .prec .tag.temporary { color: var(--brass); border: 1px solid var(--line-strong); }
+  .prec .tag.none { color: var(--muted); border: 1px solid var(--line-strong); }
+  .prec .deal { font-family: var(--display); font-weight: 600; }
+  .prec .instrument { grid-column: 2; font-size: 0.95rem; color: #34322d; }
+  .prec :global(.srcs) { grid-column: 2; margin-top: 0.2rem; }
+
+  .decisive {
+    border: 1px solid var(--loss); border-left: 4px solid var(--loss);
+    background: var(--paper-raised); border-radius: 4px;
+    padding: 1.25rem clamp(1rem, 3vw, 1.6rem); margin: 0 0 3rem;
+  }
+  .decisive .claim { font-family: var(--display); font-weight: 500; font-size: 1.15rem; }
+
+  .a-close p { font-size: 1.0625rem; margin: 0 0 1rem; }
+  .read-chapters {
+    font-family: var(--mono); font-size: 0.85rem; color: var(--slate);
+    text-decoration: none; border-bottom: 1px solid var(--line-strong);
+  }
+  .read-chapters:hover { color: var(--ink); }
+
+  @media (max-width: 40rem) {
+    .split { grid-template-columns: 1fr; }
+  }
+</style>
