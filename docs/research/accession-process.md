@@ -76,6 +76,15 @@ Accession is **mostly "take it as offered."** Joining the EU means adopting the 
 - ✅ **The most important chapter was never reached.** **Fisheries (Ch. 13) was never opened** — the Commission had not submitted its screening report, so Iceland never tabled a position — leaving its most vital sector (~39% of goods exports) entirely unnegotiated when talks stopped. *(MFA Summary Conclusions; EP briefing; LoC Global Legal Monitor)*
 - ✅ **Iceland's government's own words** are the strongest rebuttal to "an easy tailored deal": accession "would follow the formal rules currently in force. There was **no obvious reason to assume that a derogation from these rules could be gained** or the formal process accelerated ... These are therefore **not altogether traditional negotiations**." *(MFA Summary Conclusions)*
 
+### 🔓 The "⅔ already locked in" question (researched 2026-06-18 — single targeted pass, NOT multi-vote verified; core claims primary-grounded, the 11-chapter list + restart status are lower-confidence)
+**Headline: the popular belief that Iceland's ⅔ EEA alignment is "locked in" as settled accession terms is INACCURATE in its strong form.**
+- ✅ **The "⅔" is *implemented* law, not *banked* terms.** Iceland already applies ~⅔–¾ of single-market law via the EEA, which would make accession **faster** (Rehn's "<1 year" was about *speed/alignment*). But accession still requires formally adopting the **entire** acquis under treaty law; the EEA gives **no entitlement** to skip steps. Iceland's own MFA: *"there was no obvious reason to assume that a derogation from these rules could be gained or the formal process accelerated."* *(MFA Summary Conclusions — primary; EPRS briefing PE 782.591, Jan 2026)*
+- ✅ **"Nothing is agreed until everything is agreed."** Provisional closure is a *milestone, not a binding agreement*; chapters can be **reopened** (esp. as the acquis evolves), and **nothing is legally binding until the full Accession Treaty is signed and ratified by every member + the EP.** The 11 provisional closures carry **zero legal standing.** *(EEAS accession-negotiations principle — "nothing is agreed until everything is agreed... chapters can be reopened")*
+- ⚠️ **The 11 provisionally-closed chapters were the EASY, EEA-covered ones** (single-pass list, cross-referenced Commission Iceland page + EP + Wikipedia, re-verify before quoting as definitive): Science & Research; Education & Culture; Free Movement of Workers; Company Law; IP Law; Consumer & Health Protection; Foreign/Security/Defence Policy; Enterprise & Industrial Policy; Trans-European Networks; Judiciary & Fundamental Rights; Competition. *(LSE EuroPP 2012: "the chapters now closed were already mostly covered by the EEA... the easiest steps.")* **The hard ⅓ — fisheries, agriculture, free movement of capital, establishment, food-safety/veterinary, JHA — was the never-opened remainder.**
+- ⚠️ **Restart status is genuinely UNSETTLED (medium confidence).** Iceland's application was **suspended, never formally withdrawn** — so legally no fresh re-application is strictly required, and the Council (Dec 2013) said it was "ready to resume." BUT whether the prior screening/closures carry over is unresolved: the **2021 enlargement methodology restructured chapters (35→33, 6 clusters)**, the acquis has evolved 13 years, and **no EU rule grandfathers prior closures.** Realistic outcome = a **hybrid**: diplomatic credit for prior progress, but *de facto re-screening* and re-closing under current acquis. The 2026 referendum asks whether talks should **"start again."** *(EPRS PE 782.591; Council Dec 2013 conclusions; NordiskPost 2026 — secondary)*
+
+**Net for the page:** "haven't we already locked in ⅔?" → No. The ⅔ is alignment that speeds things up, not a protected down-payment; nothing binds until the final treaty; and the un-negotiated ⅓ is exactly the existential stuff (fish, farming, money).
+
 ---
 
 ## ❌ REFUTED — do NOT publish these (kept to prevent re-introduction)
@@ -91,9 +100,9 @@ The precedents flagged in the brief are now **confirmed and folded into the prec
 - 📌 **Tooling note for future passes:** EUR-Lex pages are **JS-rendered and return blank to every automated tool** (WebFetch) *and* to "save as PDF → markdown" (comes out 0 bytes). For verbatim EUR-Lex quotes, use: (a) a mirror like legislation.gov.uk for retained directives, (b) WebSearch snippets, or (c) a human copy-paste straight from the EUR-Lex viewer. Don't burn fetches on EUR-Lex URLs.
 - ⚠️ **Irish protocols** (e.g. on abortion) — not separately chased this pass; lower priority, add only if the chapter needs another example.
 
-## Open questions for a future pass
-- Which of Iceland's 11 provisionally-closed chapters were they, and what was provisionally agreed that might carry over if talks resume?
-- Legal status of a **resumed** application after the 2015 withdrawal — fresh application + re-screening, or reinstatement of prior chapter work? Does re-opening create any binding commitment beyond the 2010–2013 precedent of free withdrawal?
+## Open questions — RESOLVED 2026-06-18 (see "🔓 The '⅔ already locked in' question" above)
+- ✅ Which 11 chapters were provisionally closed → answered (the EEA-covered "easy" set; ⚠️ single-pass list, re-verify before quoting definitively).
+- ✅ Legal status of a resumed application → answered: application suspended-not-withdrawn (no fresh application strictly needed), but prior closures are **not legally locked** ("nothing agreed until everything agreed") and a restart likely means de-facto re-screening under the 2021 methodology. ⚠️ Genuinely unsettled in its procedural detail; medium confidence.
 
 ---
 
