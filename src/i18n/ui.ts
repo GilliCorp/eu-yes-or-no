@@ -8,7 +8,7 @@ export const REPO_URL = 'https://github.com/GilliCorp/eu-yes-or-no';
 
 export const ui = {
   is: {
-    'site.title': 'ESB — já eða nei?',
+    'site.title': 'ESB — hvað breytist?',
     'site.tagline': 'Hvað myndum við græða og hvað myndum við tapa? Á mannamáli, með heimildum.',
     'home.intro':
       'Ísland er nú þegar um tveir þriðju „inni“ í ESB gegnum EES-samninginn. Þessi síða snýst því ekki um „ESB eða ekkert“ — heldur hvað raunverulega breytist ef við göngum alla leið. Kafli fyrir kafla, byrjað á því sem snertir hversdaginn.',
@@ -96,7 +96,7 @@ export const ui = {
     'a11y.skip': 'Beint í efni',
   },
   en: {
-    'site.title': 'EU — yes or no?',
+    'site.title': 'EU — what changes?',
     'site.tagline': 'What would we gain and what would we lose? In plain language, with sources.',
     'home.intro':
       "Iceland is already about two-thirds 'in' the EU through the EEA Agreement. So this site isn't about 'EU or nothing' — it's about what actually changes if we go all the way. Chapter by chapter, starting with what touches everyday life.",
