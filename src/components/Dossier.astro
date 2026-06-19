@@ -87,31 +87,37 @@ const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
     </div>
 
     <div class="cols">
-      <ul class="col gains">
-        {d.gains.map((p) => (
-          <li class="entry">
-            <p class="claim">{p.claim[lang]}</p>
-            <div class="meta">
-              {p.affects?.map((a) => <span class="affect">{affect(a)}</span>)}
-              <span class="conf">{t(lang, 'dossier.confidence')}: {confLabel(p.confidence)}</span>
-            </div>
-            <SourceChips sources={p.sources} lang={lang} />
-          </li>
-        ))}
-      </ul>
+      <div class="col gains">
+        <p class="col-label gain">{t(lang, 'dossier.gains')}</p>
+        <ul class="entries">
+          {d.gains.map((p) => (
+            <li class="entry">
+              <p class="claim">{p.claim[lang]}</p>
+              <div class="meta">
+                {p.affects?.map((a) => <span class="affect">{affect(a)}</span>)}
+                <span class="conf">{t(lang, 'dossier.confidence')}: {confLabel(p.confidence)}</span>
+              </div>
+              <SourceChips sources={p.sources} lang={lang} />
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      <ul class="col losses">
-        {d.losses.map((p) => (
-          <li class="entry">
-            <p class="claim">{p.claim[lang]}</p>
-            <div class="meta">
-              {p.affects?.map((a) => <span class="affect">{affect(a)}</span>)}
-              <span class="conf">{t(lang, 'dossier.confidence')}: {confLabel(p.confidence)}</span>
-            </div>
-            <SourceChips sources={p.sources} lang={lang} />
-          </li>
-        ))}
-      </ul>
+      <div class="col losses">
+        <p class="col-label loss">{t(lang, 'dossier.losses')}</p>
+        <ul class="entries">
+          {d.losses.map((p) => (
+            <li class="entry">
+              <p class="claim">{p.claim[lang]}</p>
+              <div class="meta">
+                {p.affects?.map((a) => <span class="affect">{affect(a)}</span>)}
+                <span class="conf">{t(lang, 'dossier.confidence')}: {confLabel(p.confidence)}</span>
+              </div>
+              <SourceChips sources={p.sources} lang={lang} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -207,9 +213,14 @@ const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
   .scale { color: var(--brass); font-size: 1.5rem; }
 
   .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
-  .col { list-style: none; margin: 0; padding: 0; }
+  .col { margin: 0; padding: 0; }
   .col.gains { padding-right: 1.5rem; }
   .col.losses { padding-left: 1.5rem; border-left: 1px solid var(--line-strong); }
+  .entries { list-style: none; margin: 0; padding: 0; }
+  /* Per-column labels: hidden on desktop (the central balance header carries it); shown when columns stack on mobile */
+  .col-label { display: none; font-family: var(--display); font-weight: 600; font-size: 1.15rem; margin: 0 0 0.6rem; }
+  .col-label.gain { color: var(--gain); }
+  .col-label.loss { color: var(--loss); }
 
   .entry { padding: 1.1rem 0; border-top: 1px solid var(--line); }
   .entry:first-child { border-top: none; }
@@ -248,7 +259,9 @@ const affect = (a: string) => affectsLabel[a]?.[lang] ?? a;
     .spine { display: none; }
     .cols { grid-template-columns: 1fr; }
     .col.gains { padding-right: 0; }
-    .col.losses { padding-left: 0; border-left: none; border-top: 1px solid var(--line-strong); margin-top: 1.5rem; padding-top: 0.5rem; }
-    .lh.loss { text-align: left; }
+    .col.losses { padding-left: 0; border-left: none; border-top: 1px solid var(--line-strong); margin-top: 1.5rem; padding-top: 1.25rem; }
+    /* the central balance header makes no sense once columns stack — show each column's own label instead */
+    .ledger-head { display: none; }
+    .col-label { display: block; }
   }
 </style>
