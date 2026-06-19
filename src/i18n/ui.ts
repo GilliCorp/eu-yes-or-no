@@ -92,7 +92,7 @@ export const ui = {
     'basket.whyNoBody': 'Tollur er gjald á innfluttar vörur — ekki margföldun á búðarverði. Innlend mjólk og kjöt bera engan toll sjálf; hann verndar þau óbeint. Hve mikið verð myndi lækka veltur á álagningu og innlendri framleiðslu og er hvergi tölusett. Þess vegna sýnum við staðreyndir — verð og tolla — en spáum ekki tölu sem við getum ekki heimildastutt.',
     'footer.neutral':
       'Hlutlaus, heimildastudd síða. Hver fullyrðing vísar í frumheimild. Allt efni er opið á GitHub — saga breytinga er sýnileg.',
-    'footer.bullshit': 'Sástu villu? Leiðréttu hana',
+    'footer.source': 'Sjá heimildir og rannsóknir',
     'a11y.skip': 'Beint í efni',
   },
   en: {
@@ -180,7 +180,7 @@ export const ui = {
     'basket.whyNoBody': "A tariff is a charge on imported goods — not a multiplier on the shelf price. Icelandic milk and meat carry no tariff themselves; it protects them indirectly. How much a price would fall depends on retail margins and domestic production, and is quantified nowhere. So we show facts — prices and tariffs — but won't invent a number we can't source.",
     'footer.neutral':
       'A neutral, sourced site. Every claim cites a primary source. All content is open on GitHub — the edit history is visible.',
-    'footer.bullshit': 'Spotted an error? Fix it',
+    'footer.source': 'See the sources & research',
     'a11y.skip': 'Skip to content',
   },
 } as const;
